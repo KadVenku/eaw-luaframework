@@ -1,6 +1,6 @@
 # Empire at War LUA Framework
 
-(c) 2017 - [Kad_Venku](mailto:venkukad@gmail.com)
+(c) 2017 - [Kad_Venku](https://github.com/KadVenku)
 
 ## Description
 This is an event driven framework for the Petroglyph game Star Wars: Empire at War - Forces of Corruption written entirely in LUA 5.1.  
@@ -13,7 +13,7 @@ In addition the framework provides a fully functional event handler which regist
 
 ## Remarks
 
-Since the framework had been designed and implemented in 2017, @SvenMarcus released the [EaWX Galactic Framework](https://github.com/SvenMarcus/eawx-galactic-framework) which I would recommend over this project.
+Since the framework had been designed and implemented in 2017, [@SvenMarcus](https://github.com/SvenMarcus) released the [EaWX Galactic Framework](https://github.com/SvenMarcus/eawx-galactic-framework) which I would recommend over this project.
 
 ## License
 The project is provided under the MIT License, see LICENSE for details.
