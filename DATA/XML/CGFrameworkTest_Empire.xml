@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!-- $Header$
+/////////////////////////////////////////////////////////////////////////////////////////////////
+ (C) Petroglyph Games, Inc.
+ YUUZHAN VONG AT WAR
+/////////////////////////////////////////////////////////////////////////////////////////////////
+ C O N F I D E N T I A L   S O U R C E   C O D E - D O   N O T   D I S T R I B U T E
+/////////////////////////////////////////////////////////////////////////////////////////////////
+@FILE NAME: CGFrameworkTest_Empire.xml
+@ORIGINAL AUTHOR: Kad Venku
+@CREATION TIME: 2017-03-27 20:29:11
+@REVISION: $Revision$
+@CHANGELIST: $Change$
+@LAST MODIFIED BY: $Author$
+@LAST MODIFIED TIME: $DateTime$
+//////////////////////////////////////////////////////////////////////////////////////////////-->
+<Story>
+    <Event Name="InitialiseGalacticConquestEvent">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>0</Event_Param1>
+    </Event>
+</Story>

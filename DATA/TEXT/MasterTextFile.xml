@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<StringFiles>
+    <File>Error_Messages.tsv</File>
+    <File>Debug_Messages.tsv</File>
+    <File>LUAObjectsTypes.tsv</File>
+    <File>imported.tsv</File>
+    <File>GameMessages_GC.tsv</File>
+    <File>TextFormattedOut.tsv</File>
+    <File>Mission_Holochron.tsv</File>
+    <File>GUI.tsv</File>
+</StringFiles>

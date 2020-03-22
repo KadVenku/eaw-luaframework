@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<CommandBarComponents>
+    <CommandBarComponent Name="b_unit_tab">
+        <Type>Button</Type>
+        <Tooltip_Text>TEXT_TOOLTIP_GUI_PROD_UNITS_BUTTON</Tooltip_Text>
+        <Icon_Texture_Name>i_tab_units_deselected.tga</Icon_Texture_Name>
+        <Mouse_Over_Texture_Name>i_tab_units_over.tga</Mouse_Over_Texture_Name>
+        <Selected_Texture_Name>i_tab_units_selected.tga</Selected_Texture_Name>
+        <Group>Build_Filter_Tab</Group>
+        <Tab>True</Tab>
+        <Selected_Alpha>True</Selected_Alpha>
+        <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+        <Swap_Texture>True</Swap_Texture>
+    </CommandBarComponent>
+    <CommandBarComponent Name="b_buildings_tab">
+        <Type>Button</Type>
+        <Tooltip_Text>TEXT_TOOLTIP_GUI_PROD_BUILDINGS_BUTTON</Tooltip_Text>
+        <Icon_Texture_Name>i_tab_building_deselected.tga</Icon_Texture_Name>
+        <Mouse_Over_Texture_Name>i_tab_building_over.tga</Mouse_Over_Texture_Name>
+        <Selected_Texture_Name>i_tab_building_selected.tga</Selected_Texture_Name>
+        <Group>Build_Filter_Tab</Group>
+        <Tab>True</Tab>
+        <Selected_Alpha>True</Selected_Alpha>
+        <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+        <Swap_Texture>True</Swap_Texture>
+    </CommandBarComponent>
+    <CommandBarComponent Name="b_upgrades_tab">
+        <Type>Button</Type>
+        <Tooltip_Text>TEXT_TOOLTIP_GUI_PROD_UPGRADES_BUTTON</Tooltip_Text>
+        <Icon_Texture_Name>i_tab_upgrades_deselected.tga</Icon_Texture_Name>
+        <Mouse_Over_Texture_Name>i_tab_upgrades_over.tga</Mouse_Over_Texture_Name>
+        <Selected_Texture_Name>i_tab_upgrades_selected.tga</Selected_Texture_Name>
+        <Group>Build_Filter_Tab</Group>
+        <Tab>True</Tab>
+        <Selected_Alpha>True</Selected_Alpha>
+        <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+        <Swap_Texture>True</Swap_Texture>
+    </CommandBarComponent>
+</CommandBarComponents>

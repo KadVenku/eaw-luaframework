@@ -1,0 +1,14 @@
+*.meg filter=lfs diff=lfs merge=lfs -text
+*.dds filter=lfs diff=lfs merge=lfs -text
+*.alo filter=lfs diff=lfs merge=lfs -text
+*.ala filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.dat filter=lfs diff=lfs merge=lfs -text
+*.mtd filter=lfs diff=lfs merge=lfs -text
+*.ALO filter=lfs diff=lfs merge=lfs -text
+*.ALA filter=lfs diff=lfs merge=lfs -text
+*.TGA filter=lfs diff=lfs merge=lfs -text
+*.MEG filter=lfs diff=lfs merge=lfs -text
+*.DDS filter=lfs diff=lfs merge=lfs -text
+*.DAT filter=lfs diff=lfs merge=lfs -text
+*.MTD filter=lfs diff=lfs merge=lfs -text

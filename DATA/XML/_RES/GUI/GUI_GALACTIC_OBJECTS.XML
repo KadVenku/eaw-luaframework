@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<GUIDummyObject>
+    <Props_Generic Name="GUI_GC_PLANET_ORBITAL_GRAVWELL">
+        <Text_ID>TEXT_NONE</Text_ID>
+        <Galactic_Model_Name>GUI_GC_GRAVWELL.ALO</Galactic_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>No</Is_Decoration>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+    </Props_Generic>
+    <Props_Generic Name="GUI_GC_PLANET_ORBITAL_LONGRANGESCANNER">
+        <Text_ID>TEXT_NONE</Text_ID>
+        <Galactic_Model_Name>GUI_GC_LONGRANGESCANNER.ALO</Galactic_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>No</Is_Decoration>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+    </Props_Generic>
+    <Props_Generic Name="GUI_GC_PLANET_GROUND_PLANETRAYSHIELD">
+        <Text_ID>TEXT_NONE</Text_ID>
+        <Galactic_Model_Name>GUI_GC_PLANETARYSHIELD.ALO</Galactic_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>No</Is_Decoration>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+    </Props_Generic>
+    <Props_Generic Name="GUI_GC_PLANET_PD_BOMBARDED">
+        <Text_ID>TEXT_NONE</Text_ID>
+        <Galactic_Model_Name>GUI_GC_PD_BOMBARDMENT.ALO</Galactic_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>No</Is_Decoration>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+    </Props_Generic>
+</GUIDummyObject>

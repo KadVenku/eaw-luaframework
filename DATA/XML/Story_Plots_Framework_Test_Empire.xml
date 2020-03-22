@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!-- $Header$
+/////////////////////////////////////////////////////////////////////////////////////////////////
+ (C) Petroglyph Games, Inc.
+ YUUZHAN VONG AT WAR
+/////////////////////////////////////////////////////////////////////////////////////////////////
+ C O N F I D E N T I A L   S O U R C E   C O D E - D O   N O T   D I S T R I B U T E
+/////////////////////////////////////////////////////////////////////////////////////////////////
+@FILE NAME: Story_Plots_Framework_Test_Empire.xml
+@ORIGINAL AUTHOR: Kad Venku
+@CREATION TIME: 2017-03-27 19:58:56
+@REVISION: $Revision$
+@CHANGELIST: $Change$
+@LAST MODIFIED BY: Kad_Venku
+@LAST MODIFIED TIME: 2017-07-07 13:06:49
+//////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<Story_Mode_Plots>
+    <Lua_Script>CGFrameworkTest_Empire</Lua_Script>
+    <Active_Plot>CGFrameworkTest_Empire.xml</Active_Plot>
+
+<!-- Framework event library -->
+    <!-- Error Handler: -->
+    <Active_Plot>__luaFramework/libErrorHandler/libErrorHandler.xml</Active_Plot>
+    <!-- GUI Handler -->
+    <Active_Plot>__luaFramework/cGUIHandler/cGUIElement.xml</Active_Plot>
+    <Active_Plot>__luaFramework/cGUIHandler/cGUIHandler.xml</Active_Plot>
+    <!-- Forced UI actions -->
+    <Active_Plot>__luaFramework/cGUIHandler/cGUIForcedInteractions.xml</Active_Plot>
+    <!-- GameObject handler -->
+    <Active_Plot>__luaFramework/cGameObjectHandler/cGameObjectType.xml</Active_Plot>
+    <Active_Plot>__luaFramework/cGUIHandler/cGUIElement_Type_Filter.xml</Active_Plot>
+    <!-- Mission Holochron -->
+    <Active_Plot>__luaFramework/cGUIHandler/cGUIMissionHolochronOutput.xml</Active_Plot>
+</Story_Mode_Plots>

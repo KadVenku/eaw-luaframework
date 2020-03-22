@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<Story>
+    <Event Name="cGUIElement_LockGUIElement">
+        <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+        <Event_Param2>cGUIElement_LockGUIElement_Trigger</Event_Param2>
+        <Reward_Type>DISABLE_EVENT</Reward_Type>
+        <Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+        <Reward_Param2>guiElementPlaceholder</Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIElement_ElementActivation</Branch>
+    </Event>
+    
+    <Event Name="cGUIElement_UnlockGUIElement">
+        <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+        <Event_Param2>cGUIElement_UnlockGUIElement_Trigger</Event_Param2>
+        <Reward_Type>ENABLE_EVENT</Reward_Type>
+        <Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+        <Reward_Param2>guiElementPlaceholder</Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIElement_ElementActivation</Branch>
+    </Event>
+</Story>

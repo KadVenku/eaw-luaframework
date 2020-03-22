@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Story>
+    <Event Name="info_DisplayActiveDiplomaticMissions">
+        <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+        <Event_Param2>info_DisplayActiveDiplomaticMissions_Trigger</Event_Param2>
+        <Story_Dialog>hcActiveDiplomaticMissions</Story_Dialog>
+        <Story_Chapter>0</Story_Chapter>
+        <Story_Dialog_Popup>False</Story_Dialog_Popup>
+        <Story_Tag>info_DisplayActiveDiplomaticMissions</Story_Tag>
+        <Perpetual>true</Perpetual>
+    </Event>
+    <Event Name="info_DisplayActiveDiplomaticMissionsReset">
+        <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+        <Event_Param2>info_DisplayActiveDiplomaticMissionsReset_Trigger</Event_Param2>
+        <Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+        <Reward_Param1>info_DisplayActiveDiplomaticMissions</Reward_Param1>
+        <Prereq>info_DisplayActiveDiplomaticMissions</Prereq>
+        <Perpetual>true</Perpetual>
+    </Event>
+    <Event Name="info_DisplayDiplomaticMissionFailure">
+        <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+        <Event_Param2>info_DisplayDiplomaticMissionFailure_Trigger</Event_Param2>
+        <Story_Dialog>hcCompletedDiplomaticMissionFailure</Story_Dialog>
+        <Story_Chapter>0</Story_Chapter>
+        <Story_Dialog_Popup>True</Story_Dialog_Popup>
+        <Story_Tag/>
+        <Perpetual>true</Perpetual>
+    </Event>
+    <Event Name="info_DisplayDiplomaticMissionSuccess">
+        <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+        <Event_Param2>info_DisplayDiplomaticMissionSuccess_Trigger</Event_Param2>
+        <Story_Dialog>hcCompletedDiplomaticMissionSuccess</Story_Dialog>
+        <Story_Chapter>0</Story_Chapter>
+        <Story_Dialog_Popup>True</Story_Dialog_Popup>
+        <Story_Tag/>
+        <Perpetual>true</Perpetual>
+    </Event>
+    <Event Name="info_PlanetaryBombardmentFailure">
+        <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+        <Event_Param2>info_PlanetaryBombardmentFailure_Trigger</Event_Param2>
+        <Story_Dialog>hcCompletedBombardmentFailure</Story_Dialog>
+        <Story_Chapter>0</Story_Chapter>
+        <Story_Dialog_Popup>True</Story_Dialog_Popup>
+        <Story_Tag/>
+        <Perpetual>true</Perpetual>
+    </Event>
+    <Event Name="info_PlanetaryBombardmentSuccess">
+        <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+        <Event_Param2>info_PlanetaryBombardmentSuccess_Trigger</Event_Param2>
+        <Story_Dialog>hcCompletedBombardmentSuccess</Story_Dialog>
+        <Story_Chapter>0</Story_Chapter>
+        <Story_Dialog_Popup>True</Story_Dialog_Popup>
+        <Story_Tag/>
+        <Perpetual>true</Perpetual>
+    </Event>
+    <Event Name="info_GenericScreenSpaceMessage">
+        <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+        <Event_Param2>info_GenericScreenSpaceMessage_Trigger</Event_Param2>
+        <Reward_Type>SCREEN_TEXT</Reward_Type>
+        <Reward_Param1>MISSING</Reward_Param1>
+        <Reward_Param2>-1</Reward_Param2>
+        <Perpetual>true</Perpetual>
+    </Event>
+</Story>

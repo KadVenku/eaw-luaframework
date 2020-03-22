@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+
+<CommandBar_Component_Files>
+	<File>_RES/GUI/GUI_COMMANDBARCOMPONENTS_VANILLA.XML</File>
+	<File>_RES/GUI/GUI_COMMANDBARCOMPONENTS_ADDED.XML</File>
+</CommandBar_Component_Files>

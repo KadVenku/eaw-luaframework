@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<Story>
+    <Event Name="cGUIElement_Type_Filter_b_buildings_tabPressed">
+        <Event_Type>STORY_CLICK_GUI</Event_Type>
+        <Event_Param1>b_buildings_tab</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIElement_Type_Filter_GUIElement_b_buildings_tab_PressedFlag</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIElement_Type_Filter_GUIElementPressedEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIElement_Type_Filter_b_unit_tabPressed">
+        <Event_Type>STORY_CLICK_GUI</Event_Type>
+        <Event_Param1>b_unit_tab</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIElement_Type_Filter_GUIElement_b_unit_tab_PressedFlag</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIElement_Type_Filter_GUIElementPressedEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIElement_Type_Filter_b_upgrades_tabPressed">
+        <Event_Type>STORY_CLICK_GUI</Event_Type>
+        <Event_Param1>b_upgrades_tab</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIElement_Type_Filter_GUIElement_b_upgrades_tab_PressedFlag</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIElement_Type_Filter_GUIElementPressedEvaluation</Branch>
+    </Event>
+</Story>

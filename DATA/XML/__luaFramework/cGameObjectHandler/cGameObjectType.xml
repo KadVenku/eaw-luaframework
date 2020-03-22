@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<Story>
+    <Event Name="cGameObjectType_LockObjectTypeBuildable">
+        <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+        <Event_Param2>cGameObjectType_LockObjectTypeBuildable_Trigger</Event_Param2>
+        <Reward_Type>LOCK_UNIT</Reward_Type>
+        <Reward_Param1>Unit</Reward_Param1>
+        <Perpetual>True</Perpetual>
+    </Event>
+    <Event Name="cGameObjectType_UnlockObjectTypeBuildable">
+        <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+        <Event_Param2>cGameObjectType_UnlockObjectTypeBuildable_Trigger</Event_Param2>
+        <Reward_Type>BUILDABLE_UNIT</Reward_Type>
+        <Reward_Param1>Unit</Reward_Param1>
+        <Perpetual>True</Perpetual>
+    </Event>
+</Story>

@@ -1,0 +1,498 @@
+<?xml version="1.0" ?>
+<Story>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Abregado_Rae">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Abregado_Rae</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Abregado_Rae</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_AetenII">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>AetenII</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_AetenII</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Alderaan">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Alderaan</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Alderaan</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_AlzocIII">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>AlzocIII</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_AlzocIII</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Anaxes">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Anaxes</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Anaxes</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Atzerri">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Atzerri</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Atzerri</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Bespin">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Bespin</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Bespin</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Bestine">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Bestine</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Bestine</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Bonadan">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Bonadan</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Bonadan</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Bothawui">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Bothawui</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Bothawui</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Byss">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Byss</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Byss</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Carida">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Carida</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Carida</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Corellia">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Corellia</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Corellia</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Corulag">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Corulag</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Corulag</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Coruscant">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Coruscant</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Coruscant</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Dagobah">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Dagobah</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Dagobah</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Dantooine">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Dantooine</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Dantooine</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Dathomir">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Dathomir</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Dathomir</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Endor">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Endor</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Endor</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Eriadu">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Eriadu</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Eriadu</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Felucia">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Felucia</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Felucia</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Fondor">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Fondor</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Fondor</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Fresia">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Fresia</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Fresia</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Geonosis">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Geonosis</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Geonosis</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Honoghr">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Honoghr</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Honoghr</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Hoth">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Hoth</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Hoth</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Hypori">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Hypori</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Hypori</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Ilum">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Ilum</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Ilum</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Jabiim">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Jabiim</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Jabiim</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Kamino">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Kamino</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Kamino</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Kashyyyk">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Kashyyyk</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Kashyyyk</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Kessel">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Kessel</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Kessel</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Korriban">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Korriban</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Korriban</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Kuat">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Kuat</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Kuat</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Manaan">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Manaan</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Manaan</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Mandalore">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Mandalore</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Mandalore</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_MonCalimari">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>MonCalimari</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_MonCalimari</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Mustafar">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Mustafar</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Mustafar</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Muunilinst">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Muunilinst</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Muunilinst</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Myrkr">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Myrkr</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Myrkr</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Naboo">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Naboo</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Naboo</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_NalHutta">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>NalHutta</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_NalHutta</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Polus">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Polus</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Polus</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Ryloth">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Ryloth</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Ryloth</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Saleucami">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Saleucami</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Saleucami</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Shola">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Shola</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Shola</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Sullust">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Sullust</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Sullust</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Taris">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Taris</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Taris</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Tatooine">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Tatooine</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Tatooine</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_The_Maw">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>The_Maw</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_The_Maw</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Thyferra">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Thyferra</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Thyferra</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Utapau">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Utapau</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Utapau</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_VergessoAsteroids">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>VergessoAsteroids</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_VergessoAsteroids</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Wayland">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Wayland</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Wayland</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+    <Event Name="cGUIHandler_SetSelectedPlanetFlag_Yavin">
+        <Event_Type>STORY_SELECT_PLANET</Event_Type>
+        <Event_Param1>Yavin</Event_Param1>
+        <Reward_Type>TRIGGER_AI</Reward_Type>
+        <Reward_Param1>cGUIHandler_SelectedPlanetFlag_Yavin</Reward_Param1>
+        <Reward_Param2></Reward_Param2>
+        <Perpetual>true</Perpetual>
+        <Branch>cGUIHandler_SelectedPlanetEvaluation</Branch>
+    </Event>
+</Story>
