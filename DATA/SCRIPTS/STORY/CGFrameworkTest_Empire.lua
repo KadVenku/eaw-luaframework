@@ -1,16 +1,16 @@
 -- ===== ===== ===== ===== =====
--- Copyright (c) 2017 Kad Venku
+-- Copyright (c) 2017 Lukas Grünwald
 -- License       MIT License
 -- ===== ===== ===== ===== =====
 
-require( "PGBase" )
-require( "PGDebug" )
+require( "pgbase" )
+require( "pgdebug" )
 require( "pgevents" )
 require( "pgcommands" )
-require( "PGBaseDefinitions" )
-require( "PGStateMachine" )
-require( "PGStoryMode" )
-require( "PGSpawnUnits" )
+require( "pgbasedefinitions" )
+require( "pgstatemachine" )
+require( "pgstorymode" )
+require( "pgspawnunits" )
 -- libraries:
 require( "libErrorFunctions" )
 require( "libDebugFunctions" )

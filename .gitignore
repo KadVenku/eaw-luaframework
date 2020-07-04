@@ -44,3 +44,5 @@ bin/
 *.err
 *.log
 *.dat
+# Documents
+docs/
