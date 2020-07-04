@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><strong>libGCDefinitions.lua</strong></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <h2>libGCDefinitions.lua</h2>
+<pre>
+<span class="comment">-- ===== ===== ===== ===== =====
+</span><span class="comment">-- Copyright (c) 2017 Lukas Grünwald
+</span><span class="comment">-- License       MIT License
+</span><span class="comment">-- ===== ===== ===== ===== =====
+</span>
+<span class="keyword">local</span> CampaignDefinitions = {
+    [<span class="string">"SANDBOX_EQUAL_FOOTING"</span>] = {
+        Factions = {
+            [<span class="string">"Galactic_Empire"</span>] = {
+                  Name = <span class="string">"Galactic_Empire"</span>,
+                  Type = <span class="string">"TYPE_FACTION_MAJOR"</span>,
+                  InitiallyBuildableObjects = {
+                        <span class="comment">-- Building [Space]:
+</span>                        <span class="string">"EMPIRE_STAR_BASE_1"</span>,
+                        <span class="string">"EMPIRE_STAR_BASE_2"</span>,
+                        <span class="string">"EMPIRE_STAR_BASE_3"</span>,
+                        <span class="string">"EMPIRE_STAR_BASE_4"</span>,
+                        <span class="string">"EMPIRE_STAR_BASE_5"</span>,
+                        <span class="string">"E_ORBITAL_JAMMING_STATION"</span>,
+                        <span class="string">"EMPIRE_ORBITAL_LONG_RANGE_SCANNER"</span>,
+                        <span class="string">"E_GRAVITY_WELL_STATION"</span>,
+                        <span class="comment">-- Building [Ground]:
+</span>                        <span class="string">"GROUND_MAGNEPULSE_CANNON"</span>,
+                        <span class="string">"EMPIRE_GROUND_SHUTTER_SHIELD"</span>,
+                        <span class="string">"GROUND_CANTINA_E"</span>,
+                        <span class="string">"GROUND_HUTT_PALACE_E"</span>,
+                        <span class="string">"E_GROUND_BASE_SHIELD"</span>,
+                        <span class="string">"GROUND_GRAVITY_GENERATOR"</span>,
+                        <span class="string">"GROUND_EMPIRE_HYPERVELOCITY_GUN"</span>,
+                        <span class="string">"GROUND_INFILTRATOR_FACILITY"</span>,
+                        <span class="string">"EMPIRE_GROUND_MINING_FACILITY"</span>,
+                        <span class="string">"E_GALACTIC_TURBOLASER_TOWER_DEFENSES"</span>,
+                        <span class="string">"E_GROUND_BARRACKS"</span>,
+                        <span class="string">"E_GROUND_LIGHT_VEHICLE_FACTORY"</span>,
+                        <span class="string">"E_GROUND_HEAVY_VEHICLE_FACTORY"</span>,
+                        <span class="string">"E_GROUND_ADVANCED_VEHICLE_FACTORY"</span>,
+                        <span class="string">"E_GROUND_OFFICER_ACADEMY"</span>,
+                        <span class="string">"E_GROUND_RESEARCH_FACILITY"</span>,
+                        <span class="comment">-- Units [Ground]:
+</span>                        <span class="string">"IMPERIAL_ARMOR_GROUP"</span>,
+                        <span class="string">"IMPERIAL_ANTI_AIRCRAFT_COMPANY"</span>,
+                        <span class="string">"IMPERIAL_HEAVY_ASSAULT_COMPANY"</span>,
+                        <span class="string">"IMPERIAL_HEAVY_SCOUT_SQUAD"</span>,
+                        <span class="string">"IMPERIAL_ARTILLERY_CORP"</span>,
+                        <span class="string">"IMPERIAL_ANTI_INFANTRY_BRIGADE"</span>,
+                        <span class="string">"IMPERIAL_STORMTROOPER_SQUAD"</span>,
+                        <span class="string">"IMPERIAL_LIGHT_SCOUT_SQUAD"</span>,
+                        <span class="string">"HAV_JUGGERNAUT_COMPANY"</span>,
+                        <span class="string">"LANCET_AIR_WING"</span>,
+                        <span class="string">"EMPIRE_MDU_COMPANY"</span>,
+                        <span class="string">"NOGHRI_ASSASSIN_SQUAD"</span>,
+                        <span class="string">"DARKTROOPER_P1_COMPANY"</span>,
+                        <span class="string">"DARKTROOPER_P2_COMPANY"</span>,
+                        <span class="string">"DARKTROOPER_P3_COMPANY"</span>,
+                        <span class="comment">-- Units [Space]:
+</span>                        <span class="string">"TARTAN_PATROL_CRUISER"</span>,
+                        <span class="string">"IPV1_SYSTEM_PATROL_CRAFT"</span>,
+                        <span class="string">"BROADSIDE_CLASS_CRUISER"</span>,
+                        <span class="string">"VICTORY_DESTROYER"</span>,
+                        <span class="string">"ACCLAMATOR_ASSAULT_SHIP"</span>,
+                        <span class="string">"INTERDICTOR_CRUISER"</span>,
+                        <span class="string">"STAR_DESTROYER"</span>,
+                        <span class="string">"PROBE_DROID_TEAM"</span>,
+                  },
+            },
+            [<span class="string">"Rebel_Alliance"</span>] = {
+                  Name = <span class="string">"Rebel_Alliance"</span>,
+                  Type = <span class="string">"TYPE_FACTION_MAJOR"</span>,
+                  InitiallyBuildableObjects = {
+                        <span class="comment">-- Buildings:
+</span>                        <span class="string">"REBEL_STAR_BASE_1"</span>,
+                        <span class="string">"REBEL_STAR_BASE_2"</span>,
+                        <span class="string">"REBEL_STAR_BASE_3"</span>,
+                        <span class="string">"REBEL_STAR_BASE_4"</span>,
+                        <span class="string">"REBEL_STAR_BASE_5"</span>,
+                        <span class="string">"R_ORBITAL_JAMMING_STATION"</span>,
+                        <span class="string">"REBEL_ORBITAL_LONG_RANGE_SCANNER"</span>,
+                        <span class="string">"GROUND_ION_CANNON"</span>,
+                        <span class="string">"REBEL_GROUND_SHUTTER_SHIELD"</span>,
+                        <span class="string">"GROUND_CANTINA_R"</span>,
+                        <span class="string">"GROUND_HUTT_PALACE_R"</span>,
+                        <span class="string">"R_GROUND_BASE_SHIELD"</span>,
+                        <span class="string">"GROUND_GRAND_ARENA"</span>,
+                        <span class="string">"GROUND_INFILTRATOR_FACILITY"</span>,
+                        <span class="string">"REBEL_GROUND_MINING_FACILITY"</span>,
+                        <span class="string">"R_GALACTIC_TURBOLASER_TOWER_DEFENSES"</span>,
+                        <span class="string">"R_GROUND_BARRACKS"</span>,
+                        <span class="string">"R_GROUND_LIGHT_VEHICLE_FACTORY"</span>,
+                        <span class="string">"R_GROUND_HEAVY_VEHICLE_FACTORY"</span>,
+                        <span class="string">"R_GROUND_OFFICER_ACADEMY"</span>,
+                        <span class="string">"R_GROUND_RESEARCH_FACILITY"</span>,
+                        <span class="comment">-- Units:
+</span>                        <span class="string">"REBEL_SPEEDER_WING"</span>,
+                        <span class="string">"REBEL_ARTILLERY_BRIGADE"</span>,
+                        <span class="string">"REBEL_LIGHT_TANK_BRIGADE"</span>,
+                        <span class="string">"REBEL_HEAVY_TANK_BRIGADE"</span>,
+                        <span class="string">"REBEL_INFANTRY_SQUAD"</span>,
+                        <span class="string">"REBEL_TANK_BUSTER_SQUAD"</span>,
+                        <span class="string">"REBEL_INFILTRATOR_TEAM"</span>,
+                        <span class="string">"REBEL_MDU_COMPANY"</span>,
+                        <span class="string">"GALLOFREE_HTT_COMPANY"</span>,
+                  }
+            },
+            [<span class="string">"Zann_Consortium"</span>] = {
+                  Name = <span class="string">"Zann_Consortium"</span>,
+                  Type = <span class="string">"TYPE_FACTION_MAJOR"</span>,
+                  InitiallyBuildableObjects = {
+                        <span class="comment">-- Buildings:
+</span>                        <span class="string">"UNDERWORLD_STAR_BASE_1"</span>,
+                        <span class="string">"UNDERWORLD_STAR_BASE_2"</span>,
+                        <span class="string">"UNDERWORLD_STAR_BASE_3"</span>,
+                        <span class="string">"UNDERWORLD_STAR_BASE_4"</span>,
+                        <span class="string">"UNDERWORLD_STAR_BASE_5"</span>,
+                        <span class="string">"GROUND_CANTINA_U"</span>,
+                        <span class="string">"U_GROUND_PALACE"</span>,
+                        <span class="string">"U_GROUND_BARRACKS"</span>,
+                        <span class="string">"U_GROUND_DROID_WORKS"</span>,
+                        <span class="string">"U_GROUND_VEHICLE_FACTORY"</span>,
+                        <span class="string">"U_GROUND_MINING_FACILITY"</span>,
+                        <span class="string">"U_GROUND_GRAVITY_GENERATOR"</span>,
+                        <span class="comment">-- Units:
+</span>                        <span class="string">"UNDERWORLD_MDU_COMPANY"</span>,
+                        <span class="string">"VORNSKR_WOLF_PACK"</span>,
+                        <span class="string">"DESTROYER_DROID_COMPANY"</span>,
+                        <span class="string">"UNDERWORLD_EWOK_HANDLER_COMPANY"</span>,
+                        <span class="string">"F9TZ_CLOAKING_TRANSPORT_COMPANY"</span>,
+                        <span class="string">"MAL_ROCKET_VEHICLE_COMPANY"</span>,
+                        <span class="string">"MZ8_PULSE_CANNON_TANK_COMPANY"</span>,
+                        <span class="string">"NIGHT_SISTER_COMPANY"</span>,
+                        <span class="string">"CANDEROUS_ASSAULT_TANK_COMPANY"</span>,
+                        <span class="string">"UNDERWORLD_DISRUPTOR_MERC_SQUAD"</span>,
+                        <span class="string">"UNDERWORLD_MERC_SQUAD"</span>,
+                  }
+            },
+            [<span class="string">"Pirate_Player"</span>] = {
+                  Name = <span class="string">"Pirate_Player"</span>,
+                  Type = <span class="string">"TYPE_FACTION_MINOR"</span>,
+                  InitiallyBuildableObjects = { }
+            },
+            [<span class="string">"Neutral_Player"</span>] = {
+                  Name = <span class="string">"Neutral_Player"</span>,
+                  Type = <span class="string">"TYPE_FACTION_MINOR"</span>,
+                  InitiallyBuildableObjects = { }
+            },
+            [<span class="string">"Hostile_Player"</span>] = {
+                  Name = <span class="string">"Hostile_Player"</span>,
+                  Type = <span class="string">"TYPE_FACTION_MINOR"</span>,
+                  InitiallyBuildableObjects = { }
+            },
+        },
+        Planets = {
+            <span class="string">"Abregado_Rae"</span>,
+            <span class="string">"AetenII"</span>,
+            <span class="string">"Alderaan"</span>,
+            <span class="string">"AlzocIII"</span>,
+            <span class="string">"Anaxes"</span>,
+            <span class="string">"Atzerri"</span>,
+            <span class="string">"Bespin"</span>,
+            <span class="string">"Bestine"</span>,
+            <span class="string">"Bonadan"</span>,
+            <span class="string">"Bothawui"</span>,
+            <span class="string">"Byss"</span>,
+            <span class="string">"Carida"</span>,
+            <span class="string">"Corellia"</span>,
+            <span class="string">"Corulag"</span>,
+            <span class="string">"Coruscant"</span>,
+            <span class="string">"Dagobah"</span>,
+            <span class="string">"Dantooine"</span>,
+            <span class="string">"Dathomir"</span>,
+            <span class="string">"Endor"</span>,
+            <span class="string">"Eriadu"</span>,
+            <span class="string">"Felucia"</span>,
+            <span class="string">"Fondor"</span>,
+            <span class="string">"Fresia"</span>,
+            <span class="string">"Geonosis"</span>,
+            <span class="string">"Honoghr"</span>,
+            <span class="string">"Hoth"</span>,
+            <span class="string">"Hypori"</span>,
+            <span class="string">"Ilum"</span>,
+            <span class="string">"Jabiim"</span>,
+            <span class="string">"Kamino"</span>,
+            <span class="string">"Kashyyyk"</span>,
+            <span class="string">"Kessel"</span>,
+            <span class="string">"Korriban"</span>,
+            <span class="string">"Kuat"</span>,
+            <span class="string">"Manaan"</span>,
+            <span class="string">"Mandalore"</span>,
+            <span class="string">"MonCalimari"</span>,
+            <span class="string">"Mustafar"</span>,
+            <span class="string">"Muunilinst"</span>,
+            <span class="string">"Myrkr"</span>,
+            <span class="string">"Naboo"</span>,
+            <span class="string">"NalHutta"</span>,
+            <span class="string">"Polus"</span>,
+            <span class="string">"Ryloth"</span>,
+            <span class="string">"Saleucami"</span>,
+            <span class="string">"Shola"</span>,
+            <span class="string">"Sullust"</span>,
+            <span class="string">"Taris"</span>,
+            <span class="string">"Tatooine"</span>,
+            <span class="string">"The_Maw"</span>,
+            <span class="string">"Thyferra"</span>,
+            <span class="string">"Utapau"</span>,
+            <span class="string">"VergessoAsteroids"</span>,
+            <span class="string">"Wayland"</span>,
+            <span class="string">"Yavin"</span>,
+        },
+        TradeRoutes = {
+            <span class="string">"Hoth_Mustafar"</span>,
+            <span class="string">"Mustafar_VergessoAsteroids"</span>,
+            <span class="string">"Fondor_Thyferra"</span>,
+            <span class="string">"Bestine_Fondor"</span>,
+            <span class="string">"Bespin_Bestine"</span>,
+            <span class="string">"Anaxes_Coruscant"</span>,
+            <span class="string">"AetenII_Anaxes"</span>,
+            <span class="string">"AetenII_Dantooine"</span>,
+            <span class="string">"Bothawui_Ryloth"</span>,
+            <span class="string">"Bothawui_Corellia"</span>,
+            <span class="string">"MonCalimari_Saleucami"</span>,
+            <span class="string">"Kamino_MonCalimari"</span>,
+            <span class="string">"Kamino_Shola"</span>,
+            <span class="string">"Bonadan_Muunilinst"</span>,
+            <span class="string">"Bonadan_Yavin"</span>
+        },
+    },
+}
+
+<span class="keyword">return</span> CampaignDefinitions
+</pre>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

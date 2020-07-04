@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Getter_Functions">Getter Functions</a></li>
+<li><a href="#Initialisation">Initialisation</a></li>
+<li><a href="#Initialization">Initialization</a></li>
+<li><a href="#Game_Cycle">Game Cycle</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><strong>cGUIHandler</strong></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>cGUIHandler</code></h1>
+<p>Basic cGUIHandler class.</p>
+<p>
+ Responsible for all GUI related interactions like button presses pushing dialogue boxes and so on.
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#UpdateSelectedPlanet">UpdateSelectedPlanet ()</a></td>
+	<td class="summary">Updates the selection state of the planets.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#LockAllGalacticElements">LockAllGalacticElements ()</a></td>
+	<td class="summary">Wrapper function.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#UnlockAllGalacticElements">UnlockAllGalacticElements ()</a></td>
+	<td class="summary">Wrapper function.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#LockGUIElements">LockGUIElements (guiElemFlag)</a></td>
+	<td class="summary">Locks all GUI elements with a specific flag.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#UnlockGUIElements">UnlockGUIElements (guiElemFlag)</a></td>
+	<td class="summary">Unlocks all GUI elements with a specific flag.</td>
+	</tr>
+</table>
+<h2><a href="#Getter_Functions">Getter Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#GetSelectedPlanet">GetSelectedPlanet ()</a></td>
+	<td class="summary">Returns a the currently selected planet if no planet is selected, this returns false.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetType">GetType ()</a></td>
+	<td class="summary">Returns the lua object type as string key.</td>
+	</tr>
+</table>
+<h2><a href="#Initialisation">Initialisation</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#New">New (parentGC)</a></td>
+	<td class="summary">Constructor.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#RegisterNewGUIElement">RegisterNewGUIElement (newGUIElementName, newGUIElementType, newGUIDebugStringKey, newGUIElementFlags, newGUIElementData)</a></td>
+	<td class="summary">Registers a GUI element with the GUIHandler instance.</td>
+	</tr>
+</table>
+<h2><a href="#Initialization">Initialization</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Initialise">Initialise ()</a></td>
+	<td class="summary">Sets up all flags and prerequisites for the object.</td>
+	</tr>
+</table>
+<h2><a href="#Game_Cycle">Game Cycle</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ProcessGUI">ProcessGUI ()</a></td>
+	<td class="summary">Processes all registered GUI elements.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "UpdateSelectedPlanet"></a>
+    <strong>UpdateSelectedPlanet ()</strong>
+    </dt>
+    <dd>
+    Updates the selection state of the planets.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "LockAllGalacticElements"></a>
+    <strong>LockAllGalacticElements ()</strong>
+    </dt>
+    <dd>
+    Wrapper function.
+ Locks all GUI elements with the "GALACTIC" flag.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "UnlockAllGalacticElements"></a>
+    <strong>UnlockAllGalacticElements ()</strong>
+    </dt>
+    <dd>
+    Wrapper function.
+ Unlocks ll GUI elements with the "GALACTIC" flag.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "LockGUIElements"></a>
+    <strong>LockGUIElements (guiElemFlag)</strong>
+    </dt>
+    <dd>
+    Locks all GUI elements with a specific flag.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">guiElemFlag</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string/table</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "UnlockGUIElements"></a>
+    <strong>UnlockGUIElements (guiElemFlag)</strong>
+    </dt>
+    <dd>
+    Unlocks all GUI elements with a specific flag.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">guiElemFlag</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string/table</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Getter_Functions"></a>Getter Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "GetSelectedPlanet"></a>
+    <strong>GetSelectedPlanet ()</strong>
+    </dt>
+    <dd>
+    Returns a the currently selected planet if no planet is selected, this returns false.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">cPlanet/bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetType"></a>
+    <strong>GetType ()</strong>
+    </dt>
+    <dd>
+    Returns the lua object type as string key.
+ Used for error handling.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">String</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Initialisation"></a>Initialisation</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "New"></a>
+    <strong>New (parentGC)</strong>
+    </dt>
+    <dd>
+    Constructor.
+ Creates a new LUA object of type cGUIHandler.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parentGC</span>
+            <span class="types"><span class="type">cGalacticConquest</span></span>
+         Reference to the parent GC.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "RegisterNewGUIElement"></a>
+    <strong>RegisterNewGUIElement (newGUIElementName, newGUIElementType, newGUIDebugStringKey, newGUIElementFlags, newGUIElementData)</strong>
+    </dt>
+    <dd>
+    Registers a GUI element with the GUIHandler instance.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newGUIElementName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The name of the GUIelement as defined in the xml.
+        </li>
+        <li><span class="parameter">newGUIElementType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The type of the GUI element. This defines the class the GUI element belongs to. A specific action requires a specific class.
+        </li>
+        <li><span class="parameter">newGUIDebugStringKey</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The string key of the GUI object.
+        </li>
+        <li><span class="parameter">newGUIElementFlags</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         a single string or a table of strings which help to make the element addressable either via a group (e.g. "GALACTIC", "ZOOMED", "DIPLOMACY") or via several flags. think of them as identifying keywords.
+        </li>
+        <li><span class="parameter">newGUIElementData</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Initialisation data for the GUI element
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Initialization"></a>Initialization</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Initialise"></a>
+    <strong>Initialise ()</strong>
+    </dt>
+    <dd>
+    Sets up all flags and prerequisites for the object.
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Game_Cycle"></a>Game Cycle</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ProcessGUI"></a>
+    <strong>ProcessGUI ()</strong>
+    </dt>
+    <dd>
+    Processes all registered GUI elements.
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

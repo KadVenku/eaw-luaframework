@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><strong>cGUIHandler.lua</strong></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <h2>cGUIHandler.lua</h2>
+<pre>
+<span class="comment">-- ===== ===== ===== ===== =====
+</span><span class="comment">-- Copyright (c) 2017 Lukas Grünwald
+</span><span class="comment">-- License       MIT License
+</span><span class="comment">-- ===== ===== ===== ===== =====
+</span>
+<span class="comment">--- Basic cGUIHandler class.
+</span><span class="comment">-- Responsible for all GUI related interactions like button presses pushing dialogue boxes and so on.
+</span>
+<span class="comment">-- Import new functions:
+</span><span class="global">require</span>( <span class="string">"libErrorFunctions"</span> )
+<span class="global">require</span>( <span class="string">"libDebugFunctions"</span> )
+<span class="comment">-- Import new classes:
+</span><span class="global">require</span>( <span class="string">"cGUIElement"</span> )
+<span class="global">require</span>( <span class="string">"cGUIElement_Type_Filter"</span> )
+
+cGUIHandler = {}
+cGUIHandler.__index = cGUIHandler
+
+<span class="comment">--- Constructor.
+</span><span class="comment">-- Creates a new LUA object of type cGUIHandler.
+</span><span class="comment">-- @tparam cGalacticConquest parentGC Reference to the parent GC.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cGUIHandler.New( parentGC )
+    <span class="keyword">local</span> self = <span class="global">setmetatable</span>( {}, cGUIHandler )
+
+    self.Parent          = parentGC
+    self.ObjectType      = <span class="string">"TEXT_LUA_OBJECT_TYPE_GUIHANDLER"</span>
+    self.GUIElements     = { }
+    self.SelectedPlanet  = <span class="keyword">false</span>
+    self.DebugModeActive = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_DebugMode
+
+    <span class="keyword">local</span> NewButtons = <span class="global">require</span>( <span class="string">"libStaticGUIElements"</span> )
+    <span class="keyword">if</span> <span class="global">table</span>.getn( NewButtons ) &gt; <span class="number">0</span> <span class="keyword">then</span>
+        <span class="keyword">for</span> _, newButton <span class="keyword">in</span> <span class="global">pairs</span>( NewButtons ) <span class="keyword">do</span>
+            self:RegisterNewGUIElement( newButton.GUIElementName, newButton.GUIElementType, newButton.GUIDebugStringKey, newButton.GUIElementLayer, newButton.GUIElementData )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+
+    <span class="keyword">return</span> self
+<span class="keyword">end</span>
+
+<span class="comment">--- Sets up all flags and prerequisites for the object.
+</span><span class="comment">-- @within Initialization
+</span><span class="keyword">function</span> cGUIHandler:Initialise()
+    <span class="keyword">local</span> storyPlot = Get_Story_Plot( <span class="string">"__luaFramework/cGUIHandler/cGUIHandler.xml"</span> )
+    <span class="keyword">for</span> planetName, cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Parent.Planets ) <span class="keyword">do</span>
+        <span class="keyword">local</span> storyEvent = storyPlot.Get_Event( <span class="string">"cGUIHandler_SetSelectedPlanetFlag_"</span>..planetName )
+        storyEvent.Set_Reward_Parameter( <span class="number">1</span>, self.Parent:GetHumanPlayerFaction():GetGameFactionName() )
+    <span class="keyword">end</span>
+    <span class="keyword">for</span> _,guiObj <span class="keyword">in</span> <span class="global">pairs</span>( self.GUIElements ) <span class="keyword">do</span>
+        guiObj:Initialise()
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Returns a the currently selected planet if no planet is selected, this returns false.
+</span><span class="comment">-- @treturn cPlanet/bool
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGUIHandler:GetSelectedPlanet()
+    <span class="keyword">return</span> self.SelectedPlanet
+<span class="keyword">end</span>
+<span class="comment">--- Updates the selection state of the planets.
+</span><span class="keyword">function</span> cGUIHandler:UpdateSelectedPlanet()
+    <span class="keyword">local</span> hasSelectedAPlanet = <span class="keyword">false</span>
+    <span class="keyword">for</span> planetName, cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span> ( self.Parent.Planets ) <span class="keyword">do</span>
+        <span class="keyword">if</span> Check_Story_Flag( self.Parent:GetHumanPlayerFaction():GetPlayerObject(), <span class="string">"cGUIHandler_SelectedPlanetFlag_"</span>..planetName, <span class="keyword">nil</span>, <span class="keyword">true</span> ) <span class="keyword">then</span>
+            cPlanetObj:SetSelected( <span class="keyword">true</span> )
+            self.SelectedPlanet = cPlanetObj
+            hasSelectedAPlanet = <span class="keyword">true</span>
+            <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+                <span class="keyword">local</span> gBuildStringList = cPlanetObj:GetGroundBuildingsAsString()
+                <span class="keyword">local</span> sBuildStringList = cPlanetObj:GetSpaceBuildingsAsString()
+                debugPlanetSelected( cPlanetObj:GetStringKey(), gBuildStringList, sBuildStringList )
+            <span class="keyword">end</span>
+        <span class="keyword">else</span>
+            cPlanetObj:SetSelected( <span class="keyword">false</span> )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> <span class="keyword">not</span> hasSelectedAPlanet <span class="keyword">then</span>
+        self.SelectedPlanet = <span class="keyword">false</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Returns the lua object type as string key.
+</span><span class="comment">-- Used for error handling.
+</span><span class="comment">-- @treturn String
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGUIHandler:GetType()
+    <span class="keyword">return</span> self.ObjectType
+<span class="keyword">end</span>
+
+<span class="comment">--- Registers a GUI element with the GUIHandler instance.
+</span><span class="comment">-- @tparam string newGUIElementName The name of the GUIelement as defined in the xml.
+</span><span class="comment">-- @tparam string newGUIElementType The type of the GUI element. This defines the class the GUI element belongs to. A specific action requires a specific class.
+</span><span class="comment">-- @tparam string newGUIDebugStringKey The string key of the GUI object.
+</span><span class="comment">-- @tparam table newGUIElementFlags a single string or a table of strings which help to make the element addressable either via a group (e.g. "GALACTIC", "ZOOMED", "DIPLOMACY") or via several flags. think of them as identifying keywords.
+</span><span class="comment">-- @tparam table newGUIElementData Initialisation data for the GUI element
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cGUIHandler:RegisterNewGUIElement( newGUIElementName, newGUIElementType, newGUIDebugStringKey, newGUIElementFlags, newGUIElementData )
+    <span class="keyword">local</span> newGUIElement = <span class="keyword">false</span>
+    <span class="keyword">local</span> guiFlags = <span class="keyword">false</span>
+    <span class="comment">-- catch single strings:
+</span>    <span class="keyword">if</span> <span class="keyword">not</span> <span class="global">type</span>( newGUIElementFlags ) == <span class="string">"table"</span> <span class="keyword">then</span>
+        guiFlags = { newGUIElementFlags }
+    <span class="keyword">else</span>
+        guiFlags = newGUIElementFlags
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> newGUIElementType == <span class="string">"VANILLA_BUTTON"</span> <span class="keyword">then</span>
+        newGUIElement = cGUIElement.New( self, newGUIElementName, newGUIDebugStringKey, guiFlags )
+    <span class="keyword">elseif</span> newGUIElementType == <span class="string">"GUI_ELEM_BTN_FILTER"</span> <span class="keyword">then</span>
+        newGUIElement = cGUIElement_Type_Filter.New( self, newGUIElementName, newGUIDebugStringKey, guiFlags, newGUIElementData )
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> newGUIElement <span class="keyword">then</span>
+        self.GUIElements[newGUIElementName] = newGUIElement
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Wrapper function.
+</span><span class="comment">-- Locks all GUI elements with the "GALACTIC" flag.
+</span><span class="keyword">function</span> cGUIHandler:LockAllGalacticElements()
+    self:LockGUIElements( <span class="string">"GALACTIC"</span> )
+<span class="keyword">end</span>
+<span class="comment">--- Wrapper function.
+</span><span class="comment">-- Unlocks ll GUI elements with the "GALACTIC" flag.
+</span><span class="keyword">function</span> cGUIHandler:UnlockAllGalacticElements()
+    self:UnlockGUIElements( <span class="string">"GALACTIC"</span> )
+<span class="keyword">end</span>
+<span class="comment">--- Locks all GUI elements with a specific flag.
+</span><span class="comment">-- @tparam string/table guiElemFlag
+</span><span class="keyword">function</span> cGUIHandler:LockGUIElements( guiElemFlag )
+    <span class="keyword">for</span> _,guiElem <span class="keyword">in</span> <span class="global">pairs</span>( self.GUIElements ) <span class="keyword">do</span>
+        <span class="keyword">if</span> guiElem:IsFlaggedAs( guiElemFlag ) <span class="keyword">then</span>
+            guiElem:Lock()
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Unlocks all GUI elements with a specific flag.
+</span><span class="comment">-- @tparam string/table guiElemFlag
+</span><span class="keyword">function</span> cGUIHandler:UnlockGUIElements( guiElemFlag )
+    <span class="keyword">for</span> _,guiElem <span class="keyword">in</span> <span class="global">pairs</span>( self.GUIElements ) <span class="keyword">do</span>
+        <span class="keyword">if</span> guiElem:IsFlaggedAs( guiElemFlag ) <span class="keyword">then</span>
+            guiElem:Unlock()
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Processes all registered GUI elements.
+</span><span class="comment">-- @within Game Cycle
+</span><span class="keyword">function</span> cGUIHandler:ProcessGUI()
+    <span class="keyword">for</span> _, guiElement <span class="keyword">in</span> <span class="global">pairs</span>( self.GUIElements ) <span class="keyword">do</span>
+        <span class="keyword">if</span> guiElement:ShouldProcess() <span class="keyword">then</span>
+            guiElement:Execute()
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">return</span> cGUIHandler
+</pre>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

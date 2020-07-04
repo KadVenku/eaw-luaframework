@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><strong>libStaticTraitDefinitions.lua</strong></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <h2>libStaticTraitDefinitions.lua</h2>
+<pre>
+<span class="comment">-- ===== ===== ===== ===== =====
+</span><span class="comment">-- Copyright (c) 2017 Lukas Grünwald
+</span><span class="comment">-- License       MIT License
+</span><span class="comment">-- ===== ===== ===== ===== =====
+</span>
+<span class="comment">--- Trait definitions.
+</span><span class="comment">-- Traits can be used to make factions more unique in terms of their reaction to certain external influence, but also on terms of how they are perceived by other forces.
+</span><span class="comment">-- The numeric values are to be treated as percentages, so if you want to boost a rating use a value x &gt; 1.0, if you want to reduce a rating use a value 0.0 &lt;= x &lt; 1.0, If you don't wan the attribute to be influenced use a multiplier of x = 1.0.
+</span><span class="comment">-- Currently used values are:
+</span><span class="comment">-- @usage
+</span><span class="comment">-- ["TRAITNAME"] = {
+</span><span class="comment">--     MilitaryPowerMult       = 1.000, -- The faction's military power is multiplied by this modifier.
+</span><span class="comment">--     MilitaryInfluenceMult   = 1.000, -- The faction is more/less susceptible to military intimidation.
+</span><span class="comment">--     DiplomaticPowerMult     = 1.000, -- The faction's diplomatic influence is diminished/boosted by this amount.
+</span><span class="comment">--     DiplomaticInfluenceMult = 1.000, -- The faction is more/less influenced via diplomatic means.
+</span><span class="comment">--     MaintenanceMult         = 1.000, -- Does the trait influence the maintenance cost of units.
+</span><span class="comment">-- },
+</span><span class="comment">-- Traits have been expanded to also support objects. Being a diplomat now is a object trait, this allows for faster filtering and better reaction to circumstances.
+</span><span class="keyword">local</span> StaticTraitDefinitions = {
+    FactionTraits = {
+        {
+            TraitID                 = <span class="string">"DEMOCRACY"</span>,
+            MilitaryPowerMult       = <span class="number">0.850</span>,
+            MilitaryInfluenceMult   = <span class="number">0.650</span>,
+            DiplomaticPowerMult     = <span class="number">1.150</span>,
+            DiplomaticInfluenceMult = <span class="number">1.050</span>,
+            MaintenanceMult         = <span class="number">1.000</span>,
+        }, <span class="comment">-- DEMOCRACY trait: A faction that is a democracy uses those base multipliers. It tries to reflect the much higher valued democratic approach in relation to the "last resort" military way.
+</span>        {
+            TraitID                 = <span class="string">"DICTATORSHIP"</span>,
+            MilitaryPowerMult       = <span class="number">1.050</span>,
+            MilitaryInfluenceMult   = <span class="number">1.000</span>,
+            DiplomaticPowerMult     = <span class="number">0.850</span>,
+            DiplomaticInfluenceMult = <span class="number">0.800</span>,
+            MaintenanceMult         = <span class="number">1.000</span>,
+        },<span class="comment">-- DICTATORSHIP trait: A faction that is governed by a dictator values military approach higher than diplomatic approaches.
+</span>        {
+            TraitID                 = <span class="string">"PROUD"</span>,
+            MilitaryPowerMult       = <span class="number">1.250</span>,
+            MilitaryInfluenceMult   = <span class="number">0.900</span>,
+            DiplomaticPowerMult     = <span class="number">1.000</span>,
+            DiplomaticInfluenceMult = <span class="number">0.855</span>,
+            MaintenanceMult         = <span class="number">1.000</span>,
+        }, <span class="comment">-- PROUD trait: The faction is very proud of itself, thus valuing its military power way higher than it actually is, whilst giving less about the opinions of other factions.
+</span>        {
+            TraitID                 = <span class="string">"MILITARISTIC"</span>,
+            MilitaryPowerMult       = <span class="number">1.225</span>,
+            MilitaryInfluenceMult   = <span class="number">1.112</span>,
+            DiplomaticPowerMult     = <span class="number">1.000</span>,
+            DiplomaticInfluenceMult = <span class="number">1.000</span>,
+            MaintenanceMult         = <span class="number">1.000</span>,
+        }, <span class="comment">-- MILITARISTIC trait: Bonus to military power. Values an opponent's military power as well.
+</span>        {
+            TraitID                 = <span class="string">"ISOLATIONIST"</span>,
+            MilitaryPowerMult       = <span class="number">1.000</span>,
+            MilitaryInfluenceMult   = <span class="number">0.850</span>,
+            DiplomaticPowerMult     = <span class="number">1.000</span>,
+            DiplomaticInfluenceMult = <span class="number">0.800</span>,
+            MaintenanceMult         = <span class="number">1.015</span>,
+        },<span class="comment">-- ISOLATIONIST trait: Doesn't give much on opponent's influences, but increased maintenance cost due to the isolation.
+</span>        {
+            TraitID                 = <span class="string">"WAR_CRIMINAL_BOMBARDMENT"</span>,
+            MilitaryPowerMult       = <span class="number">1.050</span>,
+            MilitaryInfluenceMult   = <span class="number">0.750</span>,
+            DiplomaticPowerMult     = <span class="number">0.850</span>,
+            DiplomaticInfluenceMult = <span class="number">0.985</span>,
+            MaintenanceMult         = <span class="number">1.000</span>,
+        }, <span class="comment">-- WAR_CRIMINAL_BOMBARDMENT trait: Used to reduce all subsequent diplomatic actions with this faction.
+</span>    },
+    GameObjectTraits = {
+        {
+            TraitID                         = <span class="string">"BASE_DIPLOMAT"</span>,
+            DiplomaticInfluenceBaseValue    = <span class="number">15.0</span>,
+            DiplomaticInfluenceMultiplier   = <span class="number">1.02</span>,
+            DiplomaticInfluenceDamageChance = <span class="number">0.085</span>,
+            DiplomaticMissionDuration       = <span class="number">180</span>, <span class="comment">-- Time in seconds
+</span>        },
+
+        {
+            TraitID                         = <span class="string">"HERO_DIPLOMAT"</span>,
+            DiplomaticInfluenceBaseValue    = <span class="number">18.5</span>,
+            DiplomaticInfluenceMultiplier   = <span class="number">1.035</span>,
+            DiplomaticInfluenceDamageChance = <span class="number">0.015</span>,
+            DiplomaticMissionDuration       = <span class="number">120</span>, <span class="comment">-- Time in seconds
+</span>        },
+    },
+}
+
+<span class="keyword">return</span> StaticTraitDefinitions
+</pre>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

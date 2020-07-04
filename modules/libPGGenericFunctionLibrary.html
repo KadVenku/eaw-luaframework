@@ -1,0 +1,669 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Table_Functionality">Table Functionality</a></li>
+<li><a href="#Math_Library">Math Library</a></li>
+<li><a href="#Framework_Library">Framework Library</a></li>
+<li><a href="#String_Standard_Library_Wrapper">String Standard Library Wrapper</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><strong>libPGGenericFunctionLibrary</strong></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>libPGGenericFunctionLibrary</code></h1>
+<p>Generic function library.</p>
+<p>
+ Provides access to functions which are being reused all over the framework and are of general use throughout the mod.
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ConvertFloatToString">ConvertFloatToString (inputFloat, length)</a></td>
+	<td class="summary">Converts a float number to a string.</td>
+	</tr>
+</table>
+<h2><a href="#Table_Functionality">Table Functionality</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#IsContentOfTable">IsContentOfTable (tableObj, contentObj)</a></td>
+	<td class="summary">Tests whether an object is referenced within a table.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IsKeyOfTable">IsKeyOfTable (tableObj, keyObj)</a></td>
+	<td class="summary">Tests whether a key is referenced within a table.</td>
+	</tr>
+</table>
+<h2><a href="#Math_Library">Math Library</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ClampValue">ClampValue (newValue, minValue, maxValue)</a></td>
+	<td class="summary">Claps a given newValue to a given maxValue and minValue.</td>
+	</tr>
+</table>
+<h2><a href="#Framework_Library">Framework Library</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#IsObjectTaggedAs">IsObjectTaggedAs (tagTable, tagObject)</a></td>
+	<td class="summary">Tests whether a given object is tagged with a certain flag.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#UnwrapUnitsFromFleetStruct">UnwrapUnitsFromFleetStruct (objectStructID)</a></td>
+	<td class="summary">Unwraps units from reinforcement struct depending on game mode.</td>
+	</tr>
+</table>
+<h2><a href="#String_Standard_Library_Wrapper">String Standard Library Wrapper</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#AddPadding">AddPadding (origVal, strLen, paddingChar)</a></td>
+	<td class="summary">Applies padding to the given value to a given size.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#StringToCharArray">StringToCharArray (inputString)</a></td>
+	<td class="summary">Splits a given string into an array of characters.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ConvertToUpperCase">ConvertToUpperCase (inputString)</a></td>
+	<td class="summary">Converts a given string to uppercase letters.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetStringLength">GetStringLength (inputString)</a></td>
+	<td class="summary">Retrieves the length of a given string.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ConvertToNumber">ConvertToNumber (inputString)</a></td>
+	<td class="summary">Converts a given string to a number.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ConvertToString">ConvertToString (inputNumber)</a></td>
+	<td class="summary">Converts a given number to a string.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#StringSub">StringSub (inputString, sCharIndex, eCharIndex)</a></td>
+	<td class="summary">Retrieves a given subsection of a string.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#StringReverse">StringReverse (inputString)</a></td>
+	<td class="summary">Reverses a given string.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ConvertFloatToString"></a>
+    <strong>ConvertFloatToString (inputFloat, length)</strong>
+    </dt>
+    <dd>
+    Converts a float number to a string.
+ Takes a desired float and a padding length.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">inputFloat</span>
+            <span class="types"><span class="type">number</span></span>
+
+        </li>
+        <li><span class="parameter">length</span>
+            <span class="types"><span class="type">number</span></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        Formatted string
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Table_Functionality"></a>Table Functionality</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "IsContentOfTable"></a>
+    <strong>IsContentOfTable (tableObj, contentObj)</strong>
+    </dt>
+    <dd>
+    Tests whether an object is referenced within a table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">tableObj</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+        </li>
+        <li><span class="parameter">contentObj</span>
+            <span class="types"><span class="type">{object}</span></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "IsKeyOfTable"></a>
+    <strong>IsKeyOfTable (tableObj, keyObj)</strong>
+    </dt>
+    <dd>
+    Tests whether a key is referenced within a table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">tableObj</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+        </li>
+        <li><span class="parameter">keyObj</span>
+            <span class="types"><span class="type">{object}</span></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Math_Library"></a>Math Library</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ClampValue"></a>
+    <strong>ClampValue (newValue, minValue, maxValue)</strong>
+    </dt>
+    <dd>
+    Claps a given newValue to a given maxValue and minValue.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newValue</span>
+            <span class="types"><span class="type">float</span></span>
+
+        </li>
+        <li><span class="parameter">minValue</span>
+            <span class="types"><span class="type">float</span></span>
+
+        </li>
+        <li><span class="parameter">maxValue</span>
+            <span class="types"><span class="type">float</span></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">float</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Framework_Library"></a>Framework Library</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "IsObjectTaggedAs"></a>
+    <strong>IsObjectTaggedAs (tagTable, tagObject)</strong>
+    </dt>
+    <dd>
+    Tests whether a given object is tagged with a certain flag.
+ LUA objects are often tagged with flags in the mod, this generic function allows for testing for a specific flag or a specific set of flags.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">tagTable</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         The list of tags an object is tagged with. Usually a self-contained attribute.
+        </li>
+        <li><span class="parameter">tagObject</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table/string</a></span>
+         Flag the object should be tagged with.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "UnwrapUnitsFromFleetStruct"></a>
+    <strong>UnwrapUnitsFromFleetStruct (objectStructID)</strong>
+    </dt>
+    <dd>
+    Unwraps units from reinforcement struct depending on game mode.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">objectStructID</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The struct ID as defined in the table.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="String_Standard_Library_Wrapper"></a>String Standard Library Wrapper</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "AddPadding"></a>
+    <strong>AddPadding (origVal, strLen, paddingChar)</strong>
+    </dt>
+    <dd>
+    Applies padding to the given value to a given size.
+ The function will pad or cut a given string, depending on its length in relation to the given padding size.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">origVal</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Original string.
+        </li>
+        <li><span class="parameter">strLen</span>
+            <span class="types"><span class="type">number</span></span>
+         The length the string will be padded to.
+        </li>
+        <li><span class="parameter">paddingChar</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The padding char. If not provided it'll default to "0"
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "StringToCharArray"></a>
+    <strong>StringToCharArray (inputString)</strong>
+    </dt>
+    <dd>
+    Splits a given string into an array of characters.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">inputString</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        Table of single chars
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ConvertToUpperCase"></a>
+    <strong>ConvertToUpperCase (inputString)</strong>
+    </dt>
+    <dd>
+    Converts a given string to uppercase letters.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">inputString</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        inputString converted to uppercase
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetStringLength"></a>
+    <strong>GetStringLength (inputString)</strong>
+    </dt>
+    <dd>
+    Retrieves the length of a given string.
+ Can also return the length of anything that can implicitly be converted to a string.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">inputString</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ConvertToNumber"></a>
+    <strong>ConvertToNumber (inputString)</strong>
+    </dt>
+    <dd>
+    Converts a given string to a number.
+ This implicitly converts a number encoded as string to a number, the function will fail, if there structures within the string that are not numbers.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">inputString</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ConvertToString"></a>
+    <strong>ConvertToString (inputNumber)</strong>
+    </dt>
+    <dd>
+    Converts a given number to a string.
+ This function will fail and return false, if it's not given a number as argument.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">inputNumber</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number.</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "StringSub"></a>
+    <strong>StringSub (inputString, sCharIndex, eCharIndex)</strong>
+    </dt>
+    <dd>
+    Retrieves a given subsection of a string.
+ This does NOT modify the original string!.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">inputString</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+        <li><span class="parameter">sCharIndex</span>
+            <span class="types"><span class="type">number</span></span>
+         Starting index of the first desired character in the string.
+        </li>
+        <li><span class="parameter">eCharIndex</span>
+            <span class="types"><span class="type">number</span></span>
+         Index of the last desired character of the substring.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "StringReverse"></a>
+    <strong>StringReverse (inputString)</strong>
+    </dt>
+    <dd>
+    Reverses a given string.
+ this is NOt a wrapper for the standard library function, as the standard library crashes EaW, it is a less effective implementation that works with the game.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">inputString</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        Reversed string.
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><strong>cEvent_Type_DIPLCheckFactionAlliance.lua</strong></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <h2>cEvent_Type_DIPLCheckFactionAlliance.lua</h2>
+<pre>
+<span class="comment">-- ===== ===== ===== ===== =====
+</span><span class="comment">-- Copyright (c) 2017 Lukas Grünwald
+</span><span class="comment">-- License       MIT License
+</span><span class="comment">-- ===== ===== ===== ===== =====
+</span>
+<span class="comment">-- Import new functions:
+</span><span class="global">require</span>( <span class="string">"libErrorFunctions"</span> )
+<span class="global">require</span>( <span class="string">"libDebugFunctions"</span> )
+<span class="comment">-- Import new classes:
+</span><span class="global">require</span>( <span class="string">"cEvent"</span> )
+<span class="global">require</span>( <span class="string">"cPlanet"</span> )
+
+cEvent_Type_DIPLCheckFactionAlliance = {}
+cEvent_Type_DIPLCheckFactionAlliance.__index = cEvent_Type_DIPLCheckFactionAlliance
+<span class="global">setmetatable</span>( cEvent_Type_DIPLCheckFactionAlliance, { __index = cEvent } )
+<span class="comment">--- Constructor.
+</span><span class="comment">-- Creates a new LUA object of type cEvent_Type_DIPLCheckFactionAlliance.
+</span><span class="comment">-- @tparam cEventHandler parentEventHandler
+</span><span class="comment">-- @within Constructor
+</span><span class="keyword">function</span> cEvent_Type_DIPLCheckFactionAlliance.New( parentEventHandler, cHomeFaction, cNewFaction, newTimer )
+    <span class="keyword">local</span> self = <span class="global">setmetatable</span>( {}, cEvent_Type_DIPLCheckFactionAlliance )
+    self.Parent                  = parentEventHandler
+    self.Type                    = <span class="string">"TEXT_LUA_OBJECT_TYPE_EVENT_DIPLUPDATEFACTIONALLIANCE"</span>
+    self.HomeFaction             = cHomeFaction
+    self.InfluencingFaction      = cNewFaction
+    <span class="keyword">if</span> newTimer == <span class="keyword">nil</span> <span class="keyword">then</span>
+        self.IsTimed             = <span class="keyword">false</span>
+        self.RegisteredTimestamp = <span class="keyword">false</span>
+        self.Timer               = <span class="keyword">false</span>
+    <span class="keyword">else</span>
+        self.IsTimed             = <span class="keyword">true</span>
+        self.RegisteredTimestamp = GetCurrentTime()
+        self.Timer               = newTimer
+    <span class="keyword">end</span>
+
+    <span class="keyword">return</span> self
+<span class="keyword">end</span>
+<span class="comment">--- Executes the event.
+</span><span class="keyword">function</span> cEvent_Type_DIPLCheckFactionAlliance:Execute()
+    <span class="keyword">local</span> oldFactionOwnedOrAllied = <span class="number">0</span>
+    <span class="keyword">local</span> newFactionOwnedOrAllied = <span class="number">0</span>
+    <span class="keyword">local</span> isCapitalFallen         = <span class="keyword">false</span>
+    <span class="keyword">local</span> homeSector              = self.HomeFaction:GetHomeSector()
+    <span class="keyword">local</span> planetInSectorCount     = <span class="global">table</span>.getn( homeSector )
+
+    <span class="keyword">for</span> _,cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span>( homeSector ) <span class="keyword">do</span>
+        <span class="keyword">local</span> cFacOwner = cPlanetObj:GetOwner()
+        <span class="keyword">local</span> cFacAlly  = cPlanetObj:GetAlliedFaction()
+        <span class="keyword">if</span> cFacOwner == self.HomeFaction <span class="keyword">or</span> cFacAlly == self.HomeFaction <span class="keyword">then</span>
+            oldFactionOwnedOrAllied = oldFactionOwnedOrAllied + <span class="number">1</span> <span class="comment">-- Kad 22/06/2017 13:11:43 - Everything's ~coming~ adding up, ~Lucifer~ Ambassador!
+</span>            <span class="keyword">if</span> cPlanetObj:GetIsCapital() <span class="keyword">then</span>
+                isCapitalFallen = <span class="keyword">false</span>
+            <span class="keyword">end</span>
+        <span class="keyword">elseif</span> cFacOwner == self.InfluencingFaction <span class="keyword">or</span> cFacAlly == self.InfluencingFaction <span class="keyword">then</span>
+            newFactionOwnedOrAllied = newFactionOwnedOrAllied + <span class="number">1</span>
+            <span class="keyword">if</span> cPlanetObj:GetIsCapital() <span class="keyword">then</span>
+                isCapitalFallen = <span class="keyword">true</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">local</span> ownerSectorPercentage   = ( oldFactionOwnedOrAllied / planetInSectorCount ) * <span class="number">100</span>
+    <span class="keyword">local</span> foreignSectorPercentage = ( newFactionOwnedOrAllied / planetInSectorCount ) * <span class="number">100</span>
+
+    <span class="keyword">if</span> ownerSectorPercentage &lt;= foreignSectorPercentage <span class="keyword">then</span>
+        <span class="keyword">if</span> foreignSectorPercentage &gt;= <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).sSetting_Diplomacy_SectorTurnoverPercentageNoCapital <span class="keyword">or</span> ( isCapitalFallen <span class="keyword">and</span> foreignSectorPercentage &gt;= <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).sSetting_Diplomacy_SectorTurnoverPercentageCapital ) <span class="keyword">then</span>
+            <span class="keyword">for</span> _,cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span>( homeSector ) <span class="keyword">do</span>
+                <span class="keyword">if</span> cPlanetObj:GetOwner() == self.HomeFaction <span class="keyword">then</span>
+                    <span class="comment">-- Kad 22/06/2017 13:38:52 - We could technically do that in here, but that means we're duplicating a lot of code, so we use the intended event instead.
+</span>                    self.Parent.Parent:RegisterEvent( <span class="string">"EVENT_TYPE_DIPLTURNPLANET"</span>, { PlanetLUAObject = cPlanetObj, FactionLUAObjectNewOwner = self.InfluencingFaction, Timer = <span class="number">1.0</span> } ) <span class="comment">-- Kad 22/06/2017 13:37:02 - Added a timer to remove some stress from the system with several events being executed at the same time, not that we get stuck or something stupid... If we still get stuck in big sectors, I might pump the number of workers up to four.
+</span>                <span class="keyword">end</span>
+            <span class="keyword">end</span>
+            self.Parent.Parent:RegisterEvent( <span class="string">"EVENT_TYPE_DIPLMAKEALLIES"</span>, { CFactionMajor = self.InfluencingFaction, CFactionMinor = self.HomeFaction, } )
+        <span class="keyword">else</span>
+            <span class="comment">-- Kad 22/06/2017 13:41:26 - Whilst we technically have convinced the faction to turn, other factions hold significant parts of the sector, so we task the player with taking those back:
+</span>            <span class="keyword">if</span> self.InfluencingFaction:GetIsHumanPlayer() <span class="keyword">then</span> <span class="comment">-- Kad 22/06/2017 15:14:59 - Once the AI subclasses are set up, we might want to start an attack plan for the AI and the planets.
+</span>                <span class="keyword">local</span> takeBackPlanets = {}
+                <span class="keyword">for</span> _,cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span>( homeSector ) <span class="keyword">do</span>
+                    <span class="keyword">if</span> <span class="keyword">not</span> ( cPlanet:GetOwner() == self.InfluencingFaction <span class="keyword">or</span> cPlanet:GetOwner() == self.HomeFaction ) <span class="keyword">then</span>
+                        <span class="global">table</span>.insert( takeBackPlanets, cPlanetObj )
+                    <span class="keyword">end</span>
+                <span class="keyword">end</span>
+                <span class="comment">-- Kad 23/06/2017 16:07:11 - TODO: Implement!
+</span>                self.Parent.Parent:RegisterEvent( <span class="string">"EVENT_TYPE_DIPLTAKEBACKPLANETS"</span>, { CPlanetTable = takeBackPlanets , FactionLUAObjectHumanPlayer = self.InfluencingFaction, FactionLUAObjectContractor = self.HomeFaction } )
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    debugEventExecuted( self:GetObjectType(), self:IsTimedEvent(), self:GetTimer() )
+<span class="keyword">end</span>
+
+<span class="keyword">return</span> cEvent_Type_DIPLCheckFactionAlliance
+</pre>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

@@ -1,0 +1,839 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Getter_Functions">Getter Functions</a></li>
+<li><a href="#Initialisation">Initialisation</a></li>
+<li><a href="#Setter_Functions">Setter Functions</a></li>
+<li><a href="#Game_Cycle">Game Cycle</a></li>
+<li><a href="#Fleet_Accident_Functions">Fleet Accident Functions</a></li>
+<li><a href="#Validity">Validity</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><strong>cGalacticConquest</strong></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>cGalacticConquest</code></h1>
+<p>cGalacticConquest class.</p>
+<p>
+ Governs the framework and has access to all child classes.
+</p>
+
+
+<h2><a href="#Getter_Functions">Getter Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#GetObjectType">GetObjectType ()</a></td>
+	<td class="summary">Returns the lua object type as string key.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetName">GetName ()</a></td>
+	<td class="summary">Returns the lua object's name'.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetFactionObjectByName">GetFactionObjectByName (queriedFactionName)</a></td>
+	<td class="summary">Returns the cFaction given a faction name.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetFactionObjectByPlayerObject">GetFactionObjectByPlayerObject (queriedPlayerObject)</a></td>
+	<td class="summary">Returns the cFaction given a player object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetPlanetObjectByName">GetPlanetObjectByName (queriedPlanetName)</a></td>
+	<td class="summary">Returns the cPlanet given a Planet name.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetHumanPlayerFaction">GetHumanPlayerFaction ()</a></td>
+	<td class="summary">Returns the human cFaction.</td>
+	</tr>
+</table>
+<h2><a href="#Initialisation">Initialisation</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#New">New (newGCName)</a></td>
+	<td class="summary">Constructor.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Initialise">Initialise ()</a></td>
+	<td class="summary">Initialises the galactic conquest scenario.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CreatePlanets">CreatePlanets ()</a></td>
+	<td class="summary">Initialises the planets loaded from the active planet list and registers them with the GC.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#InitialisePlanets">InitialisePlanets ()</a></td>
+	<td class="summary">Initialises the object relations for planets.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CreateFactions">CreateFactions ()</a></td>
+	<td class="summary">Initialises the factions loaded from the active faction list and registers them with the GC.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#InitialiseFactions">InitialiseFactions ()</a></td>
+	<td class="summary">Initialises the object relations for factions.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#InitialiseTradeRoutes">InitialiseTradeRoutes ()</a></td>
+	<td class="summary">Initialises all registered trade routes.</td>
+	</tr>
+</table>
+<h2><a href="#Setter_Functions">Setter Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#RegisterPlanet">RegisterPlanet (newPlanet)</a></td>
+	<td class="summary">Links a single planet to its parent GC.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#RegisterFaction">RegisterFaction (newFaction)</a></td>
+	<td class="summary">Links a single faction to its parent GC.</td>
+	</tr>
+</table>
+<h2><a href="#Game_Cycle">Game Cycle</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#EvaluateGalacticFleets">EvaluateGalacticFleets ()</a></td>
+	<td class="summary">Evaluates galactic fleets.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MaintenanceCycle">MaintenanceCycle (applyToPC, applyToAI)</a></td>
+	<td class="summary">Executes a galactic maintenance cycle.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#RegisterEvent">RegisterEvent (newEventTypeString, eventArgumentTable)</a></td>
+	<td class="summary">Registers events with the event handler(-s) and does some basic load handling.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#EvaluatePlanetOwners">EvaluatePlanetOwners ()</a></td>
+	<td class="summary">Evaluates the owner of the planets and updates them accordingly.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#EvaluatePlanetBuildings">EvaluatePlanetBuildings ()</a></td>
+	<td class="summary">Evaluates the buildings on a planet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#EvaluatePlanetsContested">EvaluatePlanetsContested ()</a></td>
+	<td class="summary">Evaluates whether an enemy fleet is orbiting the planet.</td>
+	</tr>
+</table>
+<h2><a href="#Fleet_Accident_Functions">Fleet Accident Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#EvaluateAccidentAppropriateForFleet">EvaluateAccidentAppropriateForFleet (fleetInQuestion)</a></td>
+	<td class="summary">Is a hyperspace accident appropriate for the fleet?.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#EvaluateAccidentAvoidanceChanceForFleet">EvaluateAccidentAvoidanceChanceForFleet (fleetInQuestion)</a></td>
+	<td class="summary">Get the avoidance chance for the fleet:</td>
+	</tr>
+</table>
+<h2><a href="#Validity">Validity</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#IsRegisteredPlanet">IsRegisteredPlanet (planetInQuestion)</a></td>
+	<td class="summary">Tests whether an planet object has already been registered.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IsRegisteredFaction">IsRegisteredFaction (factionInQuestion)</a></td>
+	<td class="summary">Tests whether a faction object has already been registered.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Getter_Functions"></a>Getter Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "GetObjectType"></a>
+    <strong>GetObjectType ()</strong>
+    </dt>
+    <dd>
+    Returns the lua object type as string key.
+ Used for error handling.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">String</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetName"></a>
+    <strong>GetName ()</strong>
+    </dt>
+    <dd>
+    Returns the lua object's name'.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">String</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetFactionObjectByName"></a>
+    <strong>GetFactionObjectByName (queriedFactionName)</strong>
+    </dt>
+    <dd>
+    Returns the cFaction given a faction name.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">queriedFactionName</span>
+            <span class="types"><span class="type">String</span></span>
+         single faction name.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">cFaction</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetFactionObjectByPlayerObject"></a>
+    <strong>GetFactionObjectByPlayerObject (queriedPlayerObject)</strong>
+    </dt>
+    <dd>
+    Returns the cFaction given a player object.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">queriedPlayerObject</span>
+            <span class="types"><span class="type">PlayerObject</span></span>
+         single faction object.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">cFaction</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetPlanetObjectByName"></a>
+    <strong>GetPlanetObjectByName (queriedPlanetName)</strong>
+    </dt>
+    <dd>
+    Returns the cPlanet given a Planet name.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">queriedPlanetName</span>
+            <span class="types"><span class="type">String</span></span>
+         single planet name.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">cPlanet</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetHumanPlayerFaction"></a>
+    <strong>GetHumanPlayerFaction ()</strong>
+    </dt>
+    <dd>
+    Returns the human cFaction.
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Initialisation"></a>Initialisation</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "New"></a>
+    <strong>New (newGCName)</strong>
+    </dt>
+    <dd>
+    Constructor.
+ Creates a new LUA object of type cGalacticConquest.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newGCName</span>
+            <span class="types"><span class="type">String</span></span>
+         Used as key to load all relevant data from the static conquest table.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Initialise"></a>
+    <strong>Initialise ()</strong>
+    </dt>
+    <dd>
+    Initialises the galactic conquest scenario.
+ This function creates all necessary objects and is responsible for linking them correctly after creation.
+ This has to be called after the constructor, as some object might not yet be valid.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CreatePlanets"></a>
+    <strong>CreatePlanets ()</strong>
+    </dt>
+    <dd>
+    Initialises the planets loaded from the active planet list and registers them with the GC.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "InitialisePlanets"></a>
+    <strong>InitialisePlanets ()</strong>
+    </dt>
+    <dd>
+    Initialises the object relations for planets.
+ Setting up the planetary ownership and things alike.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CreateFactions"></a>
+    <strong>CreateFactions ()</strong>
+    </dt>
+    <dd>
+    Initialises the factions loaded from the active faction list and registers them with the GC.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "InitialiseFactions"></a>
+    <strong>InitialiseFactions ()</strong>
+    </dt>
+    <dd>
+    Initialises the object relations for factions.
+ Setting up the faction relations and things alike.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "InitialiseTradeRoutes"></a>
+    <strong>InitialiseTradeRoutes ()</strong>
+    </dt>
+    <dd>
+    Initialises all registered trade routes.
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Setter_Functions"></a>Setter Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "RegisterPlanet"></a>
+    <strong>RegisterPlanet (newPlanet)</strong>
+    </dt>
+    <dd>
+    Links a single planet to its parent GC.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newPlanet</span>
+            <span class="types"><span class="type">cPlanet</span></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><span class="type">nil</span></span>
+        </li>
+        <li>
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        Throws an ObjectAlreadyRegisteredError, which allows the program to continue.</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "RegisterFaction"></a>
+    <strong>RegisterFaction (newFaction)</strong>
+    </dt>
+    <dd>
+    Links a single faction to its parent GC.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newFaction</span>
+            <span class="types"><span class="type">cFaction</span></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><span class="type">nil</span></span>
+        </li>
+        <li>
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        Throws an ObjectAlreadyRegisteredError, which allows the program to continue.</li>
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Game_Cycle"></a>Game Cycle</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "EvaluateGalacticFleets"></a>
+    <strong>EvaluateGalacticFleets ()</strong>
+    </dt>
+    <dd>
+    Evaluates galactic fleets.
+ Registers fleets by factions.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MaintenanceCycle"></a>
+    <strong>MaintenanceCycle (applyToPC, applyToAI)</strong>
+    </dt>
+    <dd>
+    Executes a galactic maintenance cycle.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">applyToPC</span>
+            <span class="types"><span class="type">bool</span></span>
+         Should the player faction pay maintenance cost.
+        </li>
+        <li><span class="parameter">applyToAI</span>
+            <span class="types"><span class="type">bool</span></span>
+         Should the AI pay maintenance cost.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "RegisterEvent"></a>
+    <strong>RegisterEvent (newEventTypeString, eventArgumentTable)</strong>
+    </dt>
+    <dd>
+    Registers events with the event handler(-s) and does some basic load handling.
+ A new event is always registered with the handler with the fewest events queued.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newEventTypeString</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+        <li><span class="parameter">eventArgumentTable</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "EvaluatePlanetOwners"></a>
+    <strong>EvaluatePlanetOwners ()</strong>
+    </dt>
+    <dd>
+    Evaluates the owner of the planets and updates them accordingly.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "EvaluatePlanetBuildings"></a>
+    <strong>EvaluatePlanetBuildings ()</strong>
+    </dt>
+    <dd>
+    Evaluates the buildings on a planet.
+ Updates the building reference tables and respawns missing persistent objects.
+
+
+
+
+
+    <h3>See also:</h3>
+    <ul>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "EvaluatePlanetsContested"></a>
+    <strong>EvaluatePlanetsContested ()</strong>
+    </dt>
+    <dd>
+    Evaluates whether an enemy fleet is orbiting the planet.
+ It will update the contested variable with the reference to the fleet orbiting.
+
+
+
+
+
+    <h3>See also:</h3>
+    <ul>
+    </ul>
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Fleet_Accident_Functions"></a>Fleet Accident Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "EvaluateAccidentAppropriateForFleet"></a>
+    <strong>EvaluateAccidentAppropriateForFleet (fleetInQuestion)</strong>
+    </dt>
+    <dd>
+    Is a hyperspace accident appropriate for the fleet?.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">fleetInQuestion</span>
+            <span class="types"><span class="type">FleetObject</span></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "EvaluateAccidentAvoidanceChanceForFleet"></a>
+    <strong>EvaluateAccidentAvoidanceChanceForFleet (fleetInQuestion)</strong>
+    </dt>
+    <dd>
+    Get the avoidance chance for the fleet:
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">fleetInQuestion</span>
+            <span class="types"><span class="type">FleetObject</span></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">float</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Validity"></a>Validity</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "IsRegisteredPlanet"></a>
+    <strong>IsRegisteredPlanet (planetInQuestion)</strong>
+    </dt>
+    <dd>
+    Tests whether an planet object has already been registered.
+ This can either be used to test whether an object is valid or - during initialisation - whether an object tries to register twice.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">planetInQuestion</span>
+            <span class="types"><span class="type">cPlanet</span></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "IsRegisteredFaction"></a>
+    <strong>IsRegisteredFaction (factionInQuestion)</strong>
+    </dt>
+    <dd>
+    Tests whether a faction object has already been registered.
+ This can either be used to test whether an object is valid or - during initialisation - whether an object tries to register twice.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">factionInQuestion</span>
+            <span class="types"><span class="type">cFaction</span></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

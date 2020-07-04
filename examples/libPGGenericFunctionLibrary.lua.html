@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><strong>libPGGenericFunctionLibrary.lua</strong></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <h2>libPGGenericFunctionLibrary.lua</h2>
+<pre>
+<span class="comment">-- ===== ===== ===== ===== =====
+</span><span class="comment">-- Copyright (c) 2017 Lukas Grünwald
+</span><span class="comment">-- License       MIT License
+</span><span class="comment">-- ===== ===== ===== ===== =====
+</span>
+<span class="comment">--- Generic function library.
+</span><span class="comment">-- Provides access to functions which are being reused all over the framework and are of general use throughout the mod.
+</span><span class="global">require</span>( <span class="string">"PGBase"</span> )
+<span class="global">require</span>( <span class="string">"PGDebug"</span> )
+
+<span class="comment">--- Tests whether an object is referenced within a table.
+</span><span class="comment">-- @tparam table tableObj
+</span><span class="comment">-- @tparam {object} contentObj
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @within Table Functionality
+</span><span class="keyword">function</span> IsContentOfTable( tableObj, contentObj )
+    <span class="keyword">if</span> <span class="global">table</span>.getn( tableObj ) &gt; <span class="number">0</span> <span class="keyword">and</span> contentObj ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">for</span> _, obj <span class="keyword">in</span> <span class="global">pairs</span>( tableObj ) <span class="keyword">do</span>
+            <span class="keyword">if</span> obj == contentObj <span class="keyword">then</span>
+                <span class="keyword">return</span> <span class="keyword">true</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+
+<span class="comment">--- Tests whether a key is referenced within a table.
+</span><span class="comment">-- @tparam table tableObj
+</span><span class="comment">-- @tparam {object} keyObj
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @within Table Functionality
+</span><span class="keyword">function</span> IsKeyOfTable( tableObj, keyObj )
+    <span class="keyword">if</span> <span class="global">table</span>.getn( tableObj ) &gt; <span class="number">0</span> <span class="keyword">and</span> keyObj ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">for</span> key, _ <span class="keyword">in</span> <span class="global">pairs</span>( tableObj ) <span class="keyword">do</span>
+            <span class="keyword">if</span> key == keyObj <span class="keyword">then</span>
+                <span class="keyword">return</span> <span class="keyword">true</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+
+<span class="comment">--- Claps a given newValue to a given maxValue and minValue.
+</span><span class="comment">-- @tparam float newValue
+</span><span class="comment">-- @tparam float minValue
+</span><span class="comment">-- @tparam float maxValue
+</span><span class="comment">-- @treturn float
+</span><span class="comment">-- @within Math Library
+</span><span class="keyword">function</span> ClampValue( newValue, minValue, maxValue )
+    <span class="keyword">if</span> maxValue ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">if</span> newValue &lt; minValue <span class="keyword">then</span>
+            <span class="keyword">return</span> minValue
+        <span class="keyword">elseif</span> newValue &gt; maxValue <span class="keyword">then</span>
+            <span class="keyword">return</span> maxValue
+        <span class="keyword">else</span>
+            <span class="keyword">return</span> newValue
+        <span class="keyword">end</span>
+    <span class="keyword">else</span>
+        <span class="keyword">if</span> newValue &lt; minValue <span class="keyword">then</span>
+            <span class="keyword">return</span> minValue
+        <span class="keyword">else</span>
+            <span class="keyword">return</span> newValue
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="comment">--- Tests whether a given object is tagged with a certain flag.
+</span><span class="comment">-- LUA objects are often tagged with flags in the mod, this generic function allows for testing for a specific flag or a specific set of flags.
+</span><span class="comment">-- @tparam table tagTable The list of tags an object is tagged with. Usually a self-contained attribute.
+</span><span class="comment">-- @tparam table/string tagObject Flag the object should be tagged with.
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @within Framework Library
+</span><span class="keyword">function</span> IsObjectTaggedAs( tagTable, tagObject )
+    <span class="comment">-- Testing for multiple flags at once. Similar to an '&amp;&amp;' junction.
+</span>    <span class="keyword">if</span> <span class="global">type</span>( tagObject ) == <span class="string">"table"</span> <span class="keyword">then</span>
+        <span class="keyword">for</span> _,flag <span class="keyword">in</span> <span class="global">pairs</span>( tagObject ) <span class="keyword">do</span>
+            <span class="keyword">if</span> <span class="keyword">not</span> IsContentOfTable( tagTable, flag ) <span class="keyword">then</span>
+                <span class="keyword">return</span> <span class="keyword">false</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+        <span class="keyword">return</span> <span class="keyword">true</span>
+    <span class="keyword">else</span>
+    <span class="comment">-- Testing for a single flag:
+</span>        <span class="keyword">return</span> IsContentOfTable( tagTable, tagObject )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="comment">--- Unwraps units from reinforcement struct depending on game mode.
+</span><span class="comment">-- @tparam string objectStructID The struct ID as defined in the table.
+</span><span class="comment">-- @within Framework Library
+</span><span class="keyword">function</span> UnwrapUnitsFromFleetStruct( objectStructID )
+    <span class="keyword">if</span> Get_Game_Mode() == <span class="string">"Galactic"</span> <span class="keyword">then</span>
+        <span class="keyword">local</span> objTypeTable = <span class="global">require</span>( <span class="string">"libStaticStructReinforces"</span> )[objectStructID].Objects
+        <span class="keyword">if</span> <span class="global">table</span>.getn( objTypeTable) &gt; <span class="number">0</span> <span class="keyword">then</span>
+            <span class="keyword">local</span> spawnTable = { }
+            <span class="keyword">for</span> _,objDef <span class="keyword">in</span> <span class="global">pairs</span>( objTypeTable ) <span class="keyword">do</span>
+                <span class="keyword">for</span> i = <span class="number">1</span>, objDef.ObjectCount, <span class="number">1</span> <span class="keyword">do</span>
+                    <span class="global">table</span>.insert( spawnTable, objDef.ObjectType )
+                <span class="keyword">end</span>
+            <span class="keyword">end</span>
+            <span class="keyword">if</span> <span class="global">table</span>.getn( spawnTable ) &gt; <span class="number">0</span> <span class="keyword">then</span>
+                <span class="keyword">return</span> spawnTable
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+        <span class="keyword">return</span> <span class="keyword">false</span>
+    <span class="keyword">end</span>
+
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+
+<span class="comment">--- Applies padding to the given value to a given size.
+</span><span class="comment">-- The function will pad or cut a given string, depending on its length in relation to the given padding size.
+</span><span class="comment">-- @tparam string origVal Original string.
+</span><span class="comment">-- @tparam number strLen The length the string will be padded to.
+</span><span class="comment">-- @tparam string paddingChar The padding char. If not provided it'll default to "0"
+</span><span class="comment">-- @within String Standard Library Wrapper
+</span><span class="keyword">function</span> AddPadding( origVal, strLen, paddingChar )
+    <span class="keyword">local</span> oValTab = {}
+    <span class="keyword">local</span> retValTab = {}
+    <span class="keyword">local</span> origiVal = origVal
+    <span class="keyword">local</span> lPadChar = <span class="string">"0"</span>
+    <span class="keyword">if</span> paddingChar ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        lPadChar = paddingChar
+    <span class="keyword">end</span>
+    <span class="comment">-- Convert initial value to string:
+</span>    <span class="keyword">if</span> <span class="global">type</span>( origiVal ) ~= <span class="string">"string"</span> <span class="keyword">then</span>
+        origiVal = <span class="global">tostring</span>( origVal )
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> <span class="global">string</span>.len( origiVal ) &gt; strLen <span class="keyword">then</span>
+        <span class="comment">-- Our string is longer than the allowed string length... Cut it down!!
+</span>        oValTab = StringToCharArray( origiVal )
+        <span class="keyword">local</span> lDiff = <span class="global">string</span>.len( origiVal ) - strLen
+        <span class="keyword">for</span> i = lDiff + <span class="number">1</span>, <span class="global">string</span>.len( origiVal ), <span class="number">1</span> <span class="keyword">do</span>
+            retValTab[i-lDiff] = oValTab[i]
+        <span class="keyword">end</span>
+        <span class="keyword">local</span> retString = <span class="global">table</span>.concat( retValTab )
+        <span class="keyword">return</span> retString
+    <span class="keyword">else</span>
+        <span class="comment">-- Fill necessary padding:
+</span>        <span class="keyword">local</span> necPad = strLen - <span class="global">string</span>.len( origiVal )
+        <span class="keyword">for</span> i = <span class="number">1</span>, necPad, <span class="number">1</span> <span class="keyword">do</span>
+            retValTab[i] = lPadChar
+        <span class="keyword">end</span>
+        <span class="comment">-- Fill in rest of string:
+</span>        necPad = necPad + <span class="number">1</span>
+        <span class="keyword">for</span> i = necPad, strLen, <span class="number">1</span> <span class="keyword">do</span>
+            <span class="keyword">local</span> sPos = i - necPad + <span class="number">1</span>
+            retValTab[i] = <span class="global">string</span>.sub( origiVal, sPos, sPos )
+        <span class="keyword">end</span>
+        <span class="keyword">local</span> retString = <span class="global">table</span>.concat( retValTab )
+        <span class="keyword">return</span> retString
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="comment">--- Splits a given string into an array of characters.
+</span><span class="comment">-- @tparam string inputString
+</span><span class="comment">-- @treturn table Table of single chars
+</span><span class="comment">-- @within String Standard Library Wrapper
+</span><span class="keyword">function</span> StringToCharArray( inputString )
+    <span class="keyword">local</span> retTable = {}
+    <span class="keyword">local</span> inString = inputString
+    <span class="keyword">if</span> <span class="global">type</span>( inString ) ~= <span class="string">"string"</span> <span class="keyword">then</span>
+        inString = <span class="global">tostring</span>( inputString )
+    <span class="keyword">end</span>
+    <span class="keyword">for</span> i = <span class="number">1</span>, <span class="global">string</span>.len( inString ), <span class="number">1</span> <span class="keyword">do</span>
+        retTable[i] = <span class="global">string</span>.sub( inString, i, i )
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> retTable
+<span class="keyword">end</span>
+
+<span class="comment">--- Converts a given string to uppercase letters.
+</span><span class="comment">-- @tparam string inputString
+</span><span class="comment">-- @treturn string inputString converted to uppercase
+</span><span class="comment">-- @within String Standard Library Wrapper
+</span><span class="keyword">function</span> ConvertToUpperCase( inputString )
+    <span class="keyword">local</span> inString = inputString
+    <span class="keyword">if</span> <span class="global">type</span>( inString ) ~= <span class="string">"string"</span> <span class="keyword">then</span>
+        inString = <span class="global">tostring</span>( inputString )
+    <span class="keyword">end</span>
+    <span class="keyword">local</span> retString = <span class="global">string</span>.upper( inString )
+    <span class="keyword">return</span> retString
+<span class="keyword">end</span>
+<span class="comment">--- Retrieves the length of a given string.
+</span><span class="comment">-- Can also return the length of anything that can implicitly be converted to a string.
+</span><span class="comment">-- @tparam string inputString
+</span><span class="comment">-- @treturn number
+</span><span class="comment">-- @within String Standard Library Wrapper
+</span><span class="keyword">function</span> GetStringLength( inputString )
+    <span class="keyword">local</span> inString = inputString
+    <span class="keyword">if</span> <span class="global">type</span>( inString ) ~= <span class="string">"string"</span> <span class="keyword">then</span>
+        inString = <span class="global">tostring</span>( inputString )
+    <span class="keyword">end</span>
+    <span class="keyword">local</span> sLen = <span class="global">string</span>.len( inString )
+    <span class="keyword">return</span> sLen
+<span class="keyword">end</span>
+<span class="comment">--- Converts a given string to a number.
+</span><span class="comment">-- This implicitly converts a number encoded as string to a number, the function will fail, if there structures within the string that are not numbers.
+</span><span class="comment">-- @tparam string inputString
+</span><span class="comment">-- @treturn number
+</span><span class="comment">-- @within String Standard Library Wrapper
+</span><span class="keyword">function</span> ConvertToNumber( inputString )
+    <span class="keyword">local</span> outNumber = <span class="global">tonumber</span>( inputString )
+    <span class="keyword">return</span> outNumber
+<span class="keyword">end</span>
+<span class="comment">--- Converts a float number to a string.
+</span><span class="comment">-- Takes a desired float and a padding length.
+</span><span class="comment">-- @tparam number inputFloat
+</span><span class="comment">-- @tparam number length
+</span><span class="comment">-- @treturn string Formatted string
+</span><span class="keyword">function</span> ConvertFloatToString( inputFloat, length )
+    <span class="keyword">local</span> formattingRule = <span class="string">"%."</span>
+    <span class="keyword">local</span> lLength = ConvertToString( length )
+    formattingRule = formattingRule..lLength..<span class="string">"f"</span>
+    <span class="keyword">local</span> formattedString = <span class="global">string</span>.format(formattingRule, inputFloat)
+    <span class="keyword">return</span> formattedString
+<span class="keyword">end</span>
+<span class="comment">--- Converts a given number to a string.
+</span><span class="comment">-- This function will fail and return false, if it's not given a number as argument.
+</span><span class="comment">-- @tparam string inputNumber
+</span><span class="comment">-- @treturn number.
+</span><span class="comment">-- @within String Standard Library Wrapper
+</span><span class="keyword">function</span> ConvertToString( inputNumber )
+    <span class="keyword">if</span> <span class="global">type</span>( inputNumber ) == <span class="string">"number"</span> <span class="keyword">then</span>
+        <span class="keyword">local</span> outNumber = <span class="global">tostring</span>( inputNumber )
+        <span class="keyword">return</span> outNumber
+    <span class="keyword">else</span>
+        <span class="keyword">return</span> <span class="keyword">false</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Retrieves a given subsection of a string.
+</span><span class="comment">-- This does NOT modify the original string!.
+</span><span class="comment">-- @tparam string inputString
+</span><span class="comment">-- @tparam number sCharIndex Starting index of the first desired character in the string.
+</span><span class="comment">-- @tparam number eCharIndex Index of the last desired character of the substring.
+</span><span class="comment">-- @treturn string
+</span><span class="comment">-- @within String Standard Library Wrapper
+</span><span class="keyword">function</span> StringSub( inputString, sCharIndex, eCharIndex )
+    <span class="keyword">local</span> subString = <span class="global">string</span>.sub( inputString, sCharIndex, eCharIndex )
+    <span class="keyword">return</span> subString
+<span class="keyword">end</span>
+<span class="comment">--- Reverses a given string.
+</span><span class="comment">-- this is NOt a wrapper for the standard library function, as the standard library crashes EaW, it is a less effective implementation that works with the game.
+</span><span class="comment">-- @tparam string inputString
+</span><span class="comment">-- @treturn string Reversed string.
+</span><span class="comment">-- @within String Standard Library Wrapper
+</span><span class="keyword">function</span> StringReverse( inputString )
+    <span class="keyword">local</span> inStr = inputString
+    <span class="keyword">local</span> charArray = StringToCharArray( inStr )
+    <span class="keyword">local</span> retArray = {}
+    <span class="keyword">for</span> i = <span class="global">table</span>.getn( charArray ), <span class="number">1</span>, -<span class="number">1</span> <span class="keyword">do</span>
+        <span class="global">table</span>.insert( retArray, charArray[i] )
+    <span class="keyword">end</span>
+    <span class="keyword">local</span> retString = <span class="global">table</span>.concat( retArray )
+    <span class="keyword">return</span> retString
+<span class="keyword">end</span>
+</pre>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

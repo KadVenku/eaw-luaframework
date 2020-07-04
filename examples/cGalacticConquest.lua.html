@@ -1,0 +1,659 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><strong>cGalacticConquest.lua</strong></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <h2>cGalacticConquest.lua</h2>
+<pre>
+<span class="comment">-- ===== ===== ===== ===== =====
+</span><span class="comment">-- Copyright (c) 2017 Lukas Grünwald
+</span><span class="comment">-- License       MIT License
+</span><span class="comment">-- ===== ===== ===== ===== =====
+</span>
+<span class="comment">--- cGalacticConquest class.
+</span><span class="comment">-- Governs the framework and has access to all child classes.
+</span>
+<span class="comment">-- Import new functions:
+</span><span class="global">require</span>( <span class="string">"libErrorFunctions"</span> )
+<span class="global">require</span>( <span class="string">"libDebugFunctions"</span> )
+<span class="global">require</span>( <span class="string">"libPGGenericFunctionLibrary"</span> )
+<span class="comment">-- Import new classes:
+</span><span class="global">require</span>( <span class="string">"cFaction"</span> )
+<span class="global">require</span>( <span class="string">"cEventHandler"</span> )
+<span class="global">require</span>( <span class="string">"cGUIHandler"</span> )
+<span class="global">require</span>( <span class="string">"cObjectManager"</span> )
+<span class="global">require</span>( <span class="string">"cGlobalMessageHandler"</span> )
+<span class="global">require</span>( <span class="string">"cMajorFaction"</span> )
+<span class="global">require</span>( <span class="string">"cMinorFaction"</span> )
+<span class="global">require</span>( <span class="string">"cPlanet"</span> )
+
+cGalacticConquest = {}
+cGalacticConquest.__index = cGalacticConquest
+
+<span class="comment">--- Constructor.
+</span><span class="comment">-- Creates a new LUA object of type cGalacticConquest.
+</span><span class="comment">-- @tparam String newGCName Used as key to load all relevant data from the static conquest table.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cGalacticConquest.New( newGCName )
+    <span class="keyword">local</span> self = <span class="global">setmetatable</span>( {}, cGalacticConquest )
+
+    self.Name       = newGCName
+    self.ObjectType = <span class="string">"TEXT_LUA_OBJECT_TYPE_GC"</span>
+    self.DebugModeActive = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_DebugMode
+
+    <span class="comment">-- Initialisation from static library:
+</span>    <span class="keyword">local</span> GCDataTable = <span class="global">require</span>( <span class="string">"libGCDefinitions"</span> )
+    <span class="keyword">if</span> GCDataTable[newGCName] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        self.EventHandler                          = { }
+        self.GUIHandler                            = <span class="keyword">nil</span>
+        self.ObjectManager                         = <span class="keyword">nil</span>
+        self.GlobalMessageHandler                  = <span class="keyword">nil</span>
+        self.Factions                              = { } <span class="comment">-- empty faction list
+</span>        self.FactionNameList                       = GCDataTable[newGCName].Factions    <span class="comment">-- Temporary table. Ditched after initialization.
+</span>        self.Planets                               = { } <span class="comment">-- empty planet list
+</span>        self.PlanetNameList                        = GCDataTable[newGCName].Planets    <span class="comment">-- Temporary table. Ditched after initialization.
+</span>        self.RequestedTradeRoutes                  = GCDataTable[newGCName].TradeRoutes    <span class="comment">-- Temporary table. Ditched after initialization.
+</span>        self.GalacticFleets                        = { }
+        self.FleetAccidentCooldowns                = { }
+        self.GalacticFleetsByFactions              = { }
+    <span class="keyword">else</span>
+        ThrowObjectInitialisationError( self:GetObjectType() )
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_OBJECT_CREATED"</span> )
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> self
+<span class="keyword">end</span>
+<span class="comment">--- Initialises the galactic conquest scenario.
+</span><span class="comment">-- This function creates all necessary objects and is responsible for linking them correctly after creation.
+</span><span class="comment">-- This has to be called after the constructor, as some object might not yet be valid.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cGalacticConquest:Initialise()
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_INITIALISATION_STARTED"</span> )
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_INITIALISATION_CREATING_OBJECTS"</span> )
+    <span class="keyword">end</span>
+    self:CreatePlanets()
+    self:CreateFactions()
+    self.EventHandler         = { }
+    <span class="keyword">local</span> evtHndCnt = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span>).gSetting_Global_EventHandlerCount
+    <span class="keyword">for</span> i = <span class="number">1</span>, evtHndCnt, <span class="number">1</span> <span class="keyword">do</span>
+        <span class="keyword">local</span> newEvtHndl = cEventHandler.New( self )
+        <span class="global">table</span>.insert( self.EventHandler, newEvtHndl )
+    <span class="keyword">end</span>
+
+    <span class="comment">-- Create a stack for every message type.
+</span>    <span class="keyword">local</span> validMsgTypes = <span class="global">require</span>( <span class="string">"libStaticMessageTypeDefinitions"</span> )
+    <span class="keyword">for</span> _,msgType <span class="keyword">in</span> <span class="global">pairs</span>( validMsgTypes ) <span class="keyword">do</span>
+        <span class="keyword">local</span> msgCountID = msgType..<span class="string">"_COUNT"</span>
+        GlobalValue.Set( msgCountID, <span class="number">0</span> )
+    <span class="keyword">end</span>
+    <span class="comment">-- Last attacked planet:
+</span>    GlobalValue.Set( <span class="string">"MP_LAST_SPACE_BATTLE"</span>, <span class="number">0</span> )
+    GlobalValue.Set( <span class="string">"MP_LAST_GROUND_BATTLE"</span>, <span class="number">0</span> )
+
+    self.GUIHandler           = cGUIHandler.New( self )
+    self.ObjectManager        = cObjectManager.New( self )
+    self.GlobalMessageHandler = cGlobalMessageHandler.New( self )
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_INITIALISATION_REGISTERING_OBJECT_RELATIONS"</span> )
+    <span class="keyword">end</span>
+    self:InitialisePlanets()
+    self:InitialiseFactions()
+    self:InitialiseTradeRoutes()
+    self.GUIHandler:Initialise()
+    self.ObjectManager:Initialise()
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_INITIALISATION_GUIHANDLER_FINISHED"</span> )
+    <span class="keyword">end</span>
+    self:EvaluateGalacticFleets()
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_INITIALISATION_FINISHED"</span> )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Initialises the planets loaded from the active planet list and registers them with the GC.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cGalacticConquest:CreatePlanets()
+    <span class="keyword">for</span> _,planet_name <span class="keyword">in</span> <span class="global">pairs</span>( self.PlanetNameList ) <span class="keyword">do</span>
+        <span class="keyword">local</span> planet = cPlanet.New( planet_name, self )
+        self:RegisterPlanet( planet )
+    <span class="keyword">end</span>
+    <span class="comment">-- Ditch the planet name list parameter:
+</span>    self.PlanetNameList = <span class="keyword">nil</span>
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_PLANET_CREATION_FINISHED"</span> )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Initialises the object relations for planets.
+</span><span class="comment">-- Setting up the planetary ownership and things alike.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cGalacticConquest:InitialisePlanets()
+    <span class="keyword">for</span> planetName, cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Planets ) <span class="keyword">do</span>
+        cPlanetObj:Initialise()
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_PLANET_RELATIONS_UPDATED"</span> )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Initialises the factions loaded from the active faction list and registers them with the GC.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cGalacticConquest:CreateFactions()
+    <span class="keyword">for</span> _, newFactionStruct <span class="keyword">in</span> <span class="global">pairs</span>( self.FactionNameList ) <span class="keyword">do</span>
+        <span class="keyword">if</span> newFactionStruct.Type == <span class="string">"TYPE_FACTION_MAJOR"</span> <span class="keyword">then</span>
+            <span class="keyword">local</span> newFac = cMajorFaction.New( self, newFactionStruct.Name )
+            self:RegisterFaction( newFac )
+        <span class="keyword">elseif</span> newFactionStruct.Type == <span class="string">"TYPE_FACTION_MINOR"</span> <span class="keyword">then</span>
+            <span class="keyword">local</span> newFac = cMinorFaction.New( self, newFactionStruct.Name )
+            self:RegisterFaction( newFac )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="comment">-- Ditch the faction name list parameter:
+</span>    self.FactionNameList = <span class="keyword">nil</span>
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_FACTION_CREATION_FINISHED"</span> )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Initialises the object relations for factions.
+</span><span class="comment">-- Setting up the faction relations and things alike.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cGalacticConquest:InitialiseFactions()
+    <span class="keyword">for</span> factionName, cFactionObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Factions ) <span class="keyword">do</span>
+        cFactionObj:Initialise()
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_FACTION_RELATIONS_UPDATED"</span> )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Initialises all registered trade routes.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cGalacticConquest:InitialiseTradeRoutes()
+    <span class="keyword">local</span> TradeRouteDefinitions = <span class="global">require</span>( <span class="string">"libStaticTraderouteDefinitions"</span> )
+    <span class="keyword">for</span> _, newRoute <span class="keyword">in</span> <span class="global">pairs</span>( self.RequestedTradeRoutes ) <span class="keyword">do</span>
+        <span class="keyword">if</span> TradeRouteDefinitions[newRoute] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+            <span class="keyword">local</span> cPlanet1 = self:GetPlanetObjectByName( TradeRouteDefinitions[newRoute].Planet1 )
+            <span class="keyword">local</span> cPlanet2 = self:GetPlanetObjectByName( TradeRouteDefinitions[newRoute].Planet2 )
+            <span class="keyword">if</span> cPlanet1 <span class="keyword">and</span> cPlanet2 <span class="keyword">then</span>
+                <span class="comment">-- Cross referencing the two planets:
+</span>                cPlanet1:AddPlanetInReach( cPlanet2 )
+                cPlanet2:AddPlanetInReach( cPlanet1 )
+            <span class="keyword">end</span>
+        <span class="keyword">else</span>
+            ThrowObjectNotFoundError( <span class="string">"TEXT_LUA_OBJECT_TYPE_TRADEROUTE"</span> )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="comment">-- ditch the self.RequestedTradeRoutes
+</span>    self.RequestedTradeRoutes = <span class="keyword">nil</span>
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_TRADEROUTE_CREATION_FINISHED"</span> )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="comment">--- Evaluates galactic fleets.
+</span><span class="comment">-- Registers fleets by factions.
+</span><span class="comment">-- @within Game Cycle
+</span><span class="keyword">function</span> cGalacticConquest:EvaluateGalacticFleets()
+    self.GalacticFleetsByFactions = <span class="keyword">nil</span>
+    self.GalacticFleetsByFactions = { }
+    self.GalacticFleets = <span class="keyword">nil</span>
+    self.GalacticFleets = Find_All_Objects_Of_Type( <span class="string">"Galactic_Fleet"</span> )
+    <span class="keyword">for</span> factionKey, cFactionObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Factions ) <span class="keyword">do</span>
+        <span class="comment">-- create an empty list for each faction
+</span>        <span class="keyword">local</span> lFactionFleetTable = { }
+        <span class="keyword">for</span> _,gFleetObj <span class="keyword">in</span> <span class="global">pairs</span>( self.GalacticFleets ) <span class="keyword">do</span>
+            <span class="keyword">if</span> gFleetObj.Get_Owner() == cFactionObj:GetPlayerObject() <span class="keyword">then</span>
+                <span class="global">table</span>.insert( lFactionFleetTable, gFleetObj )
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+        self.GalacticFleetsByFactions[cFactionObj:GetName()] = lFactionFleetTable
+    <span class="keyword">end</span>
+    <span class="keyword">local</span> hyperspaceAccidentExecuteChance = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_FleetHyperspaceAccident_ExecuteChance
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        hyperspaceAccidentExecuteChance = <span class="number">0.2</span>
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> GameRandom.Get_Float() &lt;= hyperspaceAccidentExecuteChance <span class="keyword">then</span>
+        <span class="keyword">for</span> _, fleet <span class="keyword">in</span> <span class="global">pairs</span>( self.GalacticFleets ) <span class="keyword">do</span>
+            <span class="keyword">if</span> self:EvaluateAccidentAppropriateForFleet( fleet ) <span class="keyword">then</span>
+                <span class="keyword">if</span> self:EvaluateAccidentAvoidanceChanceForFleet( fleet ) &lt; <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_FleetHyperspaceAccident_AccidentChance <span class="keyword">then</span>
+                    self:RegisterEvent( <span class="string">"EVENT_TYPE_FLEETHYPERSPACEACCIDENT"</span>, { FleetObject = fleet } )
+                <span class="keyword">end</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="comment">--- Executes a galactic maintenance cycle.
+</span><span class="comment">-- @tparam bool applyToPC Should the player faction pay maintenance cost.
+</span><span class="comment">-- @tparam bool applyToAI Should the AI pay maintenance cost.
+</span><span class="comment">-- @within Game Cycle
+</span><span class="keyword">function</span> cGalacticConquest:MaintenanceCycle( applyToPC, applyToAI )
+    <span class="keyword">for</span> _ , cFacObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Factions ) <span class="keyword">do</span>
+        <span class="keyword">if</span> applyToPC <span class="keyword">and</span> cFacObj:GetIsHumanPlayer() <span class="keyword">then</span>
+            self.ObjectManager:ApplyMaintenanceCost( cFacObj )
+        <span class="keyword">elseif</span> applyToAI <span class="keyword">and</span> ( <span class="keyword">not</span> cFacObj:GetIsHumanPlayer() ) <span class="keyword">then</span>
+            self.ObjectManager:ApplyMaintenanceCost( cFacObj )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">function</span> cGalacticConquest:UpdateTimedHolochronLogs()
+    self:GetHumanPlayerFaction():ClearDiplomaticMissionHolochron()
+    self:GetHumanPlayerFaction():UpdateDiplomaticMissionHolochron()
+<span class="keyword">end</span>
+
+<span class="comment">--- Is a hyperspace accident appropriate for the fleet?.
+</span><span class="comment">-- @tparam FleetObject fleetInQuestion
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @within Fleet Accident Functions
+</span><span class="keyword">function</span> cGalacticConquest:EvaluateAccidentAppropriateForFleet( fleetInQuestion )
+    <span class="keyword">if</span> fleetInQuestion.Get_Parent_Object() <span class="keyword">then</span>
+        <span class="keyword">return</span> <span class="keyword">false</span>
+    <span class="keyword">end</span>
+    <span class="keyword">local</span> minShipCount = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_FleetHyperspaceAccident_MinShipsInFleet
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        minShipCount = <span class="number">1</span>
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> fleetInQuestion.Get_Contained_Object_Count() &lt; minShipCount <span class="keyword">then</span>
+        <span class="keyword">return</span> <span class="keyword">false</span>
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> fleetInQuestion.Contains_Hero() <span class="keyword">then</span>
+        <span class="keyword">return</span> <span class="keyword">false</span>
+    <span class="keyword">end</span>
+    <span class="keyword">local</span> preventingUnitTypes = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_FleetHyperspaceAccident_PreventingUnitTypes
+    <span class="keyword">for</span> _, preventingUnitType <span class="keyword">in</span> <span class="global">pairs</span>( preventingUnitTypes ) <span class="keyword">do</span>
+        <span class="keyword">if</span> fleetInQuestion.Contains_Object_Type( Find_Object_Type( preventingUnitType ) ) <span class="keyword">then</span>
+            <span class="keyword">return</span> <span class="keyword">false</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> <span class="keyword">true</span>
+<span class="keyword">end</span>
+
+<span class="comment">--- Get the avoidance chance for the fleet:
+</span><span class="comment">-- @tparam FleetObject fleetInQuestion
+</span><span class="comment">-- @treturn float
+</span><span class="comment">-- @within Fleet Accident Functions
+</span><span class="keyword">function</span> cGalacticConquest:EvaluateAccidentAvoidanceChanceForFleet( fleetInQuestion )
+    <span class="keyword">local</span> avoidingUnitStructs = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_FleetHyperspaceAccident_AvoidingUnitTypes
+    <span class="keyword">local</span> maxAvoidanceChance = <span class="number">0.0</span>
+    <span class="keyword">for</span> _, avoidanceStruct <span class="keyword">in</span> <span class="global">pairs</span>( avoidingUnitStructs ) <span class="keyword">do</span>
+        <span class="keyword">if</span> fleetInQuestion.Contains_Object_Type( Find_Object_Type( avoidanceStruct.ObjectType ) ) <span class="keyword">then</span>
+            <span class="keyword">if</span> avoidanceStruct.AvoidanceChance &gt;= maxAvoidanceChance <span class="keyword">then</span>
+                maxAvoidanceChance = avoidanceStruct.AvoidanceChance
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    maxAvoidanceChance = ClampValue( maxAvoidanceChance, <span class="number">0.0</span>, <span class="number">1.0</span> )
+    <span class="keyword">return</span> maxAvoidanceChance
+<span class="keyword">end</span>
+<span class="comment">-- =========  =========  ==========  ==========
+</span>
+<span class="comment">--- Returns the lua object type as string key.
+</span><span class="comment">-- Used for error handling.
+</span><span class="comment">-- @treturn String
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGalacticConquest:GetObjectType()
+    <span class="keyword">return</span> self.ObjectType
+<span class="keyword">end</span>
+<span class="comment">--- Returns the lua object's name'.
+</span><span class="comment">-- @treturn String
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGalacticConquest:GetName()
+    <span class="keyword">return</span> self.Name
+<span class="keyword">end</span>
+<span class="comment">--- Returns the cFaction given a faction name.
+</span><span class="comment">-- @tparam String queriedFactionName single faction name.
+</span><span class="comment">-- @treturn cFaction
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGalacticConquest:GetFactionObjectByName( queriedFactionName )
+    <span class="keyword">if</span> self.Factions[queriedFactionName] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">return</span> self.Factions[queriedFactionName]
+    <span class="keyword">else</span>
+        ThrowObjectNotFoundError( queriedFactionName )
+        <span class="keyword">return</span> <span class="keyword">false</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Returns the cFaction given a player object.
+</span><span class="comment">-- @tparam PlayerObject queriedPlayerObject single faction object.
+</span><span class="comment">-- @treturn cFaction
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGalacticConquest:GetFactionObjectByPlayerObject( queriedPlayerObject )
+    <span class="keyword">local</span> cFactionReturn = <span class="keyword">nil</span>
+    <span class="keyword">for</span> factionName, cFactionObject <span class="keyword">in</span> <span class="global">pairs</span>( self.Factions ) <span class="keyword">do</span>
+        <span class="keyword">if</span> cFactionObject:GetPlayerObject() == queriedPlayerObject <span class="keyword">then</span>
+            cFactionReturn = cFactionObject
+            <span class="keyword">break</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> cFactionReturn == <span class="keyword">nil</span> <span class="keyword">then</span>
+        ThrowObjectNotFoundError( queriedPlayerObject.Get_Faction_Name() )
+        <span class="keyword">return</span> <span class="keyword">false</span>
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> cFactionReturn
+<span class="keyword">end</span>
+<span class="comment">--- Returns the cPlanet given a Planet name.
+</span><span class="comment">-- @tparam String queriedPlanetName single planet name.
+</span><span class="comment">-- @treturn cPlanet
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGalacticConquest:GetPlanetObjectByName( queriedPlanetName )
+    <span class="keyword">if</span> self.Planets[queriedPlanetName] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">return</span> self.Planets[queriedPlanetName]
+    <span class="keyword">else</span>
+        ThrowObjectNotFoundError( queriedPlanetName )
+        <span class="keyword">return</span> <span class="keyword">false</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Links a single planet to its parent GC.
+</span><span class="comment">-- @tparam cPlanet newPlanet
+</span><span class="comment">-- @error Throws an ObjectAlreadyRegisteredError, which allows the program to continue.
+</span><span class="comment">-- @within Setter Functions
+</span><span class="keyword">function</span> cGalacticConquest:RegisterPlanet( newPlanet )
+    <span class="keyword">if</span> <span class="keyword">not</span> self:IsRegisteredPlanet( newPlanet ) <span class="keyword">then</span>
+        self.Planets[newPlanet:GetName()] = newPlanet
+    <span class="keyword">else</span>
+        ThrowObjectAlreadyRegisteredError( newPlanet:GetObjectType(), newPlanet:GetDisplayName() )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Links a single faction to its parent GC.
+</span><span class="comment">-- @tparam cFaction newFaction
+</span><span class="comment">-- @error Throws an ObjectAlreadyRegisteredError, which allows the program to continue.
+</span><span class="comment">-- @within Setter Functions
+</span><span class="keyword">function</span> cGalacticConquest:RegisterFaction( newFaction )
+    <span class="keyword">if</span> <span class="keyword">not</span> self:IsRegisteredFaction( newFaction ) <span class="keyword">then</span>
+        self.Factions[newFaction:GetName()] = newFaction
+    <span class="keyword">else</span>
+        ThrowObjectAlreadyRegisteredError( newFaction:GetObjectType(), newFaction:GetDisplayName() )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Returns the human cFaction.
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGalacticConquest:GetHumanPlayerFaction()
+    <span class="keyword">for</span> factionName, cFactionObject <span class="keyword">in</span> <span class="global">pairs</span>( self.Factions ) <span class="keyword">do</span>
+        <span class="keyword">if</span> cFactionObject:GetIsHumanPlayer() <span class="keyword">then</span>
+            <span class="keyword">return</span> cFactionObject
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+<span class="comment">-- =========  =========  ==========  ==========
+</span>
+<span class="comment">--- Tests whether an planet object has already been registered.
+</span><span class="comment">-- This can either be used to test whether an object is valid or - during initialisation - whether an object tries to register twice.
+</span><span class="comment">-- @tparam cPlanet planetInQuestion
+</span><span class="comment">-- @treturn Bool
+</span><span class="comment">-- @within Validity
+</span><span class="keyword">function</span> cGalacticConquest:IsRegisteredPlanet( planetInQuestion )
+    <span class="keyword">if</span> self.Planets[planetInQuestion:GetName()] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">return</span> <span class="keyword">true</span>
+    <span class="keyword">else</span>
+        <span class="keyword">return</span> <span class="keyword">false</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Tests whether a faction object has already been registered.
+</span><span class="comment">-- This can either be used to test whether an object is valid or - during initialisation - whether an object tries to register twice.
+</span><span class="comment">-- @tparam cFaction factionInQuestion
+</span><span class="comment">-- @treturn Bool
+</span><span class="comment">-- @within Validity
+</span><span class="keyword">function</span> cGalacticConquest:IsRegisteredFaction( factionInQuestion )
+    <span class="keyword">if</span> self.Factions[factionInQuestion:GetName()] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">return</span> <span class="keyword">true</span>
+    <span class="keyword">else</span>
+        <span class="keyword">return</span> <span class="keyword">false</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="comment">--- Registers events with the event handler(-s) and does some basic load handling.
+</span><span class="comment">-- A new event is always registered with the handler with the fewest events queued.
+</span><span class="comment">-- @tparam string newEventTypeString
+</span><span class="comment">-- @tparam table eventArgumentTable
+</span><span class="comment">-- @within Game Cycle
+</span><span class="keyword">function</span> cGalacticConquest:RegisterEvent( newEventTypeString, eventArgumentTable )
+    <span class="keyword">local</span> minRegisteredQueue = <span class="number">999999</span>
+    <span class="keyword">local</span> minEvtHandler = <span class="keyword">false</span>
+
+    <span class="keyword">for</span> _, evtHandler <span class="keyword">in</span> <span class="global">pairs</span>( self.EventHandler ) <span class="keyword">do</span>
+        <span class="keyword">if</span> <span class="keyword">not</span> evtHandler:IsWorking() <span class="keyword">then</span>
+            <span class="keyword">if</span> evtHandler:GetEventCount() &lt;= minRegisteredQueue <span class="keyword">then</span>
+                minRegisteredQueue = evtHandler:GetEventCount()
+                minEvtHandler = evtHandler
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="comment">-- Fail safe:
+</span>    <span class="keyword">if</span> <span class="keyword">not</span> minEvtHandler <span class="keyword">then</span>
+        <span class="keyword">for</span> _, evtHandler <span class="keyword">in</span> <span class="global">pairs</span>( self.EventHandler ) <span class="keyword">do</span>
+            <span class="keyword">if</span> <span class="keyword">not</span> evtHandler:IsWorking() <span class="keyword">then</span>
+                minEvtHandler = evtHandler
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+
+    minEvtHandler:RegisterNewEvent( newEventTypeString, eventArgumentTable )
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_EVENT_REGISTERING"</span> )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="comment">-- =========  ========= MAIN GAME LOOP ==========  ==========
+</span>
+<span class="comment">--- Evaluates the owner of the planets and updates them accordingly.
+</span><span class="comment">-- @within Game Cycle
+</span><span class="keyword">function</span> cGalacticConquest:EvaluatePlanetOwners()
+    <span class="keyword">for</span> planetName, cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Planets ) <span class="keyword">do</span>
+        cPlanetObj:EvaluateOwner()
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Evaluates the buildings on a planet.
+</span><span class="comment">-- Updates the building reference tables and respawns missing persistent objects.
+</span><span class="comment">-- @see cPlanet:UpdatePersistentObjects()
+</span><span class="comment">-- @see cPlanet:EvaluateBuildings()
+</span><span class="comment">-- @within Game Cycle
+</span><span class="keyword">function</span> cGalacticConquest:EvaluatePlanetBuildings()
+    <span class="keyword">for</span> planetName, cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Planets ) <span class="keyword">do</span>
+        cPlanetObj:UpdatePersistentObjects()
+        cPlanetObj:EvaluateBuildings()
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Evaluates whether an enemy fleet is orbiting the planet.
+</span><span class="comment">-- It will update the contested variable with the reference to the fleet orbiting.
+</span><span class="comment">-- @see cPlanet:EvaluatePlanetContested()
+</span><span class="comment">-- @within Game Cycle
+</span><span class="keyword">function</span> cGalacticConquest:EvaluatePlanetsContested()
+    <span class="keyword">for</span> planetName, cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Planets ) <span class="keyword">do</span>
+        cPlanetObj:EvaluatePlanetContested()
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="comment">-- Test functionality:
+</span><span class="keyword">function</span> cGalacticConquest:HighlightAllEmpirePlanets()
+    <span class="keyword">for</span> pName, cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Planets ) <span class="keyword">do</span>
+        <span class="keyword">if</span> cPlanetObj:GetOwner():GetPlayerObject() == Find_Player( <span class="string">"EMPIRE"</span> ) <span class="keyword">then</span>
+            <span class="keyword">local</span> tag = cPlanetObj:AddPlanetHighlight( <span class="string">"test"</span> )
+            Sleep( <span class="number">1.0</span> )
+            cPlanetObj:RemovePlanetHighlight( tag )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="keyword">function</span> cGalacticConquest:HighlightAllRebelPlanets()
+    <span class="keyword">for</span> pName, cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Planets ) <span class="keyword">do</span>
+        <span class="keyword">if</span> cPlanetObj:GetOwner():GetPlayerObject() == Find_Player( <span class="string">"REBEL"</span> ) <span class="keyword">then</span>
+            <span class="keyword">local</span> tag = cPlanetObj:AddPlanetHighlight( <span class="string">"test"</span> )
+            Sleep( <span class="number">1.0</span> )
+            cPlanetObj:RemovePlanetHighlight( tag )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="keyword">function</span> cGalacticConquest:HighlightAllUnderworldPlanets()
+    <span class="keyword">for</span> pName, cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Planets ) <span class="keyword">do</span>
+        <span class="keyword">if</span> cPlanetObj:GetOwner():GetPlayerObject() == Find_Player( <span class="string">"UNDERWORLD"</span> ) <span class="keyword">then</span>
+            <span class="keyword">local</span> tag = cPlanetObj:AddPlanetHighlight( <span class="string">"test"</span> )
+            Sleep( <span class="number">1.0</span> )
+            cPlanetObj:RemovePlanetHighlight( tag )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="keyword">function</span> cGalacticConquest:FlashCapitalPlanets()
+    <span class="keyword">for</span> pName, cPlanetObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Planets ) <span class="keyword">do</span>
+        <span class="keyword">if</span> cPlanetObj:GetIsCapital() <span class="keyword">then</span>
+            <span class="keyword">local</span> tag = cPlanetObj:AddPlanetHighlight( <span class="string">"capital"</span> )
+            Sleep( <span class="number">1.0</span> )
+            cPlanetObj:RemovePlanetHighlight( tag )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">function</span> cGalacticConquest:GetStrongestRawMilitary()
+    <span class="keyword">local</span> strFac = <span class="keyword">false</span>
+    <span class="keyword">local</span> maxStrength = <span class="number">0</span>
+    <span class="keyword">for</span> _,cFacObj <span class="keyword">in</span> <span class="global">pairs</span>( self.Factions ) <span class="keyword">do</span>
+        cFacObj:EvaluateRawMilitaryStrength()
+        <span class="keyword">if</span> cFacObj:GetRawMilitaryStrength() &gt; maxStrength <span class="keyword">then</span>
+            strFac = cFacObj:GetStringKey()
+            maxStrength = cFacObj:GetRawMilitaryStrength()
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugFactionRawMilitaryStrength( strFac, maxStrength )
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> strFac, maxStrength
+<span class="keyword">end</span>
+
+<span class="keyword">return</span> cGalacticConquest
+</pre>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

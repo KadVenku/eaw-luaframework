@@ -1,0 +1,863 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><strong>libStaticObjectDefinitionsUnits.lua</strong></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <h2>libStaticObjectDefinitionsUnits.lua</h2>
+<pre>
+<span class="comment">-- ===== ===== ===== ===== =====
+</span><span class="comment">-- Copyright (c) 2017 Lukas Grünwald
+</span><span class="comment">-- License       MIT License
+</span><span class="comment">-- ===== ===== ===== ===== =====
+</span>
+<span class="comment">--- {library} This library contains all usable object types in the game.
+</span><span class="comment">-- The way it is set up, it supports multiple affiliations for one single object type by adding factions to the Factions sub-table.
+</span><span class="keyword">local</span> StaticObjectDefinitionsUnits = {
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Imperial_Armor_Group"</span>,
+        GameObjectTypeCapital      = <span class="string">"IMPERIAL_ARMOR_GROUP"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span> },
+        CategoryMask               = { <span class="string">"tank"</span>, },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_IMPERIAL_ARMOR_GROUP"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Admonitor_Star_Destroyer"</span>,
+        GameObjectTypeCapital      = <span class="string">"ADMONITOR_STAR_DESTROYER"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span> },
+        CategoryMask               = { <span class="string">"tank"</span>, },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"SPACE"</span>, <span class="string">"HERO"</span>, <span class="string">"MAJOR_HERO"</span>, <span class="string">"DIPLOMAT"</span> },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_SD_ADMONITOR"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { <span class="string">"HERO_DIPLOMAT"</span>, },
+        MaintenanceCost            = <span class="number">50</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Imperial_Anti_Aircraft_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"IMPERIAL_ANTI_AIRCRAFT_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span> },
+        CategoryMask               = { <span class="string">"tank"</span>, },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_IMPERIAL_ANTI_AIRCRAFT"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Imperial_Heavy_Assault_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"IMPERIAL_HEAVY_ASSAULT_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span> },
+        CategoryMask               = { <span class="string">"tank"</span>, },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_IMPERIAL_HEAVY_ASSAULT_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Imperial_Heavy_Scout_Squad"</span>,
+        GameObjectTypeCapital      = <span class="string">"IMPERIAL_HEAVY_SCOUT_SQUAD"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span> },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_IMPERIAL_HEAVY_SCOUT_SQUAD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Imperial_Artillery_Corp"</span>,
+        GameObjectTypeCapital      = <span class="string">"IMPERIAL_ARTILLERY_CORP"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span> },
+        CategoryMask               = { <span class="string">"artillery"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_IMPERIAL_ARTILLERY_CORPS"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Imperial_Anti_Infantry_Brigade"</span>,
+        GameObjectTypeCapital      = <span class="string">"IMPERIAL_ANTI_INFANTRY_BRIGADE"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span> },
+        CategoryMask               = { <span class="string">"tank"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_IMPERIAL_ANTI_INFANTRY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Imperial_Stormtrooper_Squad"</span>,
+        GameObjectTypeCapital      = <span class="string">"IMPERIAL_STORMTROOPER_SQUAD"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span> },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_IMPERIAL_STORMTROOPER_SQUAD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Imperial_Light_Scout_Squad"</span>,
+        GameObjectTypeCapital      = <span class="string">"IMPERIAL_LIGHT_SCOUT_SQUAD"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span> },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_IMPERIAL_LIGHT_SCOUT_SQUAD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"HAV_Juggernaut_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"HAV_JUGGERNAUT_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"walker"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_JUGGERNAUT_TEAM"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Lancet_Air_Wing"</span>,
+        GameObjectTypeCapital      = <span class="string">"LANCET_AIR_WING"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"artillery"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_IMPERIAL_LANCET_WING"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Empire_MDU_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"EMPIRE_MDU_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"tank"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_TOOLTIP_MDU_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Noghri_Assassin_Squad"</span>,
+        GameObjectTypeCapital      = <span class="string">"NOGHRI_ASSASSIN_SQUAD"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_NOGHRI_ASSASSIN_SQUAD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"DarkTrooper_P1_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"DARKTROOPER_P1_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"artillery"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_TOOLTIP_DARKTROOPER_P1_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"DarkTrooper_P2_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"DARKTROOPER_P2_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"artillery"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_TOOLTIP_DARKTROOPER_P2_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"DarkTrooper_P3_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"DARKTROOPER_P3_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"artillery"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_TOOLTIP_DARKTROOPER_P3_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Speeder_Wing"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_SPEEDER_WING"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"walker"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_SPEEDER_WING"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Artillery_Brigade"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_ARTILLERY_BRIGADE"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"artillery"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_ARTILLERY_BRIGADE"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Light_Tank_Brigade"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_LIGHT_TANK_BRIGADE"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"tank"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_LIGHT_TANK_BRIGADE"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Heavy_Tank_Brigade"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_HEAVY_TANK_BRIGADE"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"tank"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_HEAVY_TANK_BRIGADE"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Infantry_Squad"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_INFANTRY_SQUAD"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_INFANTRY_SQUAD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Tank_Buster_Squad"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_TANK_BUSTER_SQUAD"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_TANK_BUSTER_SQUAD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Infiltrator_Team"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_INFILTRATOR_TEAM"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_REBEL_INFILTRATOR"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_MDU_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_MDU_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"tank"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_TOOLTIP_MDU_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Gallofree_HTT_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"GALLOFREE_HTT_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"tank"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_G-HTT_TRANSPORT_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Underworld_MDU_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"UNDERWORLD_MDU_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"tank"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_TOOLTIP_MDU_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Vornskr_Wolf_Pack"</span>,
+        GameObjectTypeCapital      = <span class="string">"VORNSKR_WOLF_PACK"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_VORNSKR_WOLF_PACK"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Destroyer_Droid_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"DESTROYER_DROID_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_DESTROYER_DROID_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Underworld_Ewok_Handler_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"UNDERWORLD_EWOK_HANDLER_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_EWOK_HANDLER"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"F9TZ_Cloaking_Transport_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"F9TZ_CLOAKING_TRANSPORT_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"tank"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_F9TZ_TRANSPORT_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"MAL_Rocket_Vehicle_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"MAL_ROCKET_VEHICLE_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"artillery"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_MAL_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"MZ8_Pulse_Cannon_Tank_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"MZ8_PULSE_CANNON_TANK_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"tank"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_MZ8_PC_TANK_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Night_Sister_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"NIGHT_SISTER_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_NIGHT_SISTER"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Canderous_Assault_Tank_Company"</span>,
+        GameObjectTypeCapital      = <span class="string">"CANDEROUS_ASSAULT_TANK_COMPANY"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"tank"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_CANDEROUS_TANK_COMPANY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Underworld_Disruptor_Merc_Squad"</span>,
+        GameObjectTypeCapital      = <span class="string">"UNDERWORLD_DISRUPTOR_MERC_SQUAD"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_UNDERWORLD_DISRUPTOR_MERC_SQUAD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Underworld_Merc_Squad"</span>,
+        GameObjectTypeCapital      = <span class="string">"UNDERWORLD_MERC_SQUAD"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span> },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"Infantry"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_UNDERWORLD_MERC_SQUAD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Tartan_Patrol_Cruiser"</span>,
+        GameObjectTypeCapital      = <span class="string">"TARTAN_PATROL_CRUISER"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"corvette"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"SPACE"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_TARTAN_CRUISER"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"IPV1_System_Patrol_Craft"</span>,
+        GameObjectTypeCapital      = <span class="string">"IPV1_SYSTEM_PATROL_CRAFT"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"corvette"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"SPACE"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_IPV1_SYSTEM"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Broadside_Class_Cruiser"</span>,
+        GameObjectTypeCapital      = <span class="string">"BROADSIDE_CLASS_CRUISER"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"corvette"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"SPACE"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_BROADSIDE_CRUISER"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Victory_Destroyer"</span>,
+        GameObjectTypeCapital      = <span class="string">"VICTORY_DESTROYER"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"frigate"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"SPACE"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_VICTORY_DESTROYER"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Acclamator_Assault_Ship"</span>,
+        GameObjectTypeCapital      = <span class="string">"ACCLAMATOR_ASSAULT_SHIP"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"frigate"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"SPACE"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_ACCLAMATOR"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Interdictor_Cruiser"</span>,
+        GameObjectTypeCapital      = <span class="string">"INTERDICTOR_CRUISER"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"frigate"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"SPACE"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_INTERDICTOR_CRUISER"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Star_Destroyer"</span>,
+        GameObjectTypeCapital      = <span class="string">"STAR_DESTROYER"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"capital"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"SPACE"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_UNIT_STAR_DESTROYER"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Probe_Droid_Team"</span>,
+        GameObjectTypeCapital      = <span class="string">"PROBE_DROID_TEAM"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"UNIT"</span>, },
+        CategoryMask               = { <span class="string">"NonCombatHero"</span> },
+        ObjectFilterTags           = { <span class="string">"UNIT"</span>, <span class="string">"SPACE"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_HERO_UNIT_PROBE_DROID"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Unit specific settings:
+</span>    },
+}
+
+<span class="keyword">return</span> StaticObjectDefinitionsUnits
+</pre>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

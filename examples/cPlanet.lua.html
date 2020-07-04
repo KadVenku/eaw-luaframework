@@ -1,0 +1,1008 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><strong>cPlanet.lua</strong></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <h2>cPlanet.lua</h2>
+<pre>
+<span class="comment">-- ===== ===== ===== ===== =====
+</span><span class="comment">-- Copyright (c) 2017 Lukas Grünwald
+</span><span class="comment">-- License       MIT License
+</span><span class="comment">-- ===== ===== ===== ===== =====
+</span>
+<span class="comment">-- Import new functions:
+</span><span class="global">require</span>( <span class="string">"libErrorFunctions"</span> )
+<span class="global">require</span>( <span class="string">"libDebugFunctions"</span> )
+<span class="global">require</span>( <span class="string">"libGCFunctionLibrary"</span> )
+<span class="comment">-- Import new classes:
+</span>
+cPlanet = {}
+cPlanet.__index = cPlanet
+
+<span class="comment">--- Constructor.
+</span><span class="comment">-- Creates a new LUA object of type cPlanet.
+</span><span class="comment">-- @tparam String newPlanetName Used as key to load all relevant data from the static planet table.
+</span><span class="comment">-- @tparam cGalacticConnquest parentGC Reference to the parent GC, so the planet can access fleet functions and evaluations.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cPlanet.New( newPlanetName, parentGC )
+    <span class="keyword">local</span> self = <span class="global">setmetatable</span>( {}, cPlanet )
+
+    self.Name       = newPlanetName <span class="comment">-- The Planet's name.
+</span>    self.ObjectType = <span class="string">"TEXT_LUA_OBJECT_TYPE_PLANET"</span> <span class="comment">-- LUA Object Type. Used for Error messages.
+</span>    self.Parent     = parentGC <span class="comment">-- Reference to the parent GC object.
+</span>    self.GameObject = FindPlanet( newPlanetName ) <span class="comment">-- Reference to the game object.
+</span>    self.Owner      = <span class="keyword">false</span> <span class="comment">-- Reference to the cFaction Object which owns the planet.
+</span>    self.Selected   = <span class="keyword">false</span> <span class="comment">-- Is the planet selected by the user?
+</span>    self.Contested  = <span class="keyword">false</span> <span class="comment">-- Is the planet contested by an enemy fleet?
+</span>
+    self.DebugModeActive = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_DebugMode
+
+    <span class="comment">-- Initialisation from static library:
+</span>    <span class="keyword">local</span> PlanetDataTable = <span class="global">require</span>( <span class="string">"libStaticPlanetDefinitions"</span> )
+    <span class="keyword">if</span> PlanetDataTable[newPlanetName] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        self.StringKey                  = PlanetDataTable[newPlanetName].StringKey <span class="comment">-- The MasterTextFile string key.
+</span>        self.ID                         = PlanetDataTable[newPlanetName].ID <span class="comment">-- The planet's unique integer ID
+</span>        self.IsNavPoint                 = PlanetDataTable[newPlanetName].IsNavPoint <span class="comment">-- Is the planet a NavPoint?
+</span>        self.PlanetsInReach             = { }  <span class="comment">-- Planets which can be reached with one single hyperjump.
+</span>        self.SpaceBuildpads             = PlanetDataTable[newPlanetName].SpaceBuildpads
+        self.SpaceBuildingsBuiltNumber  = <span class="number">0</span>
+        self.SpaceBuildings             = { }
+        self.MajorShipyardPlanet        = PlanetDataTable[newPlanetName].ShipyardPlanet
+        self.PersistentBuildings        = { }
+        self.GUIDisplayedObjects        = { }
+        self.MaxHealth                  = PlanetDataTable[newPlanetName].HealthPoints
+        self.CurrentHealth              = PlanetDataTable[newPlanetName].HealthPoints
+        self.MaxShieldPoints            = PlanetDataTable[newPlanetName].ShieldPoints
+        self.CurrentShieldPoints        = PlanetDataTable[newPlanetName].ShieldPoints
+        <span class="keyword">if</span> self.IsNavPoint <span class="keyword">then</span>
+            self.GroundAccessible       = <span class="keyword">false</span> <span class="comment">-- We don't want false data from the config file.
+</span>        <span class="keyword">else</span>
+            self.GroundAccessible       = PlanetDataTable[newPlanetName].GroundAccessible
+        <span class="keyword">end</span>
+        self.GroundBuildpads            = PlanetDataTable[newPlanetName].GroundBuildpads
+        self.GroundBuildingsBuiltNumber = <span class="number">0</span>
+        self.GroundBuildings            = { }
+        self.RuinBuildings              = <span class="number">0</span>
+        self.ApplicableStates           = PlanetDataTable[newPlanetName].ApplicableStates
+        self.CurrentState               = PlanetDataTable[newPlanetName].CurrentState
+        self.StateIndicator             = <span class="keyword">false</span>
+        self.IsStoryObject              = PlanetDataTable[newPlanetName].IsStoryObject
+        self.IsStoryProtected           = PlanetDataTable[newPlanetName].IsStoryProtected
+        self.BelongsToFaction           = <span class="keyword">false</span> <span class="comment">-- Setup is handled via the faction; used to cross reference.
+</span>        self.IsCapital                  = <span class="keyword">false</span> <span class="comment">-- Setup is handled via the faction; used to cross reference.
+</span>        self.IsAlliedWithFaction        = <span class="keyword">false</span> <span class="comment">-- Initialised with a EvaluateOwner() call.
+</span>        self.AllianceStrength           = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_Diplomacy_InitialPlanetAllianceStrength
+        self.DiplomaticValue            = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_Diplomacy_InitialPlanetInfluenceStrength
+        self.ForeignDiplomaticInfuence  = {}
+        self.DiplomacyDisabledForPlanet = PlanetDataTable[newPlanetName].DiplomacyDisabledForPlanet
+        self.TacticalModel              = PlanetDataTable[newPlanetName].TacticalModel
+        self.TacticalMapsByState        = PlanetDataTable[newPlanetName].TacticalMapsByState
+        self.ActiveDiplomaticMission    = <span class="keyword">false</span>
+    <span class="keyword">else</span>
+        ThrowObjectInitialisationError( self:GetObjectType() )
+    <span class="keyword">end</span>
+
+    <span class="keyword">return</span> self
+<span class="keyword">end</span>
+<span class="comment">--- Initialises all planet relations to other objects which cannot be initialised in the constructor.
+</span><span class="comment">-- Updates owner relations and the like.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cPlanet:Initialise()
+    <span class="keyword">local</span> PlanetDataTable = <span class="global">require</span>( <span class="string">"libStaticPlanetDefinitions"</span> )
+    <span class="keyword">if</span> PlanetDataTable[self:GetName()] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">local</span> GUIObjTypes = <span class="global">require</span>( <span class="string">"libStaticGUIObjectMappings"</span> )
+        <span class="keyword">for</span> _,GUIObj <span class="keyword">in</span> <span class="global">pairs</span>( GUIObjTypes ) <span class="keyword">do</span>
+            <span class="keyword">local</span> GUIObjSet = {
+                ObjectName      = GUIObj,
+                ObjectReference = <span class="keyword">false</span>,
+                IsVisible       = <span class="keyword">false</span>,
+            }
+            self.GUIDisplayedObjects[GUIObj] = GUIObjSet
+        <span class="keyword">end</span>
+        <span class="keyword">local</span> persBuildingTable = PlanetDataTable[self:GetName()].PersistentBuildings
+        <span class="keyword">if</span> <span class="global">table</span>.getn( persBuildingTable ) &gt; <span class="number">0</span> <span class="keyword">then</span>
+            <span class="keyword">for</span> _,objType <span class="keyword">in</span> <span class="global">pairs</span>( persBuildingTable ) <span class="keyword">do</span>
+                self:AddPersistentObject( objType )
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">else</span>
+        ThrowObjectInitialisationError( self:GetObjectType() )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="comment">-- ===== ===== ===== GETTER AND SETTER SECTION ===== ===== =====
+</span>
+<span class="comment">--- Returns the planet name.
+</span><span class="comment">-- @treturn String
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cPlanet:GetName()
+    <span class="keyword">return</span> self.Name
+<span class="keyword">end</span>
+<span class="comment">--- Returns the whether a planet is selected.
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cPlanet:GetSelected()
+    <span class="keyword">return</span> self.Selected
+<span class="keyword">end</span>
+<span class="comment">--- Returns the game object.
+</span><span class="comment">-- @treturn GameObject
+</span><span class="keyword">function</span> cPlanet:GetPlanetLocation()
+    <span class="keyword">return</span> self.GameObject
+<span class="keyword">end</span>
+<span class="comment">--- Sets a planet select state.
+</span><span class="comment">-- @tparam bool newSelectedState
+</span><span class="comment">-- @within Setter Functions
+</span><span class="keyword">function</span> cPlanet:SetSelected( newSelectedState )
+    self.Selected = newSelectedState
+<span class="keyword">end</span>
+<span class="comment">--- Returns the MasterTextFile key.
+</span><span class="comment">-- @treturn String
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cPlanet:GetStringKey()
+    <span class="keyword">return</span> self.StringKey
+<span class="keyword">end</span>
+<span class="comment">--- Returns the lua object type as string key.
+</span><span class="comment">-- Used for error handling.
+</span><span class="comment">-- @treturn String
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cPlanet:GetObjectType()
+    <span class="keyword">return</span> self.ObjectType
+<span class="keyword">end</span>
+<span class="comment">--- Is the planet a nav point?.
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cPlanet:GetIsNavPoint()
+    <span class="keyword">return</span> self.IsNavPoint
+<span class="keyword">end</span>
+<span class="comment">--- Returns the planet's owner as cFaction object.
+</span><span class="comment">-- @treturn cFaction
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cPlanet:GetOwner()
+    <span class="keyword">return</span> self.Owner
+<span class="keyword">end</span>
+<span class="comment">--- Returns the planet's home faction.
+</span><span class="comment">-- @treturn[1] bool false if single planet.
+</span><span class="comment">-- @treturn[2] cFaction if part of sector.
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cPlanet:GetHomeFaction()
+    <span class="keyword">return</span> self.BelongsToFaction
+<span class="keyword">end</span>
+<span class="comment">--- Sets a new ally for a planet.
+</span><span class="comment">-- This is not the same as the owner, and instead is being used by the diplomacy system.
+</span><span class="comment">-- @tparam cFaction newAllyObject
+</span><span class="comment">-- @within Setter Functions
+</span><span class="keyword">function</span> cPlanet:SetAlliedFaction( newAllyObject )
+    self.IsAlliedWithFaction = newAllyObject
+<span class="keyword">end</span>
+<span class="keyword">function</span> cPlanet:GetAlliedFaction()
+    <span class="keyword">return</span> self.IsAlliedWithFaction
+<span class="keyword">end</span>
+<span class="comment">--- Sets the planet's owner as cFaction object.
+</span><span class="comment">-- @tparam cFaction newOwner
+</span><span class="comment">-- @within Setter Functions
+</span><span class="keyword">function</span> cPlanet:SetOwner( newOwner )
+    self.Owner = newOwner
+<span class="keyword">end</span>
+<span class="comment">--- Sets the planet's parent GC reference.
+</span><span class="comment">-- @tparam cGalacticConquest galacticConquestReference
+</span><span class="comment">-- @within Setter Functions
+</span><span class="keyword">function</span> cPlanet:SetParent( galacticConquestReference )
+    self.Parent = galacticConquestReference
+<span class="keyword">end</span>
+<span class="comment">--- Sets the planet's owning faction.
+</span><span class="comment">-- @tparam cFaction owningFactionReference
+</span><span class="comment">-- @within Setter Functions
+</span><span class="keyword">function</span> cPlanet:SetParentFaction( owningFactionReference )
+    self.BelongsToFaction = owningFactionReference
+<span class="keyword">end</span>
+<span class="comment">--- Gets the planet's owning faction.
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @treturn owningFactionReference
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cPlanet:GetParentFaction()
+    <span class="keyword">return</span> self.BelongsToFaction
+<span class="keyword">end</span>
+<span class="comment">--- Sets the IsCapital attribute.
+</span><span class="comment">-- @tparam bool isPlanetCapital
+</span><span class="comment">-- @within Setter Functions
+</span><span class="keyword">function</span> cPlanet:SetIsCapital( isPlanetCapital )
+    self.IsCapital = isPlanetCapital
+<span class="keyword">end</span>
+<span class="comment">--- Gets the IsCapital attribute.
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cPlanet:GetIsCapital()
+    <span class="keyword">return</span> self.IsCapital
+<span class="keyword">end</span>
+<span class="comment">--- Returns the localisation key of the planet.
+</span><span class="comment">-- @treturn string
+</span><span class="keyword">function</span> cPlanet:GetStringKey()
+    <span class="keyword">return</span> self.StringKey
+<span class="keyword">end</span>
+<span class="comment">--- Returns the contested state.
+</span><span class="comment">-- @treturn bool
+</span><span class="keyword">function</span> cPlanet:GetContested()
+    <span class="keyword">return</span> self.Contested
+<span class="keyword">end</span>
+<span class="comment">--- Sets the contested state.
+</span><span class="comment">-- @tparam bool state
+</span><span class="keyword">function</span> cPlanet:SetContested( state )
+    self.Contested = state
+<span class="keyword">end</span>
+<span class="keyword">function</span> cPlanet:GetCurrentDiplomaticInfluenceOwnerRaw()
+    <span class="keyword">return</span> self.DiplomaticValue
+<span class="keyword">end</span>
+<span class="comment">--- Applies the owner faction's trait modifiers to the raw rating.
+</span><span class="comment">-- This function should be used to calculate diplomacy related operations.
+</span><span class="comment">-- @treturn number Raw diplomatic rating.
+</span><span class="keyword">function</span> cPlanet:GetCurrentDiplomaticInfluenceOwner()
+    <span class="keyword">local</span> lRawDiplVal = self:GetCurrentDiplomaticInfluenceOwnerRaw()
+    <span class="keyword">local</span> lTraitTable = self.Owner:GetTraits()
+    <span class="keyword">for</span> _,facTrait <span class="keyword">in</span> <span class="global">pairs</span>( lTraitTable ) <span class="keyword">do</span>
+        lRawDiplVal = lRawDiplVal * facTrait.DiplomaticInfluenceMult
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> lRawDiplVal
+<span class="keyword">end</span>
+<span class="keyword">function</span> cPlanet:GetCurrentDiplomaticInfluenceForeignFaction( cFacObj )
+    <span class="keyword">if</span> self.ForeignDiplomaticInfuence[cFacObj:GetName()] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">return</span> self.ForeignDiplomaticInfuence[cFacObj:GetName()]
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> <span class="number">0</span>
+<span class="keyword">end</span>
+<span class="comment">--- Returns the prefix for all planet related global values.
+</span><span class="comment">-- @treturn string
+</span><span class="keyword">function</span> cPlanet:GetGlobalValuePrefix()
+    <span class="keyword">local</span> gValString
+    <span class="keyword">local</span> gValPref = <span class="string">"GVAL_PLANET_"</span>
+    <span class="keyword">local</span> pName = self:GetName()
+    pName = ConvertToUpperCase( pName )
+    <span class="keyword">local</span> gValString = gValPref..pName..<span class="string">"_"</span>
+    <span class="keyword">return</span> gValString
+<span class="keyword">end</span>
+<span class="comment">--- Adds a new planet object to the planet in reach table.
+</span><span class="comment">-- @tparam cPlanet newPlanetInReach
+</span><span class="keyword">function</span> cPlanet:AddPlanetInReach( newPlanetInReach )
+    <span class="keyword">if</span> self.PlanetsInReach[newPlanetInReach:GetName()] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        ThrowObjectAlreadyRegisteredError( newPlanetInReach:GetStringKey() )
+    <span class="keyword">else</span>
+        self.PlanetsInReach[newPlanetInReach:GetName()] = newPlanetInReach
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="keyword">function</span> cPlanet:ChangeOwner( cFactionNewOwner )
+<span class="comment">-- Kad 23/06/2017 16:27:27 - We'll just change the player object owner in here and let the owner handler pick up the rest.
+</span>    self:GetPlanetLocation().Change_Owner( cFactionNewOwner:GetPlayerObject() )
+<span class="keyword">end</span>
+<span class="comment">--- Evaluates a planet's current owner.
+</span><span class="comment">-- If the owners don't match, or are not set this will trigger a EVENTTYPE_PLANET_OWNERCHANGE
+</span><span class="comment">-- @within Evaluations
+</span><span class="keyword">function</span> cPlanet:EvaluateOwner()
+    <span class="comment">-- Owning player object; that's what the game sees. In addition this is the de-facto owner of the planet.
+</span>    <span class="keyword">local</span> owningPlayerObject = self.GameObject.Get_Owner()
+    <span class="comment">-- the LUA cFaction Object; that's what the framework sees:
+</span>    <span class="keyword">local</span> owningFactionObject = self.Parent:GetFactionObjectByPlayerObject( owningPlayerObject )
+    <span class="keyword">if</span> owningFactionObject <span class="keyword">then</span>
+        <span class="keyword">if</span> self:GetOwner() <span class="keyword">then</span>
+            <span class="keyword">if</span> self:GetOwner() ~= owningFactionObject <span class="keyword">then</span>
+                <span class="comment">-- Updating the cFaction owner:
+</span>                <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+                    debugPlanetOwnerChange( self:GetStringKey(), self:GetOwner():GetStringKey(), owningFactionObject:GetStringKey() )
+                <span class="keyword">end</span>
+                self:SetOwner( owningFactionObject )
+                self:EvaluateBuildings()
+                self:UpdatePersistentObjects()
+                self:EvaluateBuildings()
+            <span class="keyword">end</span>
+        <span class="keyword">else</span>
+            self:SetOwner( owningFactionObject )
+            self.IsAlliedWithFaction = owningFactionObject
+        <span class="keyword">end</span>
+    <span class="keyword">else</span>
+        self:SetOwner( <span class="keyword">false</span> )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Updates the building lists on the planet.
+</span><span class="comment">-- TODO Try triggering the update via the built event from the gamescoring.lua module
+</span><span class="keyword">function</span> cPlanet:EvaluateBuildings()
+    <span class="comment">-- Local tables to prevent invalidating the old data.
+</span>    <span class="keyword">local</span> sBuild = { }
+    <span class="keyword">local</span> gBuild = { }
+    <span class="comment">-- Set all GUI objects invisible:
+</span>    <span class="keyword">for</span> _,guiObj <span class="keyword">in</span> <span class="global">pairs</span>( self.GUIDisplayedObjects ) <span class="keyword">do</span>
+        guiObj.IsVisible = <span class="keyword">false</span>
+    <span class="keyword">end</span>
+    <span class="comment">-- Get all buildings:
+</span>    <span class="keyword">local</span> buildingList = Find_All_Objects_Of_Type( <span class="string">"Structure"</span> )
+    <span class="keyword">for</span> index,objRef <span class="keyword">in</span> <span class="global">pairs</span>( buildingList ) <span class="keyword">do</span>
+        <span class="keyword">if</span> TestValid( objRef ) <span class="keyword">then</span>
+            <span class="keyword">if</span> objRef.Get_Planet_Location() == self:GetPlanetLocation() <span class="keyword">then</span>
+                <span class="keyword">local</span> cObjType = self.Parent.ObjectManager:GetCGameObjectTypeByReference( objRef )
+                <span class="keyword">if</span> cObjType <span class="keyword">then</span>
+                    <span class="keyword">if</span> cObjType:IsTaggedAs( <span class="string">"ORBITAL"</span> ) <span class="keyword">then</span>
+                        <span class="global">table</span>.insert( sBuild, objRef )
+                        <span class="keyword">local</span> gui3DObj = cObjType:GetGUIDummy()
+                        <span class="keyword">if</span> gui3DObj <span class="keyword">then</span>
+                            <span class="keyword">if</span> self.GUIDisplayedObjects[gui3DObj].ObjectReference <span class="keyword">then</span>
+                                self.GUIDisplayedObjects[gui3DObj].IsVisible = <span class="keyword">true</span>
+                            <span class="keyword">else</span>
+                                self.GUIDisplayedObjects[gui3DObj].ObjectReference = self:AttachGUI3DObject( self.GUIDisplayedObjects[gui3DObj].ObjectName )
+                                self.GUIDisplayedObjects[gui3DObj].IsVisible = <span class="keyword">true</span>
+                            <span class="keyword">end</span>
+                        <span class="keyword">end</span>
+                    <span class="keyword">elseif</span> cObjType:IsTaggedAs( <span class="string">"GROUND"</span> ) <span class="keyword">then</span>
+                        <span class="global">table</span>.insert( gBuild, objRef )
+                        <span class="keyword">local</span> gui3DObj = cObjType:GetGUIDummy()
+                        <span class="keyword">if</span> gui3DObj <span class="keyword">then</span>
+                            <span class="keyword">if</span> self.GUIDisplayedObjects[gui3DObj].ObjectReference <span class="keyword">then</span>
+                                self.GUIDisplayedObjects[gui3DObj].IsVisible = <span class="keyword">true</span>
+                            <span class="keyword">else</span>
+                                self.GUIDisplayedObjects[gui3DObj].ObjectReference = self:AttachGUI3DObject( self.GUIDisplayedObjects[gui3DObj].ObjectName )
+                                self.GUIDisplayedObjects[gui3DObj].IsVisible = <span class="keyword">true</span>
+                            <span class="keyword">end</span>
+                        <span class="keyword">end</span>
+                    <span class="keyword">end</span>
+                <span class="keyword">end</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">for</span> _,guiObj <span class="keyword">in</span> <span class="global">pairs</span>( self.GUIDisplayedObjects ) <span class="keyword">do</span>
+        <span class="comment">-- Temporary fix to keep persistent objects displayed after a space battle.
+</span>        <span class="comment">-- Re-spawning them is technically not desired, but in this case needed.
+</span>        <span class="keyword">if</span> <span class="keyword">not</span> guiObj.IsVisible <span class="keyword">then</span>
+            <span class="keyword">if</span> guiObj.ObjectReference <span class="keyword">then</span>
+                guiObj.ObjectReference.Despawn()
+                guiObj.ObjectReference = <span class="keyword">false</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+        <span class="comment">-- if guiObj.IsVisible then
+</span>        <span class="comment">--     if guiObj.ObjectReference then
+</span>        <span class="comment">--         self:ShowAttachedGUIObject( guiObj.ObjectReference )
+</span>        <span class="comment">--     end
+</span>        <span class="comment">-- else
+</span>        <span class="comment">--     if guiObj.ObjectReference then
+</span>        <span class="comment">--         self:HideAttachedGUIObject( guiObj.ObjectReference )
+</span>        <span class="comment">--     end
+</span>        <span class="comment">-- end
+</span>    <span class="keyword">end</span>
+    self.SpaceBuildings = sBuild <span class="comment">-- Invalidate the old building tables.
+</span>    self.GroundBuildings = gBuild <span class="comment">-- Invalidate the old building tables.
+</span>    self.SpaceBuildingsBuiltNumber = <span class="global">table</span>.getn( self.SpaceBuildings ) <span class="comment">-- update building count.
+</span>    self.GroundBuildingsBuiltNumber = <span class="global">table</span>.getn( self.GroundBuildings ) <span class="comment">-- update building count.
+</span><span class="keyword">end</span>
+<span class="comment">--- Returns the string keys for the space buildings on a planet.
+</span><span class="comment">-- @treturn table
+</span><span class="keyword">function</span> cPlanet:GetSpaceBuildingsAsString()
+    <span class="keyword">local</span> retTable = {}
+    <span class="keyword">for</span> _,objRef <span class="keyword">in</span> <span class="global">pairs</span>( self.SpaceBuildings ) <span class="keyword">do</span>
+        <span class="keyword">local</span> cObjType = self.Parent.ObjectManager:GetCGameObjectTypeByReference( objRef )
+        <span class="keyword">if</span> cObjType <span class="keyword">then</span>
+            <span class="keyword">local</span> stringKey = cObjType:GetStringKey()
+            <span class="global">table</span>.insert( retTable, stringKey )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> <span class="global">table</span>.getn( retTable ) &gt; <span class="number">0</span> <span class="keyword">then</span>
+        <span class="keyword">return</span> retTable
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+<span class="comment">--- Returns the string keys for the ground buildings on the planet.
+</span><span class="comment">-- @treturn table
+</span><span class="keyword">function</span> cPlanet:GetGroundBuildingsAsString()
+    <span class="keyword">local</span> retTable = {}
+    <span class="keyword">for</span> _,objRef <span class="keyword">in</span> <span class="global">pairs</span>( self.GroundBuildings ) <span class="keyword">do</span>
+        <span class="keyword">local</span> cObjType = self.Parent.ObjectManager:GetCGameObjectTypeByReference( objRef )
+        <span class="keyword">if</span> cObjType <span class="keyword">then</span>
+            <span class="keyword">local</span> stringKey = cObjType:GetStringKey()
+            <span class="global">table</span>.insert( retTable, stringKey )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> <span class="global">table</span>.getn( retTable ) &gt; <span class="number">0</span> <span class="keyword">then</span>
+        <span class="keyword">return</span> retTable
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+<span class="comment">--- Evaluates, whether an enemy fleet orbits a planet.
+</span><span class="comment">-- @treturn bool Returns a boolean depending on checked result.
+</span><span class="comment">-- @treturn GalacticFleetObject Returns the contesting fleet object. Can be used to check for present diplomats, etc.
+</span><span class="keyword">function</span> cPlanet:EvaluatePlanetContested()
+    <span class="keyword">local</span> gFleets = self.Parent.GalacticFleets
+    <span class="keyword">for</span> _,fleetObj <span class="keyword">in</span> <span class="global">pairs</span>( gFleets ) <span class="keyword">do</span>
+        <span class="keyword">if</span> fleetObj.Get_Parent_Object() == self:GetPlanetLocation() <span class="keyword">and</span> fleetObj.Get_Owner() ~= self.GameObject.Get_Owner() <span class="keyword">then</span>
+            <span class="keyword">if</span> self.DebugModeActive <span class="keyword">and</span> <span class="keyword">not</span> self:GetContested() <span class="keyword">then</span>
+                debugPlanetContested( self:GetStringKey() )
+            <span class="keyword">end</span>
+            self:SetContested( <span class="keyword">true</span> )
+            <span class="keyword">return</span> <span class="keyword">true</span>, fleetObj
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    self:SetContested( <span class="keyword">false</span> )
+    <span class="keyword">return</span> <span class="keyword">false</span>, <span class="keyword">false</span>
+<span class="keyword">end</span>
+<span class="comment">--- Evaluates the influence on the planet of the owner faction.
+</span><span class="comment">-- This returns the raw influence without the faction traits applied.
+</span><span class="keyword">function</span> cPlanet:EvaluateDiplomaticInfluenceOwnerFactionRaw()
+    <span class="comment">-- Backing up tables to prevent invalidations via the building update cycle:
+</span>    <span class="keyword">local</span> oBldngTable = self.SpaceBuildings
+    <span class="comment">-- Backing up tables to prevent invalidations via the building update cycle:
+</span>    <span class="keyword">local</span> gBldngTable = self.GroundBuildings
+    <span class="comment">-- we won't reuse the old influence, instead calculate a new one.
+</span>    <span class="keyword">local</span> lDipInf = <span class="number">0.0</span>
+    <span class="keyword">local</span> prevVal = self.DiplomaticValue
+    <span class="comment">-- Kad 18/06/2017 13:56:13 - We take a certain percentage of the old influence into account, so the influence does grow slowly, even if no diplomat is present.
+</span>    <span class="keyword">local</span> prevValMult = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_Diplomacy_OwnerPreviousEvalValueKept
+    prevVal = prevVal * prevValMult
+    lDipInf = lDipInf + prevVal
+    <span class="keyword">for</span> _,objRef <span class="keyword">in</span> <span class="global">pairs</span>( oBldngTable ) <span class="keyword">do</span>
+        <span class="keyword">if</span> TestValid( objRef ) <span class="keyword">then</span>
+            <span class="keyword">local</span> cObjType = self.Parent.ObjectManager:GetCGameObjectTypeByReference( objRef )
+            <span class="keyword">if</span> cObjType  <span class="keyword">then</span>
+                lDipInf = lDipInf + cObjType:GetDiplomaticInfluence()
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">for</span> _,objRef <span class="keyword">in</span> <span class="global">pairs</span>( gBldngTable ) <span class="keyword">do</span>
+        <span class="keyword">if</span> TestValid( objRef ) <span class="keyword">then</span>
+            <span class="keyword">local</span> cObjType = self.Parent.ObjectManager:GetCGameObjectTypeByReference( objRef )
+            <span class="keyword">if</span> cObjType  <span class="keyword">then</span>
+                lDipInf = lDipInf + cObjType:GetDiplomaticInfluence()
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="comment">-- Now evaluate units as well:
+</span>    <span class="keyword">local</span> ownerUnits = Find_All_Objects_Of_Type( self.Owner:GetPlayerObject() )
+    <span class="keyword">local</span> lDipMult = <span class="number">1.0</span>
+    <span class="keyword">for</span> _,unitRef <span class="keyword">in</span> <span class="global">pairs</span>( ownerUnits ) <span class="keyword">do</span>
+        <span class="keyword">if</span> TestValid( unitRef ) <span class="keyword">and</span> unitRef.Get_Planet_Location() == self:GetPlanetLocation() <span class="keyword">then</span>
+            <span class="keyword">local</span> cObjType = self.Parent.ObjectManager:GetCGameObjectTypeByReference( unitRef )
+            <span class="keyword">if</span> cObjType <span class="keyword">then</span>
+                <span class="keyword">if</span> cObjType:IsTaggedAs( <span class="string">"DIPLOMAT"</span> ) <span class="keyword">then</span>
+                    <span class="comment">-- We use the object's traits here:
+</span>                    <span class="keyword">for</span> _,unitTrait <span class="keyword">in</span> <span class="global">pairs</span>( cObjType.Traits ) <span class="keyword">do</span>
+                        lDipInf = lDipInf + unitTrait.DiplomaticInfluenceBaseValue
+                        lDipMult = lDipMult * unitTrait.DiplomaticInfluenceMultiplier
+                    <span class="keyword">end</span>
+                <span class="keyword">end</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="comment">-- Kad 18/06/2017 13:57:38 - We might want to cap the influence at a certain level for a planet.
+</span>    lDipInf = lDipInf * lDipMult
+    <span class="keyword">local</span> maxInf = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_Diplomacy_InfluenceOnPlanetCap
+    lDipInf = ClampValue( lDipInf, <span class="number">0</span>, maxInf )
+    self.DiplomaticValue = lDipInf
+<span class="keyword">end</span>
+<span class="comment">--- Returns the current raw diplomatic value.
+</span><span class="comment">-- Calling this function forces an update of the self.DiplomaticAttribute
+</span><span class="comment">-- @treturn number self.DiplomaticValue
+</span><span class="keyword">function</span> cPlanet:GetDiplomaticRatingRaw()
+    self:EvaluateDiplomaticInfluenceOwnerFactionRaw()
+    <span class="keyword">return</span> self.DiplomaticValue
+<span class="keyword">end</span>
+<span class="comment">--- Applies the owner faction's trait modifiers to the raw rating.
+</span><span class="comment">-- This function should be used to calculate diplomacy related operations.
+</span><span class="comment">-- @treturn number Raw diplomatic rating.
+</span><span class="keyword">function</span> cPlanet:GetDiplomaticRating()
+    <span class="keyword">local</span> lRawDiplVal = self:GetDiplomaticRatingRaw()
+    <span class="keyword">local</span> lTraitTable = self.Owner:GetTraits()
+    <span class="keyword">for</span> _,facTrait <span class="keyword">in</span> <span class="global">pairs</span>( lTraitTable ) <span class="keyword">do</span>
+        lRawDiplVal = lRawDiplVal * facTrait.DiplomaticInfluenceMult
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> lRawDiplVal
+<span class="keyword">end</span>
+<span class="comment">--- Evaluates the influence on the planet of a given faction.
+</span><span class="comment">-- This returns the raw influence without the faction traits applied.
+</span><span class="comment">-- @tparam cFaction cFacObj Faction to be evaluated.
+</span><span class="comment">-- @tparam cGameObjectType cGameObjDiplomatType Diplomat leading the talks.
+</span><span class="keyword">function</span> cPlanet:EvaluateForeignDiplomaticInfuenceRaw( cFacObj, cGameObjDiplomatType )
+    <span class="keyword">local</span> lDipInf = <span class="number">0.0</span>
+    <span class="keyword">local</span> lDipMult = <span class="number">1.0</span>
+    <span class="keyword">local</span> upperCap = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_Diplomacy_InfluenceOnPlanetCap
+    <span class="comment">-- Kad 08/06/2017 17:33:24 - We're now only updating the diplomat that does the sweet talking.
+</span>    <span class="keyword">for</span> _,unitTrait <span class="keyword">in</span> <span class="global">pairs</span>( cGameObjDiplomatType.Traits ) <span class="keyword">do</span>
+        lDipInf = lDipInf + unitTrait.DiplomaticInfluenceBaseValue
+        lDipMult = lDipMult * unitTrait.DiplomaticInfluenceMultiplier
+    <span class="keyword">end</span>
+    lDiplInf = lDipInf * lDipMult
+    lDiplInf = ClampValue( lDiplInf, <span class="number">0</span>, upperCap )
+    <span class="keyword">if</span> self.ForeignDiplomaticInfuence[cFacObj:GetName()] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">local</span> lInf = self.ForeignDiplomaticInfuence[cFacObj:GetName()]
+        lInf = lInf + lDiplInf
+        lInf = ClampValue( lInf, <span class="number">0</span>, upperCap )
+        self.ForeignDiplomaticInfuence[cFacObj:GetName()] = lInf
+    <span class="keyword">else</span>
+        self.ForeignDiplomaticInfuence[cFacObj:GetName()] = lDiplInf
+    <span class="keyword">end</span>
+    <span class="comment">-- Kad 08/06/2017 17:40:54 - Update the other factions accordingly. This does take the traits into account!
+</span>    <span class="keyword">local</span> fInfluencingMult = <span class="number">1.0</span>
+    <span class="keyword">local</span> dFacTraits = cFacObj:GetTraits()
+    <span class="keyword">for</span> _,dFacTrait <span class="keyword">in</span> <span class="global">pairs</span>( dFacTraits ) <span class="keyword">do</span>
+        fInfluencingMult = fInfluencingMult * dFacTrait.DiplomaticPowerMult
+    <span class="keyword">end</span>
+    <span class="keyword">for</span> factionName,Influence <span class="keyword">in</span> <span class="global">pairs</span>( self.ForeignDiplomaticInfuence ) <span class="keyword">do</span>
+        <span class="keyword">if</span> factionName ~= cFacObj:GetName() <span class="keyword">then</span>
+            <span class="keyword">local</span> fTraits = self.Parent.Factions[factionName]:GetTraits()
+            <span class="keyword">local</span> influencedMult = <span class="number">1.0</span>
+            <span class="keyword">for</span> _,fTrait <span class="keyword">in</span> <span class="global">pairs</span>( fTraits ) <span class="keyword">do</span>
+                influencedMult = influencedMult * fTrait.DiplomaticInfluenceMult
+            <span class="keyword">end</span>
+            <span class="keyword">local</span> diplDiff = lDiplInf * fInfluencingMult * nfluencedMult
+            Influence = Influence - diplDiff
+            <span class="comment">-- Kad 08/06/2017 18:04:51 - 0 &lt; Influence &lt; InfluenceCap
+</span>            Influence = ClampValue( Influence, <span class="number">0</span>, upperCap )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Returns the current raw diplomatic value of a given faction.
+</span><span class="comment">-- Calling this function forces an update of the self.ForeignDiplomaticInfuence table.
+</span><span class="comment">-- @tparam cFaction cFacObj Faction to be evaluated.
+</span><span class="comment">-- @tparam cGameObjectType cGameObjDiplomatType Diplomat leading the talks.
+</span><span class="comment">-- @treturn number ForeignDiplomaticInfuence[cFacObj:GetName()]
+</span><span class="keyword">function</span> cPlanet:GetForeignDiplomaticInfuenceRaw( cFacObj, cGameObjDiplomatType )
+    self:EvaluateForeignDiplomaticInfuenceRaw( cFacObj, cGameObjDiplomatType )
+    <span class="keyword">return</span> self.ForeignDiplomaticInfuence[cFacObj:GetName()]
+<span class="keyword">end</span>
+<span class="comment">--- Applies the desired faction's trait modifiers to the raw rating.
+</span><span class="comment">-- This function should be used to calculate diplomacy related operations.
+</span><span class="comment">-- @tparam cFaction cFacObj Faction to be evaluated.
+</span><span class="comment">-- @tparam cGameObjectType cGameObjDiplomatType Diplomat leading the talks.
+</span><span class="comment">-- @treturn number Raw diplomatic rating.
+</span><span class="keyword">function</span> cPlanet:GetForeignDiplomaticInfuence( cFacObj, cGameObjDiplomatType )
+    <span class="keyword">local</span> lRawDiplVal = self:GetForeignDiplomaticInfuenceRaw( cFacObj, cGameObjDiplomatType )
+    <span class="keyword">local</span> lTraitTable = cFacObj:GetTraits()
+    <span class="keyword">for</span> _,facTrait <span class="keyword">in</span> <span class="global">pairs</span>( lTraitTable ) <span class="keyword">do</span>
+        lRawDiplVal = lRawDiplVal * facTrait.DiplomaticPowerMult
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> lRawDiplVal
+<span class="keyword">end</span>
+<span class="comment">--- Attaches a persistent object to the planet.
+</span><span class="comment">-- This object will be stuck at this specific planet until a MP_POD message referencing this object has been fired.
+</span><span class="comment">-- @tparam string objType
+</span><span class="keyword">function</span> cPlanet:AddPersistentObject( objType )
+    <span class="keyword">if</span> self.PersistentBuildings[objType] == <span class="keyword">nil</span> <span class="keyword">then</span>
+        self.PersistentBuildings[objType] = <span class="number">1</span>
+    <span class="keyword">else</span>
+        self.PersistentBuildings[objType] = self.PersistentBuildings[objType] + <span class="number">1</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Removes a registered persistent object type from a planet.
+</span><span class="comment">-- An incoming MP_POD message will create an event that in turn calls this function with the desired persistent object.
+</span><span class="comment">-- @tparam string objType
+</span><span class="keyword">function</span> cPlanet:RemovePersistentObject( objType )
+    <span class="keyword">if</span> self.PersistentBuildings[objType] ~= <span class="keyword">nil</span>  <span class="keyword">or</span> self.PersistentBuildings[objType] &lt; <span class="number">1</span> <span class="keyword">then</span>
+        self.PersistentBuildings[objType] = <span class="number">0</span>
+    <span class="keyword">else</span>
+        self.PersistentBuildings[objType] = self.PersistentBuildings[objType] - <span class="number">1</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Update cycle which ensures that persistent objects are in fact still residing on the planet.
+</span><span class="comment">-- This function will re-spawn any missing persistent object attached to the planet.
+</span><span class="keyword">function</span> cPlanet:UpdatePersistentObjects()
+    <span class="keyword">for</span> objType, objCount <span class="keyword">in</span> <span class="global">pairs</span>( self.PersistentBuildings ) <span class="keyword">do</span>
+        <span class="keyword">local</span> objTypeTable = Find_All_Objects_Of_Type( objType )
+        <span class="keyword">local</span> objTypePresent = <span class="number">0</span>
+        <span class="keyword">for</span> _,objRef <span class="keyword">in</span> <span class="global">pairs</span>( objTypeTable ) <span class="keyword">do</span>
+            <span class="keyword">if</span> IsContentOfTable( self.SpaceBuildings, objRef ) <span class="keyword">or</span> IsContentOfTable( self.GroundBuildings, objRef ) <span class="keyword">then</span>
+                objTypePresent = objTypePresent + <span class="number">1</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+        <span class="keyword">if</span> objTypePresent &lt; objCount <span class="keyword">then</span>
+            <span class="keyword">local</span> respawnTable = {}
+            <span class="keyword">for</span> i = <span class="number">1</span>, objCount - objTypePresent, <span class="number">1</span> <span class="keyword">do</span>
+                <span class="global">table</span>.insert( respawnTable, objType )
+            <span class="keyword">end</span>
+            SpawnList( respawnTable, self:GetPlanetLocation(), self:GetPlanetLocation().Get_Owner(), <span class="keyword">true</span>, <span class="keyword">true</span> )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Hides a 3D preview of a present object on the planet.
+</span><span class="comment">-- This will only hide objects which are already present on a planet.
+</span><span class="comment">-- @tparam GameObject objRef
+</span><span class="keyword">function</span> cPlanet:HideAttachedGUIObject( objRef )
+    objRef.Hide( <span class="keyword">true</span> )
+<span class="keyword">end</span>
+<span class="comment">--- Shows an attached GUI 3D Preview.
+</span><span class="comment">-- this will only show objects which have already been spawned for the planet.
+</span><span class="comment">-- @tparam GameObject objRef
+</span><span class="keyword">function</span> cPlanet:ShowAttachedGUIObject( objRef )
+    objRef.Hide( <span class="keyword">false</span> )
+<span class="keyword">end</span>
+<span class="comment">--- Attaches a new 3D GUI preview game object to the planet.
+</span><span class="comment">-- If a preview has been requested that has not yet been spawned, this function will create it.
+</span><span class="comment">-- @tparam string objType
+</span><span class="comment">-- @treturn[1] GameObject 3D GUI Object
+</span><span class="keyword">function</span> cPlanet:AttachGUI3DObject( objType )
+    <span class="keyword">local</span> GUI3DObj = Create_Generic_Object( objType, self:GetPlanetLocation().Get_Position(), Find_Player( <span class="string">"Neutral"</span> ) )
+    <span class="keyword">return</span> GUI3DObj
+<span class="keyword">end</span>
+
+<span class="keyword">function</span> cPlanet:SetActiveDiplomaticMission()
+    self.ActiveDiplomaticMission = <span class="keyword">true</span>
+<span class="keyword">end</span>
+<span class="keyword">function</span> cPlanet:SetInactiveDiplomaticMission()
+    self.ActiveDiplomaticMission = <span class="keyword">false</span>
+<span class="keyword">end</span>
+<span class="keyword">function</span> cPlanet:GetActiveDiplomaticMission()
+    <span class="keyword">return</span> self.ActiveDiplomaticMission
+<span class="keyword">end</span>
+<span class="keyword">function</span> cPlanet:TakeDamage( damageTaken )
+    <span class="keyword">if</span> self.GroundAccessible <span class="keyword">then</span> <span class="comment">-- Kad 07/07/2017 11:51:57 - Let's prevent someone using this function on planets without ground maps, usually we wouldn't do that, but in this case we're better safe than sorry...
+</span>        <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+            Game_Message( <span class="string">"TEXT_DEBUG_PLANET_TAKING_DAMAGE"</span> )
+        <span class="keyword">end</span>
+        <span class="comment">-- Kad 04/07/2017 19:22:22 - Do we have a shield generator?
+</span>        <span class="keyword">local</span> bTab = self.GroundBuildings
+        <span class="keyword">if</span> self:IsShielded() <span class="keyword">then</span>
+            <span class="comment">-- Kad 04/07/2017 19:31:26 - Damage shield:
+</span>            self.CurrentShieldPoints = self.CurrentShieldPoints - damageTaken
+            <span class="keyword">local</span> carryOnDamage = <span class="number">0</span> <span class="comment">-- Kad 05/07/2017 17:40:17 - ... my wayward son ...
+</span>            <span class="keyword">if</span> self.CurrentShieldPoints &lt; <span class="number">0</span> <span class="keyword">then</span>
+                carryOnDamage = self.CurrentShieldPoints
+                self.CurrentShieldPoints = <span class="number">0</span>
+                <span class="keyword">for</span> id, objRef <span class="keyword">in</span> <span class="global">pairs</span>( bTab ) <span class="keyword">do</span>
+                    <span class="keyword">local</span> objRefType = self.Parent.ObjectManager:GetCGameObjectTypeByReference( objRef )
+                    <span class="keyword">if</span> objRefType <span class="keyword">then</span>
+                        <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+                            Game_Message( <span class="string">"TEXT_DEBUG_PLANET_TAKING_SHEILD_DAMAGE"</span> )
+                        <span class="keyword">end</span>
+                        <span class="keyword">if</span> objRefType:GetIsPlanetaryShieldGenerator() <span class="keyword">then</span>
+                            <span class="keyword">if</span> self.PersistentBuildings[objRefType:GetObjectTypeXML()] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+                                self:RemovePersistentObject( objRefType:GetObjectTypeXML() )
+                            <span class="keyword">end</span>
+                            <span class="keyword">if</span> self.PersistentBuildings[objRefType:GetObjectTypeCapital()] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+                                self:RemovePersistentObject( objRefType:GetObjectTypeCapital() )
+                            <span class="keyword">end</span>
+                            DestroyBuilding( objRef, <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_PD_BombardmentBuildingDestructionParticle )
+                            self:AddPersistentObject( <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_PD_RuinObject )
+                            <span class="comment">-- Kad 06/07/2017 13:22:05 - Remove the object from our local table, the building manager will take care of updating the actual one.
+</span>                            bTab[id] = <span class="keyword">nil</span>
+                        <span class="keyword">end</span>
+                    <span class="keyword">end</span>
+                <span class="keyword">end</span>
+                self.CurrentHealth = self.CurrentHealth + carryOnDamage
+            <span class="keyword">end</span>
+        <span class="keyword">else</span>
+            <span class="comment">-- Kad 04/07/2017 19:28:24 - Damage the planet:
+</span>            self.CurrentHealth = self.CurrentHealth - damageTaken
+            <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+                Game_Message( <span class="string">"TEXT_DEBUG_PLANET_TAKING_HEALTH_DAMAGE"</span> )
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+        <span class="keyword">if</span> self.CurrentHealth &lt; self.MaxHealth <span class="keyword">then</span>
+            <span class="keyword">local</span> healthRatio = self.CurrentHealth / self.MaxHealth
+            <span class="comment">-- Kad 05/07/2017 13:46:28 - Blow random stuff to pieces:
+</span>            <span class="keyword">for</span> id,objRef <span class="keyword">in</span> <span class="global">pairs</span>( bTab ) <span class="keyword">do</span>
+                <span class="keyword">if</span> GameRandom.Get_Float() &gt; healthRatio <span class="keyword">then</span>
+                    <span class="keyword">local</span> objRefType = self.Parent.ObjectManager:GetCGameObjectTypeByReference( objRef )
+                    <span class="keyword">if</span> objRefType <span class="keyword">then</span>
+                        <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+                            Game_Message( <span class="string">"TEXT_DEBUG_PLANET_DESTROYING_BUILDING"</span> )
+                        <span class="keyword">end</span>
+                        <span class="keyword">if</span> <span class="keyword">not</span> objRefType:GetIsRuin() <span class="keyword">then</span>
+                            <span class="keyword">if</span> self.PersistentBuildings[objRefType:GetObjectTypeXML()] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+                                self:RemovePersistentObject( objRefType:GetObjectTypeXML() )
+                            <span class="keyword">end</span>
+                            <span class="keyword">if</span> self.PersistentBuildings[objRefType:GetObjectTypeCapital()] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+                                self:RemovePersistentObject( objRefType:GetObjectTypeCapital() )
+                            <span class="keyword">end</span>
+                            DestroyBuilding( objRef, <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_PD_BombardmentBuildingDestructionParticle )
+                            self:AddPersistentObject( <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_PD_RuinObject )
+                            bTab[id] = <span class="keyword">nil</span> <span class="comment">-- Kad 06/07/2017 15:07:06 - Prevent this object from doing anything in future calculations.
+</span>                        <span class="keyword">end</span>
+                    <span class="keyword">end</span>
+                <span class="keyword">end</span>
+            <span class="keyword">end</span>
+            <span class="keyword">local</span> groundUnitTable = Find_All_Objects_Of_Type( <span class="string">"Infantry | Vehicle | Air"</span> ) <span class="comment">-- Kad 06/07/2017 13:28:11 - We omit heroes later on
+</span>            <span class="keyword">for</span> _,objRef <span class="keyword">in</span> <span class="global">pairs</span>( groundUnitTable ) <span class="keyword">do</span>
+                <span class="keyword">if</span> TestValid( objRef ) <span class="keyword">then</span>
+                    <span class="keyword">if</span> objRef.Get_Planet_Location() == self:GetPlanetLocation() <span class="keyword">and</span> objRef.Get_Owner() == self:GetOwner():GetPlayerObject() <span class="keyword">then</span>
+                        <span class="keyword">if</span> <span class="keyword">not</span> objRef.Get_Type().Is_Hero() <span class="keyword">then</span> <span class="comment">-- Kad 06/07/2017 13:29:05 - Don't kill heroes.
+</span>                            <span class="keyword">if</span> GameRandom.Get_Float() &gt; healthRatio <span class="keyword">then</span>
+                                DestroyUnit( objRef, <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_PD_BombardmentUnitDestructionParticle )
+                            <span class="keyword">end</span>
+                        <span class="keyword">end</span>
+                    <span class="keyword">end</span>
+                <span class="keyword">end</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="keyword">function</span> cPlanet:GetHealth()
+    <span class="keyword">local</span> currPercentage = self.CurrentHealth / self.MaxHealth
+    <span class="keyword">return</span> currPercentage
+<span class="keyword">end</span>
+<span class="keyword">function</span> cPlanet:GetShield()
+    <span class="keyword">local</span> currPercentage = self.CurrentShieldPoints / self.MaxShieldPoints
+    <span class="keyword">return</span> currPercentage
+<span class="keyword">end</span>
+<span class="keyword">function</span> cPlanet:IsShielded()
+    <span class="keyword">local</span> bTab = self.GroundBuildings
+    <span class="keyword">local</span> isShielded = <span class="keyword">false</span>
+    <span class="keyword">for</span> _,objRef <span class="keyword">in</span> <span class="global">pairs</span>( bTab ) <span class="keyword">do</span>
+        <span class="keyword">local</span> objRefType = self.Parent.ObjectManager:GetCGameObjectTypeByReference( objRef )
+        <span class="keyword">if</span> objRefType <span class="keyword">then</span>
+            <span class="keyword">if</span> objRefType:GetIsPlanetaryShieldGenerator() <span class="keyword">then</span>
+                <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+                    Game_Message( <span class="string">"TEXT_DEBUG_PLANETARY_SHIELD_PRESENT"</span> )
+                <span class="keyword">end</span>
+                isShielded = <span class="keyword">true</span>
+                <span class="keyword">break</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> isShielded
+<span class="keyword">end</span>
+<span class="keyword">function</span> cPlanet:GetCurrentState()
+    <span class="keyword">return</span> self.CurrentState
+<span class="keyword">end</span>
+
+<span class="keyword">function</span> cPlanet:AdvanceState( newState, cFactionAttacker, cFactionDefender )
+    <span class="keyword">if</span> IsContentOfTable( self.ApplicableStates, newState ) <span class="keyword">and</span> self:GetCurrentState() ~= newState <span class="keyword">then</span> <span class="comment">-- Kad 14/07/2017 15:56:07 - We don't want to change from the current state to the current state that'll just end up being fucky.
+</span>        self:SetNewState( newState, cFactionAttacker, cFactionDefender )
+    <span class="keyword">else</span>
+        <span class="comment">-- Kad 07/07/2017 17:49:47 - TODO Throw error!
+</span>    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">function</span> cPlanet:SetNewState( newState, cFactionAttacker, cFactionDefender )
+    <span class="comment">-- Kad 07/07/2017 23:25:30 - A State consists of:
+</span>    <span class="comment">-- NumericID           = 0,
+</span>    <span class="comment">-- UniqueKey           = "UNIQUE_NAME",
+</span>    <span class="comment">-- StateIndicator      = false,
+</span>    <span class="comment">-- EvacuateAllUnits    = false,
+</span>    <span class="comment">-- TurnsPlanetNeutral  = false,
+</span>    <span class="comment">-- BlocksGroundAccess  = false,
+</span>    <span class="comment">-- DestroysPlanet      = false,
+</span>    <span class="comment">-- EndsCurrentAlliance = false,
+</span>    <span class="comment">-- AddsTraitToAttacker = false,
+</span>    <span class="comment">-- AddsTraitToDefender = false,
+</span>
+    <span class="comment">-- Kad 07/07/2017 23:24:07 - Load the state:
+</span>    <span class="keyword">local</span> nState = <span class="global">require</span>( <span class="string">"libStaticPlanetStates"</span> )[newState]
+    <span class="comment">-- Kad 07/07/2017 23:24:16 - Each state consists of the same basic information, so we just do a big if, instead of fancy iteration magic:
+</span>    <span class="keyword">if</span> nState.StateIndicator <span class="keyword">then</span>
+        <span class="keyword">if</span> self.StateIndicator <span class="keyword">then</span>
+            self.StateIndicator.Despawn()
+            self.StateIndicator = <span class="keyword">false</span>
+        <span class="keyword">end</span>
+        self.StateIndicator = Create_Generic_Object( nState.StateIndicator, self:GetPlanetLocation().Get_Position(), Find_Player( <span class="string">"Neutral"</span> ) )
+    <span class="keyword">else</span>
+        <span class="keyword">if</span> self.StateIndicator <span class="keyword">then</span>
+            self.StateIndicator.Despawn()
+            self.StateIndicator = <span class="keyword">false</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="comment">-- Kad 10/07/2017 13:16:46 - We don't even need this, do we?
+</span>    <span class="comment">-- if nState.EvacuateAllUnits then
+</span>    <span class="comment">--     local groundUnits = Find_All_Objects_Of_Type( "Infantry | Air | Vehicle" )
+</span>    <span class="comment">--     local groundUnitsByOwner = {}
+</span>    <span class="comment">--     for _,objRef in pairs( groundUnits ) do
+</span>    <span class="comment">--         if objRef.Get_Planet_Location() == self:GetPlanetLocation() then
+</span>    <span class="comment">--             if groundUnitsByOwner[objRef.Get_Owner()] ~= nil then
+</span>    <span class="comment">--                 table.insert(groundUnitsByOwner[objRef.Get_Owner()], objRef)
+</span>    <span class="comment">--             else
+</span>    <span class="comment">--                 groundUnitsByOwner[objRef.Get_Owner()] = {}
+</span>    <span class="comment">--                 table.insert(groundUnitsByOwner[objRef.Get_Owner()], objRef)
+</span>    <span class="comment">--             end
+</span>    <span class="comment">--         end
+</span>    <span class="comment">--     end
+</span>    <span class="comment">-- end
+</span>    <span class="keyword">if</span> cFactionAttacker ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">if</span> nState.AddsTraitToAttacker <span class="keyword">then</span>
+            cFactionAttacker:AddNewTrait( nState.AddsTraitToAttacker )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> cFactionDefender ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">if</span> nState.AddsTraitToDefender <span class="keyword">then</span>
+            cFactionAttacker:AddNewTrait( nState.AddsTraitToDefender )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> nState.TurnsPlanetNeutral <span class="keyword">then</span>
+        <span class="comment">-- Kad 10/07/2017 14:43:13 - TODO
+</span>    <span class="keyword">end</span>
+    <span class="keyword">if</span> nState.BlocksGroundAccess <span class="keyword">then</span>
+        <span class="comment">-- Kad 10/07/2017 14:43:07 - TODO
+</span>    <span class="keyword">end</span>
+    <span class="keyword">if</span> nState.DestroysPlanet <span class="keyword">then</span>
+        self:Destroy()
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">function</span> cPlanet:GetPlanetInReach( desiredOwner )
+    <span class="comment">-- Kad 10/07/2017 11:32:41 - Not doing a proper graph traversal, I'd have to build the graph first and then do a Dijstra. Instead we'll search only two jumps far and cache the planets. If we can't find a proper planet, we'll randomly choose one from the cache.
+</span>    <span class="keyword">local</span> plnCache = {}
+    <span class="keyword">for</span> _,cPlnObjL0 <span class="keyword">in</span> <span class="global">pairs</span>( self.PlanetsInReach ) <span class="keyword">do</span>
+        <span class="keyword">if</span> cPlnObjL0:GetOwner() == desiredOwner <span class="keyword">or</span> cPlnObjL0:GetOwner():GetPlayerObject() == Find_Player( <span class="string">"Neutral"</span> ) <span class="keyword">then</span>
+            debugFoundSuitablePlanetInReach( cPlnObjL0:GetStringKey(), desiredOwner:GetStringKey() )
+            <span class="keyword">return</span> cPlnObjL0
+        <span class="keyword">else</span>
+            <span class="global">table</span>.insert( plnCache, cPlnObjL0 ) <span class="comment">-- Kad 10/07/2017 21:44:59 - Cache planet.
+</span>            <span class="keyword">for</span> _,cPlnObjL1 <span class="keyword">in</span> <span class="global">pairs</span>( cPlnObjL0.PlanetsInReach ) <span class="keyword">do</span>
+                <span class="keyword">if</span> cPlnObjL1:GetOwner() == desiredOwner <span class="keyword">or</span> cPlnObjL1:GetOwner():GetPlayerObject() == Find_Player( <span class="string">"Neutral"</span> ) <span class="keyword">then</span>
+                    debugFoundSuitablePlanetInReach( cPlnObjL1:GetStringKey(), desiredOwner:GetStringKey() )
+                    <span class="keyword">return</span> cPlnObjL1
+                <span class="keyword">else</span>
+                    <span class="global">table</span>.insert( plnCache, cPlnObjL1 )
+                <span class="keyword">end</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">local</span> pln = plnCache[GameRandom( <span class="number">1</span>, <span class="global">table</span>.getn( plnCache ) )]
+    <span class="keyword">if</span> self.DebugModeActive <span class="keyword">then</span>
+        debugRandomPlanetInReach( pln:GetStringKey(), desiredOwner:GetStringKey() )
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> pln
+<span class="keyword">end</span>
+
+<span class="keyword">function</span> cPlanet:Destroy()
+    <span class="keyword">local</span> helperDSFleetSpawn = SpawnList( {<span class="string">"Death_Star"</span>}, self:GetPlanetLocation(), Find_Player( <span class="string">"Hostile"</span> ), <span class="keyword">false</span>, <span class="keyword">false</span> )
+    <span class="keyword">local</span> helperDeathStar = helperDSFleetSpawn[<span class="number">1</span>]
+    <span class="keyword">local</span> helperDSFleet = Assemble_Fleet( helperDSFleetSpawn )
+    helperDeathStar.Set_Check_Contested_Space( <span class="keyword">false</span> )
+    helperDSFleet.Activate_Ability( <span class="string">"Death_Star"</span> )
+    helperDeathStar.Set_Check_Contested_Space( <span class="keyword">true</span> )
+    helperDeathStar.Despawn()
+    self.GroundAccessible = <span class="keyword">false</span>
+<span class="keyword">end</span>
+
+
+<span class="comment">-- ============ DEBUG STUFF ============
+</span>
+<span class="keyword">function</span> cPlanet:AddPlanetHighlight( highlightTag )
+    <span class="keyword">local</span> tag = <span class="keyword">nil</span>
+    <span class="keyword">if</span> highlightTag == <span class="keyword">nil</span> <span class="keyword">then</span>
+        tag = self:GetName()..<span class="string">"_TAG"</span>
+    <span class="keyword">else</span>
+        tag = highlightTag
+    <span class="keyword">end</span>
+    Add_Planet_Highlight( self.GameObject, tag )
+    <span class="keyword">return</span> tag
+<span class="keyword">end</span>
+
+<span class="keyword">function</span> cPlanet:RemovePlanetHighlight( highlightTag )
+    <span class="keyword">if</span> highlightTag ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        Remove_Planet_Highlight( highlightTag )
+    <span class="keyword">else</span>
+        Remove_Planet_Highlight( self:GetName()..<span class="string">"_TAG"</span> )
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">return</span> cPlanet
+</pre>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

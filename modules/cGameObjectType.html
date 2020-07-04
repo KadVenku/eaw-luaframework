@@ -1,0 +1,863 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Getter_Functions">Getter Functions</a></li>
+<li><a href="#Initialisation">Initialisation</a></li>
+<li><a href="#Setter_Functions">Setter Functions</a></li>
+<li><a href="#Abstracts">Abstracts</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><strong>cGameObjectType</strong></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>cGameObjectType</code></h1>
+<p>{abstract} cGameObjectType base class.</p>
+<p>
+ All game objects inherit this class's functionality.
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#InitialiseTraits">InitialiseTraits (traitTable)</a></td>
+	<td class="summary">Initializes the faction traits.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HideFromGUI">HideFromGUI (factionInQuestion)</a></td>
+	<td class="summary">Hides an object from the GUI.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ShowOnGUI">ShowOnGUI (factionInQuestion)</a></td>
+	<td class="summary">Shows an object type on the GUI.</td>
+	</tr>
+</table>
+<h2><a href="#Getter_Functions">Getter Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#GetType">GetType ()</a></td>
+	<td class="summary">Returns the cGameObjectType type.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetObjectTypeXML">GetObjectTypeXML ()</a></td>
+	<td class="summary">Returns the name of the cGameObjectType as defined in the corresponding xml entry.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetObjectTypeCapital">GetObjectTypeCapital ()</a></td>
+	<td class="summary">Returns the name of the cGameObjectType in capital letters.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetIsBuildable">GetIsBuildable (factionInQuestion)</a></td>
+	<td class="summary">Returns whether the object is buildable, or not.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetIsHiddenFromGUI">GetIsHiddenFromGUI ()</a></td>
+	<td class="summary">Returns whether the object is currently hidden from the GUI, or not.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetMaintenanceCostSingleObject">GetMaintenanceCostSingleObject ()</a></td>
+	<td class="summary">Returns maintenance cost for the object type.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetMaintenanceCostAllObjectsOfFaction">GetMaintenanceCostAllObjectsOfFaction (cFactionObj)</a></td>
+	<td class="summary">Get the maintenance cost for all instances as sum.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetCategoryMask">GetCategoryMask ()</a></td>
+	<td class="summary">Returns the cGameObjectType's CategoryMask.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IsAvailableToFaction">IsAvailableToFaction (factionInQuestion)</a></td>
+	<td class="summary">Is the game object available to a certain faction?</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IsGUIFilterTaggedAs">IsGUIFilterTaggedAs (tagObject)</a></td>
+	<td class="summary">Tests whether the cGameObjectType is flagged with a certain flag/list of flags.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IsTaggedAs">IsTaggedAs (tagObject)</a></td>
+	<td class="summary">Tests whether the cGameObjectType is flagged with a certain flag/list of flags.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetAllInstancesOfSelf">GetAllInstancesOfSelf ()</a></td>
+	<td class="summary">Returns a list of all instances of the cGameObjectType.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetInstancesOfSelfFilteredBy">GetInstancesOfSelfFilteredBy (filterType, filterObject)</a></td>
+	<td class="summary">Returns a list of objects filtered by the criteria specified.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetStringKey">GetStringKey ()</a></td>
+	<td class="summary">Returns the objects in-game string key</td>
+	</tr>
+</table>
+<h2><a href="#Initialisation">Initialisation</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#New">New (parentObjectManager, newGameObjectName)</a></td>
+	<td class="summary">Constructor.</td>
+	</tr>
+</table>
+<h2><a href="#Setter_Functions">Setter Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#SetIsBuildable">SetIsBuildable (factionInQuestion, newBuildability)</a></td>
+	<td class="summary">Sets the Buildable attribute.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#SetIsHiddenFromGUI">SetIsHiddenFromGUI (newHiddenState)</a></td>
+	<td class="summary">Sets the HiddenFromGUI attribute.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MakeAvailableToFaction">MakeAvailableToFaction (factionInQuestion)</a></td>
+	<td class="summary">Makes an object available to a faction during play.</td>
+	</tr>
+</table>
+<h2><a href="#Abstracts">Abstracts</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#GetIsPlanetaryShieldGenerator">GetIsPlanetaryShieldGenerator ()</a></td>
+	<td class="summary">{abstract} Abstract getter function.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetIsBaseShieldGenerator">GetIsBaseShieldGenerator ()</a></td>
+	<td class="summary">{abstract} Abstract getter function.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetShieldStrength">GetShieldStrength ()</a></td>
+	<td class="summary">{abstract} Abstract getter function.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetGUIDummy">GetGUIDummy ()</a></td>
+	<td class="summary">{abstract} Abstract getter function.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetDiplomaticInfluence">GetDiplomaticInfluence ()</a></td>
+	<td class="summary">{abstract} Abstract getter function.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "InitialiseTraits"></a>
+    <strong>InitialiseTraits (traitTable)</strong>
+    </dt>
+    <dd>
+    Initializes the faction traits.
+ Only loads traits which are defined, if a trait is not defined, the trait will be skipped.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">traitTable</span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "HideFromGUI"></a>
+    <strong>HideFromGUI (factionInQuestion)</strong>
+    </dt>
+    <dd>
+    Hides an object from the GUI.  This does not affect the buildable state at all.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">factionInQuestion</span>
+            <span class="types"><span class="type">cFaction</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ShowOnGUI"></a>
+    <strong>ShowOnGUI (factionInQuestion)</strong>
+    </dt>
+    <dd>
+    Shows an object type on the GUI.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">factionInQuestion</span>
+            <span class="types"><span class="type">cFaction</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Getter_Functions"></a>Getter Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "GetType"></a>
+    <strong>GetType ()</strong>
+    </dt>
+    <dd>
+    Returns the cGameObjectType type.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetObjectTypeXML"></a>
+    <strong>GetObjectTypeXML ()</strong>
+    </dt>
+    <dd>
+    Returns the name of the cGameObjectType as defined in the corresponding xml entry.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetObjectTypeCapital"></a>
+    <strong>GetObjectTypeCapital ()</strong>
+    </dt>
+    <dd>
+    Returns the name of the cGameObjectType in capital letters.
+ Can be used to test for validity, when the object.Get_Type().Get_Name() has been used, as this returns the name in capital letters.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        Name in CAPITAL letters.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetIsBuildable"></a>
+    <strong>GetIsBuildable (factionInQuestion)</strong>
+    </dt>
+    <dd>
+    Returns whether the object is buildable, or not.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">factionInQuestion</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetIsHiddenFromGUI"></a>
+    <strong>GetIsHiddenFromGUI ()</strong>
+    </dt>
+    <dd>
+    Returns whether the object is currently hidden from the GUI, or not.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetMaintenanceCostSingleObject"></a>
+    <strong>GetMaintenanceCostSingleObject ()</strong>
+    </dt>
+    <dd>
+    Returns maintenance cost for the object type.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetMaintenanceCostAllObjectsOfFaction"></a>
+    <strong>GetMaintenanceCostAllObjectsOfFaction (cFactionObj)</strong>
+    </dt>
+    <dd>
+    Get the maintenance cost for all instances as sum.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cFactionObj</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetCategoryMask"></a>
+    <strong>GetCategoryMask ()</strong>
+    </dt>
+    <dd>
+    Returns the cGameObjectType's CategoryMask.
+ Concatenates all tagged category masks with the '|' operator for filtering purposes.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">Consider this example <span class="global">table</span> <span class="keyword">for</span> the CategoryMask attribute:
+self.CategoryMask = { <span class="string">"Capital"</span>, <span class="string">"Structure"</span>, <span class="string">"SpaceHero"</span> }
+self:GetCategoryMask()
+This call would <span class="keyword">then</span> <span class="keyword">return</span>:
+<span class="string">"Capital | Structure | SpaceHero"</span>
+</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "IsAvailableToFaction"></a>
+    <strong>IsAvailableToFaction (factionInQuestion)</strong>
+    </dt>
+    <dd>
+    Is the game object available to a certain faction?
+ This setting does not return the state of the object, or whether it is currently unavailable, it instead returns a bool depending on whether the object could be constructed.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">factionInQuestion</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "IsGUIFilterTaggedAs"></a>
+    <strong>IsGUIFilterTaggedAs (tagObject)</strong>
+    </dt>
+    <dd>
+    Tests whether the cGameObjectType is flagged with a certain flag/list of flags.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">tagObject</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string/table</a></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "IsTaggedAs"></a>
+    <strong>IsTaggedAs (tagObject)</strong>
+    </dt>
+    <dd>
+    Tests whether the cGameObjectType is flagged with a certain flag/list of flags.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">tagObject</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string/table</a></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetAllInstancesOfSelf"></a>
+    <strong>GetAllInstancesOfSelf ()</strong>
+    </dt>
+    <dd>
+    Returns a list of all instances of the cGameObjectType.
+ this uses the XML name of the cGameObjectType to collect it.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        If not objects can be found it returns false instead.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetInstancesOfSelfFilteredBy"></a>
+    <strong>GetInstancesOfSelfFilteredBy (filterType, filterObject)</strong>
+    </dt>
+    <dd>
+    Returns a list of objects filtered by the criteria specified.
+ Possible filters are (Might be expanded later on):
+ "PLANET": Returns all instances of the cGameObjectType filtered by the planet they reside on.
+ "OWNER": Returns all instances of the cGameObjectType filtered by the owner.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">filterType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         String filter for the function.
+        </li>
+        <li><span class="parameter">filterObject</span>
+            <span class="types"><span class="type">luaObject</span></span>
+         object to filter by.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        If not objects can be found it returns false instead.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetStringKey"></a>
+    <strong>GetStringKey ()</strong>
+    </dt>
+    <dd>
+    Returns the objects in-game string key
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Initialisation"></a>Initialisation</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "New"></a>
+    <strong>New (parentObjectManager, newGameObjectName)</strong>
+    </dt>
+    <dd>
+    Constructor.
+ Creates a new LUA object of type cGameObjectType.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parentObjectManager</span>
+            <span class="types"><span class="type">cObjectManager</span></span>
+
+        </li>
+        <li><span class="parameter">newGameObjectName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         GameObject as defined in the xml.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Setter_Functions"></a>Setter Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "SetIsBuildable"></a>
+    <strong>SetIsBuildable (factionInQuestion, newBuildability)</strong>
+    </dt>
+    <dd>
+    Sets the Buildable attribute.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">factionInQuestion</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Faction name.
+        </li>
+        <li><span class="parameter">newBuildability</span>
+            <span class="types"><span class="type">bool</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "SetIsHiddenFromGUI"></a>
+    <strong>SetIsHiddenFromGUI (newHiddenState)</strong>
+    </dt>
+    <dd>
+    Sets the HiddenFromGUI attribute.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newHiddenState</span>
+            <span class="types"><span class="type">bool</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MakeAvailableToFaction"></a>
+    <strong>MakeAvailableToFaction (factionInQuestion)</strong>
+    </dt>
+    <dd>
+    Makes an object available to a faction during play.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">factionInQuestion</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Abstracts"></a>Abstracts</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "GetIsPlanetaryShieldGenerator"></a>
+    <strong>GetIsPlanetaryShieldGenerator ()</strong>
+    </dt>
+    <dd>
+    {abstract} Abstract getter function.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetIsBaseShieldGenerator"></a>
+    <strong>GetIsBaseShieldGenerator ()</strong>
+    </dt>
+    <dd>
+    {abstract} Abstract getter function.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetShieldStrength"></a>
+    <strong>GetShieldStrength ()</strong>
+    </dt>
+    <dd>
+    {abstract} Abstract getter function.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetGUIDummy"></a>
+    <strong>GetGUIDummy ()</strong>
+    </dt>
+    <dd>
+    {abstract} Abstract getter function.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetDiplomaticInfluence"></a>
+    <strong>GetDiplomaticInfluence ()</strong>
+    </dt>
+    <dd>
+    {abstract} Abstract getter function.
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

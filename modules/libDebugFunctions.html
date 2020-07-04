@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Debugging_Functions">Debugging Functions</a></li>
+<li><a href="#Threaded_Output_Handler">Threaded Output Handler</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><strong>libDebugFunctions</strong></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>libDebugFunctions</code></h1>
+<p>Generic debugging functionality.</p>
+<p>
+ Provides threaded functions to push messages to the droid log or the mission holochron.
+</p>
+
+
+<h2><a href="#Debugging_Functions">Debugging Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#debugPushDroidMessage">debugPushDroidMessage (msgContent)</a></td>
+	<td class="summary">Pushes a message to the droid log.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#debugPlanetOwnerChange">debugPlanetOwnerChange (planetStringKey, prevOwnerStringKey, newOwnerStringKey)</a></td>
+	<td class="summary">Displays a planet owner change message via the mission holochron.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#debugPlanetSelected">debugPlanetSelected (planetStringKey, gObjectTable, sObjectTable)</a></td>
+	<td class="summary">Displays a planet selected message via the mission holochron.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#debugEventExecuted">debugEventExecuted (eventType, isTimed, eventTimer)</a></td>
+	<td class="summary">Displays a (timed) event executuion message via the mission holochron.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#debugGUIElementLockUnlockEvent">debugGUIElementLockUnlockEvent (guiElemStringKey, evtType)</a></td>
+	<td class="summary">Displays a GUI element (un-)locked message via the mission holochron.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#debugAvailableObjectType">debugAvailableObjectType (playerFactionKey, objectStringTable)</a></td>
+	<td class="summary">Displays a list of available buildings for a given faction via the mission holochron.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#debugPlanetContested">debugPlanetContested (planetStringKey)</a></td>
+	<td class="summary">Displays a message if an enemy fleet is orbiting a planet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#debugFactionRawMilitaryStrength">debugFactionRawMilitaryStrength (factionStringKey, factionStrength)</a></td>
+	<td class="summary">Displays a faction's raw military strength.</td>
+	</tr>
+</table>
+<h2><a href="#Threaded_Output_Handler">Threaded Output Handler</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#tOutPushDroidMessage">tOutPushDroidMessage (msgContent)</a></td>
+	<td class="summary">Threaded output for the droid log push.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#tOutPlanetOwnerChange">tOutPlanetOwnerChange (table)</a></td>
+	<td class="summary">Threaded output for the planet owner change push.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#tOutPlanetSelected">tOutPlanetSelected (table)</a></td>
+	<td class="summary">Threaded output for the planet selected message push.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#tOutEventExecuted">tOutEventExecuted (table)</a></td>
+	<td class="summary">Threaded output (timed) event executuion message push.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#tOutGUIElementLockUnlockEvent">tOutGUIElementLockUnlockEvent (table)</a></td>
+	<td class="summary">Threaded output for the GUI element (un-)locked message push.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#tOutAvailableObjectType">tOutAvailableObjectType (table)</a></td>
+	<td class="summary">Threaded output for the available buildings message push.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#tOutPlanetContested">tOutPlanetContested (planetStringKey)</a></td>
+	<td class="summary">Threaded output for the planet selected message push.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#tOutFactionRawMilitaryStrength">tOutFactionRawMilitaryStrength (table)</a></td>
+	<td class="summary">Threaded output for the faction's raw military strength push.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#tOutFoundSuitablePlanetInReach">tOutFoundSuitablePlanetInReach (table)</a></td>
+	<td class="summary">Threaded output for the faction's raw military strength push.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#tOutRandomPlanetInReach">tOutRandomPlanetInReach (table)</a></td>
+	<td class="summary">Threaded output for the faction's raw military strength push.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Debugging_Functions"></a>Debugging Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "debugPushDroidMessage"></a>
+    <strong>debugPushDroidMessage (msgContent)</strong>
+    </dt>
+    <dd>
+    Pushes a message to the droid log.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">msgContent</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "debugPlanetOwnerChange"></a>
+    <strong>debugPlanetOwnerChange (planetStringKey, prevOwnerStringKey, newOwnerStringKey)</strong>
+    </dt>
+    <dd>
+    Displays a planet owner change message via the mission holochron.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">planetStringKey</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+        <li><span class="parameter">prevOwnerStringKey</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+        <li><span class="parameter">newOwnerStringKey</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "debugPlanetSelected"></a>
+    <strong>debugPlanetSelected (planetStringKey, gObjectTable, sObjectTable)</strong>
+    </dt>
+    <dd>
+    Displays a planet selected message via the mission holochron.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">planetStringKey</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+        <li><span class="parameter">gObjectTable</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Table containing the string keys of all ground objects built on the provided planet.
+        </li>
+        <li><span class="parameter">sObjectTable</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Table containing the string keys of all space objects built on the provided planet.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "debugEventExecuted"></a>
+    <strong>debugEventExecuted (eventType, isTimed, eventTimer)</strong>
+    </dt>
+    <dd>
+    Displays a (timed) event executuion message via the mission holochron.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">eventType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+        <li><span class="parameter">isTimed</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+        <li><span class="parameter">eventTimer</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "debugGUIElementLockUnlockEvent"></a>
+    <strong>debugGUIElementLockUnlockEvent (guiElemStringKey, evtType)</strong>
+    </dt>
+    <dd>
+    Displays a GUI element (un-)locked message via the mission holochron.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">guiElemStringKey</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+        <li><span class="parameter">evtType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "debugAvailableObjectType"></a>
+    <strong>debugAvailableObjectType (playerFactionKey, objectStringTable)</strong>
+    </dt>
+    <dd>
+    Displays a list of available buildings for a given faction via the mission holochron.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">playerFactionKey</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+        <li><span class="parameter">objectStringTable</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "debugPlanetContested"></a>
+    <strong>debugPlanetContested (planetStringKey)</strong>
+    </dt>
+    <dd>
+    Displays a message if an enemy fleet is orbiting a planet.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">planetStringKey</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "debugFactionRawMilitaryStrength"></a>
+    <strong>debugFactionRawMilitaryStrength (factionStringKey, factionStrength)</strong>
+    </dt>
+    <dd>
+    Displays a faction's raw military strength.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">factionStringKey</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+        <li><span class="parameter">factionStrength</span>
+            <span class="types"><span class="type">number</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Threaded_Output_Handler"></a>Threaded Output Handler</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "tOutPushDroidMessage"></a>
+    <strong>tOutPushDroidMessage (msgContent)</strong>
+    </dt>
+    <dd>
+    Threaded output for the droid log push.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">msgContent</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "tOutPlanetOwnerChange"></a>
+    <strong>tOutPlanetOwnerChange (table)</strong>
+    </dt>
+    <dd>
+    Threaded output for the planet owner change push.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">table</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "tOutPlanetSelected"></a>
+    <strong>tOutPlanetSelected (table)</strong>
+    </dt>
+    <dd>
+    Threaded output for the planet selected message push.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">table</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "tOutEventExecuted"></a>
+    <strong>tOutEventExecuted (table)</strong>
+    </dt>
+    <dd>
+    Threaded output (timed) event executuion message push.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">table</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "tOutGUIElementLockUnlockEvent"></a>
+    <strong>tOutGUIElementLockUnlockEvent (table)</strong>
+    </dt>
+    <dd>
+    Threaded output for the GUI element (un-)locked message push.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">table</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "tOutAvailableObjectType"></a>
+    <strong>tOutAvailableObjectType (table)</strong>
+    </dt>
+    <dd>
+    Threaded output for the available buildings message push.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">table</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "tOutPlanetContested"></a>
+    <strong>tOutPlanetContested (planetStringKey)</strong>
+    </dt>
+    <dd>
+    Threaded output for the planet selected message push.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">planetStringKey</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "tOutFactionRawMilitaryStrength"></a>
+    <strong>tOutFactionRawMilitaryStrength (table)</strong>
+    </dt>
+    <dd>
+    Threaded output for the faction's raw military strength push.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">table</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "tOutFoundSuitablePlanetInReach"></a>
+    <strong>tOutFoundSuitablePlanetInReach (table)</strong>
+    </dt>
+    <dd>
+    Threaded output for the faction's raw military strength push.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">table</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "tOutRandomPlanetInReach"></a>
+    <strong>tOutRandomPlanetInReach (table)</strong>
+    </dt>
+    <dd>
+    Threaded output for the faction's raw military strength push.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">table</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

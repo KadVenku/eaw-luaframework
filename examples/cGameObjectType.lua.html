@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><strong>cGameObjectType.lua</strong></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <h2>cGameObjectType.lua</h2>
+<pre>
+<span class="comment">-- ===== ===== ===== ===== =====
+</span><span class="comment">-- Copyright (c) 2017 Lukas Grünwald
+</span><span class="comment">-- License       MIT License
+</span><span class="comment">-- ===== ===== ===== ===== =====
+</span>
+<span class="comment">--- {abstract} cGameObjectType base class.
+</span><span class="comment">-- All game objects inherit this class's functionality.
+</span>
+<span class="comment">-- Import new functions:
+</span><span class="global">require</span>( <span class="string">"libErrorFunctions"</span> )
+<span class="global">require</span>( <span class="string">"libDebugFunctions"</span> )
+<span class="global">require</span>( <span class="string">"libPGGenericFunctionLibrary"</span> )
+
+cGameObjectType = {}
+cGameObjectType.__index = cGameObjectType
+
+<span class="comment">--- Constructor.
+</span><span class="comment">-- Creates a new LUA object of type cGameObjectType.
+</span><span class="comment">-- @tparam cObjectManager parentObjectManager
+</span><span class="comment">-- @tparam string newGameObjectName GameObject as defined in the xml.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cGameObjectType.New( parentObjectManager, newGameObjectName )
+    <span class="keyword">local</span> self = <span class="global">setmetatable</span>( {}, cGameObjectType )
+
+    self.Parent                = parentObjectManager
+    self.GameObjectTypeXML     = newGameObjectName
+    self.ObjectType            = <span class="string">"TEXT_LUA_OBJECT_TYPE_GAMEOBJECT_WRAPPER"</span>
+    self.DebugModeActive       = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_DebugMode
+
+    <span class="keyword">return</span> self
+<span class="keyword">end</span>
+<span class="comment">--- Returns the cGameObjectType type.
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:GetType()
+    <span class="keyword">return</span> self.ObjectType
+<span class="keyword">end</span>
+<span class="comment">--- Returns the name of the cGameObjectType as defined in the corresponding xml entry.
+</span><span class="comment">-- @treturn string
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:GetObjectTypeXML()
+    <span class="keyword">return</span> self.GameObjectTypeXML
+<span class="keyword">end</span>
+<span class="comment">--- Returns the name of the cGameObjectType in capital letters.
+</span><span class="comment">-- Can be used to test for validity, when the object.Get_Type().Get_Name() has been used, as this returns the name in capital letters.
+</span><span class="comment">-- @treturn string Name in CAPITAL letters.
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:GetObjectTypeCapital()
+    <span class="keyword">return</span> self.GameObjectTypeCapital
+<span class="keyword">end</span>
+<span class="comment">--- Returns whether the object is buildable, or not.
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:GetIsBuildable( factionInQuestion )
+    <span class="keyword">return</span> self.Buildable[factionInQuestion]
+<span class="keyword">end</span>
+<span class="comment">--- Sets the Buildable attribute.
+</span><span class="comment">-- @tparam string factionInQuestion Faction name.
+</span><span class="comment">-- @tparam bool newBuildability
+</span><span class="comment">-- @within Setter Functions
+</span><span class="keyword">function</span> cGameObjectType:SetIsBuildable( factionInQuestion, newBuildability )
+    self.Buildable[factionInQuestion] = newBuildability
+<span class="keyword">end</span>
+<span class="comment">--- Returns whether the object is currently hidden from the GUI, or not.
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:GetIsHiddenFromGUI()
+    <span class="keyword">return</span> self.HiddenFromGUI
+<span class="keyword">end</span>
+<span class="comment">--- Sets the HiddenFromGUI attribute.
+</span><span class="comment">-- @tparam bool newHiddenState
+</span><span class="comment">-- @within Setter Functions
+</span><span class="keyword">function</span> cGameObjectType:SetIsHiddenFromGUI( newHiddenState )
+    self.HiddenFromGUI = newHiddenState
+<span class="keyword">end</span>
+<span class="comment">--- Returns maintenance cost for the object type.
+</span><span class="comment">-- @treturn integer
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:GetMaintenanceCostSingleObject()
+    <span class="keyword">return</span> self.MaintenanceCost
+<span class="keyword">end</span>
+<span class="comment">--- Get the maintenance cost for all instances as sum.
+</span><span class="comment">-- @treturn integer
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:GetMaintenanceCostAllObjectsOfFaction( cFactionObj )
+    <span class="keyword">if</span> self:IsAvailableToFaction( cFactionObj:GetName() ) <span class="keyword">then</span>
+        <span class="comment">-- Only compute anything if the object has maintenance cost.
+</span>        <span class="keyword">if</span> self:GetMaintenanceCostSingleObject() &gt; <span class="number">0</span> <span class="keyword">then</span>
+            <span class="keyword">local</span> existingObjects = self:GetInstancesOfSelfFilteredBy( <span class="string">"OWNER"</span>, cFactionObj )
+            <span class="keyword">if</span> existingObjects <span class="keyword">then</span>
+                <span class="keyword">local</span> existingObjectCount = <span class="global">table</span>.getn( existingObjects )
+                <span class="keyword">local</span> maintenanceCost = self:GetMaintenanceCostSingleObject() * existingObjectCount
+                <span class="keyword">return</span> maintenanceCost
+            <span class="keyword">end</span>
+            <span class="keyword">return</span> <span class="number">0</span>
+        <span class="keyword">else</span>
+            <span class="keyword">return</span> <span class="number">0</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Returns the cGameObjectType's CategoryMask.
+</span><span class="comment">-- Concatenates all tagged category masks with the '|' operator for filtering purposes.
+</span><span class="comment">-- @usage Consider this example table for the CategoryMask attribute:
+</span><span class="comment">-- self.CategoryMask = { "Capital", "Structure", "SpaceHero" }
+</span><span class="comment">-- self:GetCategoryMask()
+</span><span class="comment">-- This call would then return:
+</span><span class="comment">-- "Capital | Structure | SpaceHero"
+</span><span class="comment">-- @treturn string
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:GetCategoryMask()
+    <span class="keyword">local</span> CategoryMaskFilter = <span class="global">table</span>.concat( self.CategoryMask, <span class="string">" | "</span> )
+    <span class="keyword">return</span> CategoryMaskFilter
+<span class="keyword">end</span>
+
+
+<span class="comment">--- Is the game object available to a certain faction?
+</span><span class="comment">-- This setting does not return the state of the object, or whether it is currently unavailable, it instead returns a bool depending on whether the object could be constructed.
+</span><span class="comment">-- @tparam string factionInQuestion
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:IsAvailableToFaction( factionInQuestion )
+    <span class="keyword">return</span> IsContentOfTable( self.AvailableForFactions, factionInQuestion )
+<span class="keyword">end</span>
+<span class="comment">--- Makes an object available to a faction during play.
+</span><span class="comment">-- @tparam string factionInQuestion
+</span><span class="comment">-- @within Setter Functions
+</span><span class="keyword">function</span> cGameObjectType:MakeAvailableToFaction( factionInQuestion )
+    <span class="global">table</span>.insert( self.AvailableForFactions, factionInQuestion )
+<span class="keyword">end</span>
+<span class="comment">--- Tests whether the cGameObjectType is flagged with a certain flag/list of flags.
+</span><span class="comment">-- @tparam  string/table tagObject
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:IsGUIFilterTaggedAs( tagObject )
+    <span class="keyword">return</span> IsObjectTaggedAs( self.GUIFilterTags, tagObject )
+<span class="keyword">end</span>
+<span class="comment">--- Tests whether the cGameObjectType is flagged with a certain flag/list of flags.
+</span><span class="comment">-- @tparam  string/table tagObject
+</span><span class="comment">-- @treturn bool
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:IsTaggedAs( tagObject )
+    <span class="keyword">return</span> IsObjectTaggedAs( self.ObjectFilterTags, tagObject )
+<span class="keyword">end</span>
+<span class="comment">--- Initializes the faction traits.
+</span><span class="comment">-- Only loads traits which are defined, if a trait is not defined, the trait will be skipped.
+</span><span class="keyword">function</span> cGameObjectType:InitialiseTraits( traitTable )
+    <span class="keyword">local</span> lTraitTable = traitTable
+    <span class="keyword">local</span> lTraitDefinitions = <span class="global">require</span>( <span class="string">"libStaticTraitDefinitions"</span> ).GameObjectTraits
+    <span class="keyword">for</span> _,trait <span class="keyword">in</span> <span class="global">pairs</span>(lTraitDefinitions) <span class="keyword">do</span>
+        <span class="keyword">if</span> IsContentOfTable( lTraitTable, trait.TraitID ) <span class="keyword">then</span>
+            <span class="global">table</span>.insert( self.Traits, trait )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Returns a list of all instances of the cGameObjectType.
+</span><span class="comment">-- this uses the XML name of the cGameObjectType to collect it.
+</span><span class="comment">-- @treturn table If not objects can be found it returns false instead.
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:GetAllInstancesOfSelf()
+    <span class="keyword">local</span> returnTable = Find_All_Objects_Of_Type( self:GetObjectTypeXML() )
+    <span class="keyword">if</span> <span class="global">table</span>.getn( returnTable ) &gt; <span class="number">0</span> <span class="keyword">then</span>
+        <span class="keyword">return</span> returnTable
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+<span class="comment">--- Returns a list of objects filtered by the criteria specified.
+</span><span class="comment">-- Possible filters are (Might be expanded later on):
+</span><span class="comment">-- "PLANET": Returns all instances of the cGameObjectType filtered by the planet they reside on.
+</span><span class="comment">-- "OWNER": Returns all instances of the cGameObjectType filtered by the owner.
+</span><span class="comment">-- @tparam string filterType String filter for the function.
+</span><span class="comment">-- @tparam luaObject filterObject object to filter by.
+</span><span class="comment">-- @treturn table If not objects can be found it returns false instead.
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:GetInstancesOfSelfFilteredBy( filterType, filterObject )
+    <span class="keyword">local</span> allObjects = <span class="keyword">false</span>
+    <span class="keyword">if</span> filterType == <span class="string">"PLANET"</span> <span class="keyword">or</span> filterType == <span class="string">"planet"</span> <span class="keyword">or</span> filterType == <span class="string">"Planet"</span> <span class="keyword">then</span>
+        allObjects = self:GetAllInstancesOfSelf()
+        <span class="keyword">if</span> allObjects <span class="keyword">then</span>
+            <span class="keyword">for</span> index, gameObj <span class="keyword">in</span> <span class="global">pairs</span>( allObjects ) <span class="keyword">do</span>
+                <span class="keyword">if</span> gameObj.Get_Planet_Location() ~= filterObject:GetPlanetLocation() <span class="keyword">then</span>
+                    allObjects[index] = <span class="keyword">nil</span>
+                <span class="keyword">end</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">elseif</span> filterType == <span class="string">"OWNER"</span> <span class="keyword">or</span> filterType == <span class="string">"Owner"</span> <span class="keyword">or</span> filterType == <span class="string">"owner"</span> <span class="keyword">then</span>
+        allObjects = self:GetAllInstancesOfSelf()
+        <span class="keyword">if</span> allObjects <span class="keyword">then</span>
+            <span class="keyword">for</span> index, gameObj <span class="keyword">in</span> <span class="global">pairs</span>( allObjects ) <span class="keyword">do</span>
+                <span class="keyword">if</span> gameObj.Get_Owner() ~= filterObject:GetPlayerObject() <span class="keyword">then</span>
+                    allObjects[index] = <span class="keyword">nil</span>
+                <span class="keyword">end</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> allObjects
+<span class="keyword">end</span>
+
+<span class="comment">--- Hides an object from the GUI. This does not affect the buildable state at all.
+</span><span class="comment">-- @tparam cFaction factionInQuestion
+</span><span class="keyword">function</span> cGameObjectType:HideFromGUI( factionInQuestion )
+    <span class="keyword">if</span> <span class="keyword">not</span> self:GetIsHiddenFromGUI() <span class="keyword">then</span>
+        <span class="keyword">if</span> factionInQuestion ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+            <span class="keyword">if</span> self:GetIsBuildable( factionInQuestion ) <span class="keyword">then</span>
+                <span class="keyword">local</span> hideEvent = Get_Story_Plot( <span class="string">"__luaFramework/cGameObjectHandler/cGameObjectType.xml"</span> ).Get_Event( <span class="string">"cGameObjectType_LockObjectTypeBuildable"</span> )
+                hideEvent.Set_Reward_Parameter( <span class="number">0</span>, self:GetObjectTypeXML() )
+                Story_Event( <span class="string">"cGameObjectType_LockObjectTypeBuildable_Trigger"</span> )
+                self:SetIsHiddenFromGUI( <span class="keyword">true</span> )
+            <span class="keyword">end</span>
+        <span class="keyword">else</span>
+            <span class="keyword">local</span> hideEvent = Get_Story_Plot( <span class="string">"__luaFramework/cGameObjectHandler/cGameObjectType.xml"</span> ).Get_Event( <span class="string">"cGameObjectType_LockObjectTypeBuildable"</span> )
+            hideEvent.Set_Reward_Parameter( <span class="number">0</span>, self:GetObjectTypeXML() )
+            Story_Event( <span class="string">"cGameObjectType_LockObjectTypeBuildable_Trigger"</span> )
+            self:SetIsHiddenFromGUI( <span class="keyword">true</span> )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Shows an object type on the GUI.
+</span><span class="comment">-- @tparam cFaction factionInQuestion
+</span><span class="keyword">function</span> cGameObjectType:ShowOnGUI( factionInQuestion )
+    <span class="keyword">if</span> self:GetIsHiddenFromGUI() <span class="keyword">then</span>
+        <span class="keyword">if</span> factionInQuestion ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+            <span class="keyword">if</span> self:GetIsBuildable( factionInQuestion ) <span class="keyword">then</span>
+                <span class="keyword">local</span> hideEvent = Get_Story_Plot( <span class="string">"__luaFramework/cGameObjectHandler/cGameObjectType.xml"</span> ).Get_Event( <span class="string">"cGameObjectType_UnlockObjectTypeBuildable"</span> )
+                hideEvent.Set_Reward_Parameter( <span class="number">0</span>, self:GetObjectTypeXML() )
+                Story_Event( <span class="string">"cGameObjectType_UnlockObjectTypeBuildable_Trigger"</span> )
+                self:SetIsHiddenFromGUI( <span class="keyword">false</span> )
+            <span class="keyword">end</span>
+        <span class="keyword">else</span>
+            <span class="keyword">local</span> hideEvent = Get_Story_Plot( <span class="string">"__luaFramework/cGameObjectHandler/cGameObjectType.xml"</span> ).Get_Event( <span class="string">"cGameObjectType_UnlockObjectTypeBuildable"</span> )
+            hideEvent.Set_Reward_Parameter( <span class="number">0</span>, self:GetObjectTypeXML() )
+            Story_Event( <span class="string">"cGameObjectType_UnlockObjectTypeBuildable_Trigger"</span> )
+            self:SetIsHiddenFromGUI( <span class="keyword">false</span> )
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">--- Returns the objects in-game string key
+</span><span class="comment">-- @treturn string
+</span><span class="comment">-- @within Getter Functions
+</span><span class="keyword">function</span> cGameObjectType:GetStringKey()
+    <span class="keyword">return</span> self.StringID
+<span class="keyword">end</span>
+<span class="comment">--- {abstract} Abstract getter function.
+</span><span class="comment">-- @within Abstracts
+</span><span class="keyword">function</span> cGameObjectType:GetIsPlanetaryShieldGenerator()
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+<span class="comment">--- {abstract} Abstract getter function.
+</span><span class="comment">-- @within Abstracts
+</span><span class="keyword">function</span> cGameObjectType:GetIsBaseShieldGenerator()
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+<span class="comment">--- {abstract} Abstract getter function.
+</span><span class="comment">-- @within Abstracts
+</span><span class="keyword">function</span> cGameObjectType:GetShieldStrength()
+    <span class="keyword">return</span> <span class="number">0</span>
+<span class="keyword">end</span>
+<span class="comment">--- {abstract} Abstract getter function.
+</span><span class="comment">-- @within Abstracts
+</span><span class="keyword">function</span> cGameObjectType:GetGUIDummy()
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+<span class="comment">--- {abstract} Abstract getter function.
+</span><span class="comment">-- @within Abstracts
+</span><span class="keyword">function</span> cGameObjectType:GetDiplomaticInfluence()
+    <span class="keyword">return</span> <span class="number">0.0</span>
+<span class="keyword">end</span>
+
+<span class="keyword">return</span> cGameObjectType
+</pre>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

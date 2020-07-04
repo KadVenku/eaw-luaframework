@@ -1,0 +1,1205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Getter_Functions">Getter Functions</a></li>
+<li><a href="#Initialisation">Initialisation</a></li>
+<li><a href="#Setter_Functions">Setter Functions</a></li>
+<li><a href="#Evaluations">Evaluations</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><strong>cPlanet</strong></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>cPlanet</code></h1>
+<p>Constructor.</p>
+<p>
+ Creates a new LUA object of type cPlanet.
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#GetPlanetLocation">GetPlanetLocation ()</a></td>
+	<td class="summary">Returns the game object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetStringKey">GetStringKey ()</a></td>
+	<td class="summary">Returns the localisation key of the planet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetContested">GetContested ()</a></td>
+	<td class="summary">Returns the contested state.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#SetContested">SetContested (state)</a></td>
+	<td class="summary">Sets the contested state.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetCurrentDiplomaticInfluenceOwner">GetCurrentDiplomaticInfluenceOwner ()</a></td>
+	<td class="summary">Applies the owner faction's trait modifiers to the raw rating.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetGlobalValuePrefix">GetGlobalValuePrefix ()</a></td>
+	<td class="summary">Returns the prefix for all planet related global values.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#AddPlanetInReach">AddPlanetInReach (newPlanetInReach)</a></td>
+	<td class="summary">Adds a new planet object to the planet in reach table.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#EvaluateBuildings">EvaluateBuildings ()</a></td>
+	<td class="summary">Updates the building lists on the planet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetSpaceBuildingsAsString">GetSpaceBuildingsAsString ()</a></td>
+	<td class="summary">Returns the string keys for the space buildings on a planet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetGroundBuildingsAsString">GetGroundBuildingsAsString ()</a></td>
+	<td class="summary">Returns the string keys for the ground buildings on the planet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#EvaluatePlanetContested">EvaluatePlanetContested ()</a></td>
+	<td class="summary">Evaluates, whether an enemy fleet orbits a planet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#EvaluateDiplomaticInfluenceOwnerFactionRaw">EvaluateDiplomaticInfluenceOwnerFactionRaw ()</a></td>
+	<td class="summary">Evaluates the influence on the planet of the owner faction.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetDiplomaticRatingRaw">GetDiplomaticRatingRaw ()</a></td>
+	<td class="summary">Returns the current raw diplomatic value.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetDiplomaticRating">GetDiplomaticRating ()</a></td>
+	<td class="summary">Applies the owner faction's trait modifiers to the raw rating.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#EvaluateForeignDiplomaticInfuenceRaw">EvaluateForeignDiplomaticInfuenceRaw (cFacObj, cGameObjDiplomatType)</a></td>
+	<td class="summary">Evaluates the influence on the planet of a given faction.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetForeignDiplomaticInfuenceRaw">GetForeignDiplomaticInfuenceRaw (cFacObj, cGameObjDiplomatType)</a></td>
+	<td class="summary">Returns the current raw diplomatic value of a given faction.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetForeignDiplomaticInfuence">GetForeignDiplomaticInfuence (cFacObj, cGameObjDiplomatType)</a></td>
+	<td class="summary">Applies the desired faction's trait modifiers to the raw rating.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#AddPersistentObject">AddPersistentObject (objType)</a></td>
+	<td class="summary">Attaches a persistent object to the planet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#RemovePersistentObject">RemovePersistentObject (objType)</a></td>
+	<td class="summary">Removes a registered persistent object type from a planet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#UpdatePersistentObjects">UpdatePersistentObjects ()</a></td>
+	<td class="summary">Update cycle which ensures that persistent objects are in fact still residing on the planet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HideAttachedGUIObject">HideAttachedGUIObject (objRef)</a></td>
+	<td class="summary">Hides a 3D preview of a present object on the planet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ShowAttachedGUIObject">ShowAttachedGUIObject (objRef)</a></td>
+	<td class="summary">Shows an attached GUI 3D Preview.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#AttachGUI3DObject">AttachGUI3DObject (objType)</a></td>
+	<td class="summary">Attaches a new 3D GUI preview game object to the planet.</td>
+	</tr>
+</table>
+<h2><a href="#Getter_Functions">Getter Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#GetName">GetName ()</a></td>
+	<td class="summary">Returns the planet name.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetSelected">GetSelected ()</a></td>
+	<td class="summary">Returns the whether a planet is selected.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetStringKey">GetStringKey ()</a></td>
+	<td class="summary">Returns the MasterTextFile key.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetObjectType">GetObjectType ()</a></td>
+	<td class="summary">Returns the lua object type as string key.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetIsNavPoint">GetIsNavPoint ()</a></td>
+	<td class="summary">Is the planet a nav point?.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetOwner">GetOwner ()</a></td>
+	<td class="summary">Returns the planet's owner as cFaction object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetHomeFaction">GetHomeFaction ()</a></td>
+	<td class="summary">Returns the planet's home faction.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetParentFaction">GetParentFaction ()</a></td>
+	<td class="summary">Gets the planet's owning faction.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetIsCapital">GetIsCapital ()</a></td>
+	<td class="summary">Gets the IsCapital attribute.</td>
+	</tr>
+</table>
+<h2><a href="#Initialisation">Initialisation</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Initialise">Initialise ()</a></td>
+	<td class="summary">Initialises all planet relations to other objects which cannot be initialised in the constructor.</td>
+	</tr>
+</table>
+<h2><a href="#Setter_Functions">Setter Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#SetSelected">SetSelected (newSelectedState)</a></td>
+	<td class="summary">Sets a planet select state.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#SetAlliedFaction">SetAlliedFaction (newAllyObject)</a></td>
+	<td class="summary">Sets a new ally for a planet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#SetOwner">SetOwner (newOwner)</a></td>
+	<td class="summary">Sets the planet's owner as cFaction object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#SetParent">SetParent (galacticConquestReference)</a></td>
+	<td class="summary">Sets the planet's parent GC reference.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#SetParentFaction">SetParentFaction (owningFactionReference)</a></td>
+	<td class="summary">Sets the planet's owning faction.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#SetIsCapital">SetIsCapital (isPlanetCapital)</a></td>
+	<td class="summary">Sets the IsCapital attribute.</td>
+	</tr>
+</table>
+<h2><a href="#Evaluations">Evaluations</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#EvaluateOwner">EvaluateOwner ()</a></td>
+	<td class="summary">Evaluates a planet's current owner.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "GetPlanetLocation"></a>
+    <strong>GetPlanetLocation ()</strong>
+    </dt>
+    <dd>
+    Returns the game object.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">GameObject</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetStringKey"></a>
+    <strong>GetStringKey ()</strong>
+    </dt>
+    <dd>
+    Returns the localisation key of the planet.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetContested"></a>
+    <strong>GetContested ()</strong>
+    </dt>
+    <dd>
+    Returns the contested state.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "SetContested"></a>
+    <strong>SetContested (state)</strong>
+    </dt>
+    <dd>
+    Sets the contested state.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">state</span>
+            <span class="types"><span class="type">bool</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetCurrentDiplomaticInfluenceOwner"></a>
+    <strong>GetCurrentDiplomaticInfluenceOwner ()</strong>
+    </dt>
+    <dd>
+    Applies the owner faction's trait modifiers to the raw rating.
+ This function should be used to calculate diplomacy related operations.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        Raw diplomatic rating.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetGlobalValuePrefix"></a>
+    <strong>GetGlobalValuePrefix ()</strong>
+    </dt>
+    <dd>
+    Returns the prefix for all planet related global values.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "AddPlanetInReach"></a>
+    <strong>AddPlanetInReach (newPlanetInReach)</strong>
+    </dt>
+    <dd>
+    Adds a new planet object to the planet in reach table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newPlanetInReach</span>
+            <span class="types"><span class="type">cPlanet</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "EvaluateBuildings"></a>
+    <strong>EvaluateBuildings ()</strong>
+    </dt>
+    <dd>
+    Updates the building lists on the planet.
+ TODO Try triggering the update via the built event from the gamescoring.lua module
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetSpaceBuildingsAsString"></a>
+    <strong>GetSpaceBuildingsAsString ()</strong>
+    </dt>
+    <dd>
+    Returns the string keys for the space buildings on a planet.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetGroundBuildingsAsString"></a>
+    <strong>GetGroundBuildingsAsString ()</strong>
+    </dt>
+    <dd>
+    Returns the string keys for the ground buildings on the planet.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "EvaluatePlanetContested"></a>
+    <strong>EvaluatePlanetContested ()</strong>
+    </dt>
+    <dd>
+    Evaluates, whether an enemy fleet orbits a planet.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><span class="type">bool</span></span>
+        Returns a boolean depending on checked result.</li>
+        <li>
+           <span class="types"><span class="type">GalacticFleetObject</span></span>
+        Returns the contesting fleet object. Can be used to check for present diplomats, etc.</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "EvaluateDiplomaticInfluenceOwnerFactionRaw"></a>
+    <strong>EvaluateDiplomaticInfluenceOwnerFactionRaw ()</strong>
+    </dt>
+    <dd>
+    Evaluates the influence on the planet of the owner faction.
+ This returns the raw influence without the faction traits applied.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetDiplomaticRatingRaw"></a>
+    <strong>GetDiplomaticRatingRaw ()</strong>
+    </dt>
+    <dd>
+    Returns the current raw diplomatic value.
+ Calling this function forces an update of the self.DiplomaticAttribute
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        self.DiplomaticValue
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetDiplomaticRating"></a>
+    <strong>GetDiplomaticRating ()</strong>
+    </dt>
+    <dd>
+    Applies the owner faction's trait modifiers to the raw rating.
+ This function should be used to calculate diplomacy related operations.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        Raw diplomatic rating.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "EvaluateForeignDiplomaticInfuenceRaw"></a>
+    <strong>EvaluateForeignDiplomaticInfuenceRaw (cFacObj, cGameObjDiplomatType)</strong>
+    </dt>
+    <dd>
+    Evaluates the influence on the planet of a given faction.
+ This returns the raw influence without the faction traits applied.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cFacObj</span>
+            <span class="types"><span class="type">cFaction</span></span>
+         Faction to be evaluated.
+        </li>
+        <li><span class="parameter">cGameObjDiplomatType</span>
+            <span class="types"><span class="type">cGameObjectType</span></span>
+         Diplomat leading the talks.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetForeignDiplomaticInfuenceRaw"></a>
+    <strong>GetForeignDiplomaticInfuenceRaw (cFacObj, cGameObjDiplomatType)</strong>
+    </dt>
+    <dd>
+    Returns the current raw diplomatic value of a given faction.
+ Calling this function forces an update of the self.ForeignDiplomaticInfuence table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cFacObj</span>
+            <span class="types"><span class="type">cFaction</span></span>
+         Faction to be evaluated.
+        </li>
+        <li><span class="parameter">cGameObjDiplomatType</span>
+            <span class="types"><span class="type">cGameObjectType</span></span>
+         Diplomat leading the talks.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        ForeignDiplomaticInfuence[cFacObj:GetName()]
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetForeignDiplomaticInfuence"></a>
+    <strong>GetForeignDiplomaticInfuence (cFacObj, cGameObjDiplomatType)</strong>
+    </dt>
+    <dd>
+    Applies the desired faction's trait modifiers to the raw rating.
+ This function should be used to calculate diplomacy related operations.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cFacObj</span>
+            <span class="types"><span class="type">cFaction</span></span>
+         Faction to be evaluated.
+        </li>
+        <li><span class="parameter">cGameObjDiplomatType</span>
+            <span class="types"><span class="type">cGameObjectType</span></span>
+         Diplomat leading the talks.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        Raw diplomatic rating.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "AddPersistentObject"></a>
+    <strong>AddPersistentObject (objType)</strong>
+    </dt>
+    <dd>
+    Attaches a persistent object to the planet.
+ This object will be stuck at this specific planet until a MP_POD message referencing this object has been fired.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">objType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "RemovePersistentObject"></a>
+    <strong>RemovePersistentObject (objType)</strong>
+    </dt>
+    <dd>
+    Removes a registered persistent object type from a planet.
+ An incoming MP_POD message will create an event that in turn calls this function with the desired persistent object.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">objType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "UpdatePersistentObjects"></a>
+    <strong>UpdatePersistentObjects ()</strong>
+    </dt>
+    <dd>
+    Update cycle which ensures that persistent objects are in fact still residing on the planet.
+ This function will re-spawn any missing persistent object attached to the planet.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "HideAttachedGUIObject"></a>
+    <strong>HideAttachedGUIObject (objRef)</strong>
+    </dt>
+    <dd>
+    Hides a 3D preview of a present object on the planet.
+ This will only hide objects which are already present on a planet.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">objRef</span>
+            <span class="types"><span class="type">GameObject</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ShowAttachedGUIObject"></a>
+    <strong>ShowAttachedGUIObject (objRef)</strong>
+    </dt>
+    <dd>
+    Shows an attached GUI 3D Preview.
+ this will only show objects which have already been spawned for the planet.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">objRef</span>
+            <span class="types"><span class="type">GameObject</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "AttachGUI3DObject"></a>
+    <strong>AttachGUI3DObject (objType)</strong>
+    </dt>
+    <dd>
+    Attaches a new 3D GUI preview game object to the planet.
+ If a preview has been requested that has not yet been spawned, this function will create it.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">objType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">GameObject</span></span>
+        3D GUI Object
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Getter_Functions"></a>Getter Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "GetName"></a>
+    <strong>GetName ()</strong>
+    </dt>
+    <dd>
+    Returns the planet name.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">String</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetSelected"></a>
+    <strong>GetSelected ()</strong>
+    </dt>
+    <dd>
+    Returns the whether a planet is selected.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetStringKey"></a>
+    <strong>GetStringKey ()</strong>
+    </dt>
+    <dd>
+    Returns the MasterTextFile key.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">String</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetObjectType"></a>
+    <strong>GetObjectType ()</strong>
+    </dt>
+    <dd>
+    Returns the lua object type as string key.
+ Used for error handling.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">String</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetIsNavPoint"></a>
+    <strong>GetIsNavPoint ()</strong>
+    </dt>
+    <dd>
+    Is the planet a nav point?.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetOwner"></a>
+    <strong>GetOwner ()</strong>
+    </dt>
+    <dd>
+    Returns the planet's owner as cFaction object.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">cFaction</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetHomeFaction"></a>
+    <strong>GetHomeFaction ()</strong>
+    </dt>
+    <dd>
+    Returns the planet's home faction.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+        false if single planet.
+    </ol>
+     <h3>Or</h3>
+    <ol>
+
+           <span class="types"><span class="type">cFaction</span></span>
+        if part of sector.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetParentFaction"></a>
+    <strong>GetParentFaction ()</strong>
+    </dt>
+    <dd>
+    Gets the planet's owning faction.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><span class="type">bool</span></span>
+        </li>
+        <li>
+           <span class="types"><span class="type">owningFactionReference</span></span>
+        </li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetIsCapital"></a>
+    <strong>GetIsCapital ()</strong>
+    </dt>
+    <dd>
+    Gets the IsCapital attribute.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Initialisation"></a>Initialisation</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Initialise"></a>
+    <strong>Initialise ()</strong>
+    </dt>
+    <dd>
+    Initialises all planet relations to other objects which cannot be initialised in the constructor.
+ Updates owner relations and the like.
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Setter_Functions"></a>Setter Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "SetSelected"></a>
+    <strong>SetSelected (newSelectedState)</strong>
+    </dt>
+    <dd>
+    Sets a planet select state.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newSelectedState</span>
+            <span class="types"><span class="type">bool</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "SetAlliedFaction"></a>
+    <strong>SetAlliedFaction (newAllyObject)</strong>
+    </dt>
+    <dd>
+    Sets a new ally for a planet.
+ This is not the same as the owner, and instead is being used by the diplomacy system.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newAllyObject</span>
+            <span class="types"><span class="type">cFaction</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "SetOwner"></a>
+    <strong>SetOwner (newOwner)</strong>
+    </dt>
+    <dd>
+    Sets the planet's owner as cFaction object.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newOwner</span>
+            <span class="types"><span class="type">cFaction</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "SetParent"></a>
+    <strong>SetParent (galacticConquestReference)</strong>
+    </dt>
+    <dd>
+    Sets the planet's parent GC reference.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">galacticConquestReference</span>
+            <span class="types"><span class="type">cGalacticConquest</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "SetParentFaction"></a>
+    <strong>SetParentFaction (owningFactionReference)</strong>
+    </dt>
+    <dd>
+    Sets the planet's owning faction.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">owningFactionReference</span>
+            <span class="types"><span class="type">cFaction</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "SetIsCapital"></a>
+    <strong>SetIsCapital (isPlanetCapital)</strong>
+    </dt>
+    <dd>
+    Sets the IsCapital attribute.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">isPlanetCapital</span>
+            <span class="types"><span class="type">bool</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Evaluations"></a>Evaluations</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "EvaluateOwner"></a>
+    <strong>EvaluateOwner ()</strong>
+    </dt>
+    <dd>
+    Evaluates a planet's current owner.
+ If the owners don't match, or are not set this will trigger a EVENTTYPE_PLANET_OWNERCHANGE
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

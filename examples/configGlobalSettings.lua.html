@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><strong>configGlobalSettings.lua</strong></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <h2>configGlobalSettings.lua</h2>
+<pre>
+<span class="comment">-- ===== ===== ===== ===== =====
+</span><span class="comment">-- Copyright (c) 2017 Lukas Grünwald
+</span><span class="comment">-- License       MIT License
+</span><span class="comment">-- ===== ===== ===== ===== =====
+</span>
+<span class="comment">--- This is the framework's settings file for global variables.
+</span><span class="comment">-- These can be used to configure and balance various parts of the framework.
+</span>
+<span class="keyword">local</span> GlobalConfigurationSettings = {
+    gSetting_Global_EventHandlerCount = <span class="number">2</span>, <span class="comment">-- Number of spawned event handlers.
+</span>    gSetting_Global_ThreadWatchdogTick = <span class="number">1</span>, <span class="comment">-- How often are threads checked for activity?
+</span>    gSetting_Global_ThreadWatchdogTimeoutMult = <span class="number">10</span>, <span class="comment">-- How often is a thread allowed to miss its update time?
+</span>    gSetting_Global_FiscalCycle = <span class="number">45.0</span>, <span class="comment">-- Set this to the same value as &lt;Fiscal_Cycle_Time_In_Secs&gt; in Gameconstants.xml
+</span>    <span class="comment">-- Padding settings:
+</span>    gSetting_Global_MaxMessagePadding = <span class="number">3</span>, <span class="comment">-- Message system supports a maximum of 999 messages per type.
+</span>    gSetting_Global_PaddingFactionID = <span class="number">1</span>, <span class="comment">-- padding for faction IDs (max 9); Only supports major factions.
+</span>    gSetting_Global_PaddingObjectTypeID = <span class="number">3</span>, <span class="comment">-- Padding for object IDs (max 999)
+</span>    gSetting_Global_PaddingObjectTypeCount = <span class="number">2</span>, <span class="comment">-- Padding for object numbers (max 99)
+</span>    gSetting_Global_PaddingPlanetID = <span class="number">3</span>, <span class="comment">-- Padding for faction IDs (max 999)
+</span>    gSetting_Global_PaddingPDEventType = <span class="number">2</span>, <span class="comment">-- Padding for PD events (max 99)
+</span>    <span class="comment">-- Debug settings:
+</span>    gSetting_DebugMode = <span class="keyword">true</span>,    <span class="comment">-- Debug mode on or off?
+</span>    <span class="comment">-- Feature settings:
+</span>    gSetting_Feat_MaintenanceAI = <span class="keyword">false</span>, <span class="comment">-- Maintenance cost for AI player
+</span>    gSetting_Feat_MaintenancePC = <span class="keyword">true</span>, <span class="comment">-- Maintenance cost for human player
+</span>    gSetting_Feat_MaintenanceTick = <span class="number">45.0</span>, <span class="comment">-- Set this to the same value as &lt;Fiscal_Cycle_Time_In_Secs&gt; in Gameconstants.xml
+</span>    gSetting_Feat_PlanetShieldReplenishTick = <span class="number">10.0</span>, <span class="comment">-- Kad 07/07/2017 15:05:44 - Replenish the shield every x seconds by amount.
+</span>    gSetting_Feat_PlanetShieldReplenishAmount = <span class="number">0.05</span>, <span class="comment">-- Kad 07/07/2017 15:05:26 - That's a percentage of the max health!
+</span>    <span class="comment">-- Evaluation intervals:
+</span>    gSetting_Eval_OwnerTick = <span class="number">0.1</span>,   <span class="comment">-- owner check loop time
+</span>    gSetting_Eval_GUIEventTick = <span class="number">0.1</span>,    <span class="comment">-- how often is the selected planet updated?
+</span>    gSetting_Eval_FleetsTick = <span class="number">1.0</span>,   <span class="comment">-- fleet updater loop time
+</span>    gSetting_PD_RuinObject = <span class="string">"E_Ground_Heavy_Vehicle_Factory"</span>,
+    gSetting_PD_BombardmentBurstCount = <span class="number">4</span>,
+    gSetting_PD_BombardmentBurstIntervalMin = <span class="number">2.0</span>,
+    gSetting_PD_BombardmentBurstIntervalMax = <span class="number">4.0</span>,
+    gSetting_PD_BombardmentAttackRatingScaling = <span class="number">1.0</span>,
+    gSetting_PD_BombardmentCapableClassFilter = <span class="string">"Super | Capital | Frigate"</span>,
+    gSetting_PD_BombardmentBuildingDestructionParticle = <span class="string">"Planet_Explosion_Galactic"</span>,
+    gSetting_PD_BombardmentUnitDestructionParticle = <span class="string">"Planet_Explosion_Galactic"</span>,
+    <span class="comment">-- Diplomacy settings:
+</span>    gSetting_Diplomacy_MaxAllianceTier = <span class="number">4</span>,
+    gSetting_Diplomacy_AllianceThesholds = { [<span class="number">1</span>] = <span class="number">0.25</span>, [<span class="number">2</span>] = <span class="number">0.45</span>, [<span class="number">3</span>] = <span class="number">0.70</span>, [<span class="number">4</span>] = <span class="number">0.85</span>, [<span class="number">5</span>] = <span class="number">1.0</span>, }, <span class="comment">-- Kad 03/07/2017 11:17:28 - Do not use tier 5, it's just there so a call doesn't return a nil pointer.
+</span>    gSetting_Diplomacy_AllianceLostThreshold = <span class="number">0.15</span>,
+    sSetting_Diplomacy_SectorTurnoverPercentageNoCapital = <span class="number">65</span>,
+    sSetting_Diplomacy_SectorTurnoverPercentageCapital = <span class="number">45</span>,
+    gSetting_Diplomacy_MissionDurationFallback = <span class="number">360</span>,
+    gSetting_Diplomacy_InfluenceOnPlanetCap = <span class="number">200</span>, <span class="comment">-- Max influence one can have on a planet.
+</span>    gSetting_Diplomacy_InitialPlanetAllianceStrength = <span class="number">75</span>,    <span class="comment">-- On initialisation, all planets are bound to their owner with this alliance factor.
+</span>    gSetting_Diplomacy_InitialPlanetInfluenceStrength = <span class="number">75</span>,
+    gSetting_Diplomacy_DiplomaticMissionLocalInfluenceReduction = <span class="number">0.9</span>, <span class="comment">-- Reduces the local influence by 10%.
+</span>    gSetting_Diplomacy_OwnerPreviousEvalValueKept = <span class="number">1.1</span>, <span class="comment">-- 10% of the previous evaluation are being added to the new value. A planet "gets used to" its owner.
+</span>    <span class="comment">-- Event handler settings:
+</span>    gSetting_EventHandlerTick = <span class="number">0.2</span>,   <span class="comment">-- Serve events every x seconds
+</span>    <span class="comment">-- Fleet hyperspace accident:
+</span>    gSetting_FleetHyperspaceAccident_ExecuteChance = <span class="number">0.05</span>,  <span class="comment">-- 5% chance of an hyperspace over all.
+</span>    gSetting_FleetHyperspaceAccident_AccidentChance = <span class="number">0.5</span>,  <span class="comment">-- 50% chance of an hyperspace accident.
+</span>    gSetting_FleetHyperspaceAccident_DestructionParticle = <span class="string">"Planet_Explosion_Galactic"</span>,  <span class="comment">-- Spawned particle.
+</span>    gSetting_FleetHyperspaceAccident_MinShipsDestroyed = <span class="number">0.1</span>,   <span class="comment">-- At least 10% of the contained ships are being destroyed
+</span>    gSetting_FleetHyperspaceAccident_MaxShipsDestroyed = <span class="number">1.0</span>,   <span class="comment">-- But up to 100% can be destroyed.
+</span>    gSetting_FleetHyperspaceAccident_MinShipsInFleet = <span class="number">5</span>,  <span class="comment">-- Minimum number of ships contained in a fleet before it becomes dangerously large.
+</span>    gSetting_FleetHyperspaceAccident_AvoidingUnitTypes = {
+        {
+            ObjectType = <span class="string">"Generic_Fleet_Commander_Rebel"</span>,
+            AvoidanceChance = <span class="number">0.5</span>,
+        },
+        {
+            ObjectType = <span class="string">"Generic_Fleet_Commander_Empire"</span>,
+            AvoidanceChance = <span class="number">0.5</span>,
+        },
+    },
+    gSetting_FleetHyperspaceAccident_PreventingUnitTypes = {
+        <span class="string">"TIE_Scout"</span>,
+    },
+}
+
+<span class="keyword">return</span> GlobalConfigurationSettings
+</pre>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

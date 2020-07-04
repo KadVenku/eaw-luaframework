@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><strong>cMajorFaction.lua</strong></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <h2>cMajorFaction.lua</h2>
+<pre>
+<span class="comment">-- ===== ===== ===== ===== =====
+</span><span class="comment">-- Copyright (c) 2017 Lukas Grünwald
+</span><span class="comment">-- License       MIT License
+</span><span class="comment">-- ===== ===== ===== ===== =====
+</span>
+<span class="comment">--- cMajorFaction class.
+</span><span class="comment">-- Used to mirror all playable factions.
+</span>
+<span class="comment">-- Import new functions:
+</span><span class="global">require</span>( <span class="string">"libErrorFunctions"</span> )
+<span class="global">require</span>( <span class="string">"libDebugFunctions"</span> )
+<span class="comment">-- Import new classes:
+</span><span class="global">require</span>( <span class="string">"cFaction"</span> )
+
+cMajorFaction = {}
+cMajorFaction.__index = cMajorFaction
+<span class="global">setmetatable</span>( cMajorFaction, { __index = cFaction } )
+
+<span class="comment">--- Constructor.
+</span><span class="comment">-- Creates a new LUA object of type cMajorFaction.
+</span><span class="comment">-- @tparam cGalacticConquest parentGC The parent GC for this faction.
+</span><span class="comment">-- @tparam String newFactionName Used as key to load all relevant data from the static faction table.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cMajorFaction.New( parentGC, newFactionName )
+    <span class="keyword">local</span> self = <span class="global">setmetatable</span>( {}, cMajorFaction )
+
+    self.Name             = newFactionName
+    self.Parent           = parentGC
+    self.ObjectType       = <span class="string">"TEXT_LUA_OBJECT_TYPE_FACTION_MAJOR"</span>
+
+    <span class="comment">-- Initialisation from static library:
+</span>    <span class="keyword">local</span> FactionDataTable = <span class="global">require</span>( <span class="string">"libStaticFactionDefinitions"</span> )
+    <span class="keyword">if</span> FactionDataTable[newFactionName] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        self.StringKey                 = FactionDataTable[newFactionName].StringKey
+        self.GameFactionName           = FactionDataTable[newFactionName].GameFactionName
+        self.AllianceTiers             = FactionDataTable[newFactionName].AllianceStages
+        self.PlayerObject              = Find_Player( self.GameFactionName )
+        self.IsHuman                   = <span class="keyword">false</span>
+        self.FactionMilitaryStrength   = <span class="number">0.0</span>  <span class="comment">-- Military strength of a faction.
+</span>        self.FactionDiplomaticStrength = <span class="number">0.0</span>  <span class="comment">-- diplomatic strength of a faction. How many allies do we have? Who is the protector of this faction?
+</span>        self.FactionGalacticPerception = <span class="number">0.0</span>    <span class="comment">-- How do other factions see this faction? It's a value computed from a factions military and diplomatic strength, as well as its allies.
+</span>        self.AffectedByDiplomacy       = FactionDataTable[newFactionName].AffectedByDiplomacy <span class="comment">-- Can we use diplomacy with this faction?
+</span>        self.IsProtectoriateOf         = <span class="keyword">false</span>   <span class="comment">-- Only used for minor factions.
+</span>        self.HomePlanets               = { }  <span class="comment">-- This was previously handled as sector. Now it's more open to support factions instead.
+</span>        self.CapitalPlanet             = <span class="keyword">nil</span>  <span class="comment">-- Capital of the sector.
+</span>        self.Traits                    = { }  <span class="comment">-- Tags with traits which affect how a faction reacts to you. The Empire won't be impressed all that much by raw military strength, things like that.
+</span>        self.ActiveDiplomaticMissions  = { }
+        self.CurrentlyBuildableObjects = { }
+        self.Protectorates             = { }
+        self.DebugModeActive           = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_DebugMode
+    <span class="keyword">else</span>
+        ThrowObjectInitialisationError( self.ObjectType )
+    <span class="keyword">end</span>
+
+    <span class="keyword">return</span> self
+<span class="keyword">end</span>
+
+<span class="comment">--- Initialisation function.
+</span><span class="comment">-- This can only be called after all necessary objects have been created, as those attributes reflect interactions between objects.
+</span><span class="comment">-- @within Initialisation
+</span><span class="keyword">function</span> cMajorFaction:Initialise()
+    <span class="keyword">local</span> FactionDataTable = <span class="global">require</span>( <span class="string">"libStaticFactionDefinitions"</span> )
+    <span class="keyword">if</span> FactionDataTable[self:GetName()] == <span class="keyword">nil</span> <span class="keyword">then</span>
+        ThrowObjectInitialisationError( self.ObjectType )
+    <span class="keyword">else</span>
+        self.IsHuman                   = self:EvaluateHumanPlayer()
+        <span class="comment">-- self.FactionMilitaryStrength   = self:EvaluateFactionMilitaryStrength()
+</span>        <span class="comment">-- self.FactionDiplomaticStrength = self:EvaluateFactionDiplomaticStrength()
+</span>        <span class="comment">-- self.FactionGalacticPerception = self:EvaluateFactionGalacticPerception()
+</span>        <span class="keyword">local</span> lHomePlanets = FactionDataTable[self:GetName()].HomePlanets
+        <span class="keyword">local</span> lCapital = FactionDataTable[self:GetName()].CapitalPlanet
+        self:InitialiseHomeSector( lHomePlanets, lCapital )
+        <span class="keyword">local</span> lTraits = FactionDataTable[self:GetName()].Traits
+        <span class="keyword">if</span> lTraits <span class="keyword">then</span>
+            <span class="keyword">if</span> <span class="global">table</span>.getn( lTraits ) &gt; <span class="number">0</span> <span class="keyword">then</span>
+                self:InitialiseTraits( lTraits )
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+        self:EvaluateRawMilitaryStrength()
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="comment">--- Overwrites the default cFaction:EvaluateHumanPlayer() function to actually do something useful.
+</span><span class="comment">-- @treturn Bool
+</span><span class="comment">-- @within Evaluations
+</span><span class="keyword">function</span> cMajorFaction:EvaluateHumanPlayer()
+    <span class="keyword">local</span> isHuman = self:GetPlayerObject().Is_Human()
+    <span class="keyword">if</span> isHuman <span class="keyword">and</span> self.DebugModeActive <span class="keyword">then</span>
+        debugPushDroidMessage( <span class="string">"TEXT_DEBUG_GC_HUMAN_PLAYER_FOUND"</span> )
+        debugPushDroidMessage( self:GetStringKey() )
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> isHuman
+<span class="keyword">end</span>
+<span class="keyword">function</span> cMajorFaction:GetProtectorates()
+    <span class="keyword">return</span> self.Protectorates
+<span class="keyword">end</span>
+<span class="keyword">function</span> cMajorFaction:AddDiplomaticMission( mission )
+    <span class="global">table</span>.insert( self.ActiveDiplomaticMissions, mission )
+<span class="keyword">end</span>
+<span class="keyword">function</span> cMajorFaction:ClearDiplomaticMissionHolochron()
+    Story_Event( <span class="string">"info_DisplayActiveDiplomaticMissionsReset_Trigger"</span> )
+<span class="keyword">end</span>
+
+<span class="keyword">function</span> cMajorFaction:UpdateDiplomaticMissionHolochron()
+    <span class="keyword">local</span> dipMis = self.ActiveDiplomaticMissions
+    <span class="keyword">local</span> displayEvent = Get_Story_Plot( <span class="string">"__luaFramework/cGUIHandler/cGUIMissionHolochronOutput.xml"</span> ).Get_Event( <span class="string">"info_DisplayActiveDiplomaticMissions"</span> )
+    <span class="keyword">local</span> dialogFile = <span class="string">"hcActiveDiplomaticMissions"</span>
+    <span class="keyword">local</span> addedMission = <span class="keyword">false</span>
+    displayEvent.Clear_Dialog_Text()
+    displayEvent.Add_Dialog_Text( <span class="string">"TEXT_OUT_FORMATTED_SEPARATOR"</span> )
+    <span class="keyword">for</span> _, diplMission <span class="keyword">in</span> <span class="global">pairs</span>( dipMis ) <span class="keyword">do</span>
+        displayEvent.Add_Dialog_Text( <span class="string">"TEXT_OUT_FORMATTED_NEWLINE"</span> )
+        displayEvent.Add_Dialog_Text( <span class="string">"TEXT_MISSION_CONTENT_ACTIVE_DIPLOMATIC_MISSION_AT"</span>, diplMission.Planet:GetStringKey() )
+        displayEvent.Add_Dialog_Text( <span class="string">"TEXT_MISSION_CONTENT_ACTIVE_DIPLOMATIC_MISSION_LED_BY"</span>, diplMission.Diplomat:GetStringKey() )
+        <span class="keyword">local</span> timeInProgress = GetCurrentTime() - diplMission.TimeInitialised
+        <span class="keyword">local</span> timeLeft = diplMission.Timer - timeInProgress
+        <span class="keyword">local</span> fiscalCycle = <span class="global">require</span>( <span class="string">"configGlobalSettings"</span> ).gSetting_Global_FiscalCycle
+        timeLeft = timeLeft/fiscalCycle
+        displayEvent.Add_Dialog_Text( <span class="string">"TEXT_MISSION_CONTENT_ACTIVE_DIPLOMATIC_MISSION_TIME_LEFT"</span>, timeLeft, <span class="string">"TEXT_CYCLES"</span> )
+        displayEvent.Add_Dialog_Text( <span class="string">"TEXT_OUT_FORMATTED_NEWLINE"</span> )
+        displayEvent.Add_Dialog_Text( <span class="string">"TEXT_OUT_FORMATTED_SEPARATOR"</span> )
+        addedMission = <span class="keyword">true</span>
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> <span class="keyword">not</span> addedMission <span class="keyword">then</span>
+        displayEvent.Add_Dialog_Text( <span class="string">"TEXT_OUT_FORMATTED_NEWLINE"</span> )
+        displayEvent.Add_Dialog_Text( <span class="string">"TEXT_MISSION_CONTENT_ACTIVE_DIPLOMATIC_MISSION_NONE"</span> )
+        displayEvent.Add_Dialog_Text( <span class="string">"TEXT_OUT_FORMATTED_NEWLINE"</span> )
+        displayEvent.Add_Dialog_Text( <span class="string">"TEXT_OUT_FORMATTED_SEPARATOR"</span> )
+    <span class="keyword">end</span>
+    Story_Event( <span class="string">"info_DisplayActiveDiplomaticMissions_Trigger"</span> )
+<span class="keyword">end</span>
+<span class="keyword">function</span> cMajorFaction:RemoveDiplomaticMission( mission )
+    <span class="keyword">local</span> keyToRemove = <span class="keyword">false</span>
+    <span class="keyword">for</span> key,entry <span class="keyword">in</span> <span class="global">pairs</span>( self.ActiveDiplomaticMissions ) <span class="keyword">do</span>
+        <span class="keyword">if</span> mission.Planet == entry.Planet <span class="keyword">and</span> mission.Diplomat == entry.Diplomat <span class="keyword">then</span>
+            keyToRemove = key
+            <span class="keyword">break</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> keyToRemove <span class="keyword">then</span>
+        self.ActiveDiplomaticMissions[keyToRemove] = <span class="keyword">nil</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">function</span> cMajorFaction:MakeAlly( cMinorFactionObj )
+    <span class="keyword">if</span> self.Protectorates[cMinorFactionObj:GetName()] == <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">local</span> allyStruct = {
+            Faction = cMinorFactionObj,
+            Stages = {}
+        }
+        <span class="keyword">for</span> i = <span class="number">1</span>, <span class="global">require</span>(<span class="string">"configGlobalSettings"</span>).gSetting_Diplomacy_MaxAllianceTier, <span class="number">1</span> <span class="keyword">do</span>
+            allyStruct.Stages[<span class="number">1</span>] = <span class="keyword">false</span>
+        <span class="keyword">end</span>
+        self.Protectorates[cMinorFactionObj:GetName()] = allyStruct
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="keyword">function</span> cMajorFaction:GetAlly( cMinorFactionObj )
+    <span class="keyword">if</span> self.Protectorates[cMinorFactionObj:GetName()] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">return</span> self.Protectorates[cMinorFactionObj:GetName()]
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+<span class="keyword">function</span> cMajorFaction:IsAlliedWith( cMinorFactionObj )
+    <span class="keyword">if</span> self.Protectorates[cMinorFactionObj:GetName()] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">return</span> <span class="keyword">true</span>
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+<span class="keyword">function</span> cMajorFaction:GetIsDiplomacyStageTriggered( factionNameString, diplomacyStage )
+    <span class="keyword">if</span> self.Protectorates[factionNameString] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        <span class="keyword">return</span> self.Protectorates[factionNameString].Stages[diplomacyStage]
+    <span class="keyword">end</span>
+    <span class="keyword">return</span> <span class="keyword">false</span>
+<span class="keyword">end</span>
+<span class="keyword">function</span> cMajorFaction:SetDiplomacyStageTriggered( factionNameString, diplomacyStage )
+    <span class="keyword">if</span> self.Protectorates[factionNameString] ~= <span class="keyword">nil</span> <span class="keyword">then</span>
+        self.Protectorates[factionNameString].Stages[diplomacyStage] = <span class="keyword">true</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">return</span> cMajorFaction
+</pre>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

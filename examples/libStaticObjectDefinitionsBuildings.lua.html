@@ -1,0 +1,1166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><strong>libStaticObjectDefinitionsBuildings.lua</strong></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><a href="../modules/cFaction.html">cFaction</a></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <h2>libStaticObjectDefinitionsBuildings.lua</h2>
+<pre>
+<span class="comment">-- ===== ===== ===== ===== =====
+</span><span class="comment">-- Copyright (c) 2017 Lukas Grünwald
+</span><span class="comment">-- License       MIT License
+</span><span class="comment">-- ===== ===== ===== ===== =====
+</span>
+<span class="comment">--- {library} This library contains all usable object types in the game.
+</span><span class="comment">-- The way it is set up, it supports multiple affiliations for one single object type by adding factions to the Factions sub-table. Doing so for  is not encouraged, as multi-alignment breaks diplomacy.
+</span><span class="keyword">local</span> StaticObjectDefinitionsBuildings = {
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Empire_Star_Base_1"</span>,
+        GameObjectTypeCapital      = <span class="string">"EMPIRE_STAR_BASE_1"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_EMPIRE_STAR_BASE_1"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Empire_Star_Base_2"</span>,
+        GameObjectTypeCapital      = <span class="string">"EMPIRE_STAR_BASE_2"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_EMPIRE_STAR_BASE_2"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Empire_Star_Base_3"</span>,
+        GameObjectTypeCapital      = <span class="string">"EMPIRE_STAR_BASE_3"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_EMPIRE_STAR_BASE_3"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Empire_Star_Base_4"</span>,
+        GameObjectTypeCapital      = <span class="string">"EMPIRE_STAR_BASE_4"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_EMPIRE_STAR_BASE_4"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Empire_Star_Base_5"</span>,
+        GameObjectTypeCapital      = <span class="string">"EMPIRE_STAR_BASE_5"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_EMPIRE_STAR_BASE_5"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"E_Orbital_Jamming_Station"</span>,
+        GameObjectTypeCapital      = <span class="string">"E_ORBITAL_JAMMING_STATION"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_ORBITAL_JAMMING_STATION"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Empire_Orbital_Long_Range_Scanner"</span>,
+        GameObjectTypeCapital      = <span class="string">"EMPIRE_ORBITAL_LONG_RANGE_SCANNER"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_ORBITAL_LONG_RANGE_SCANNER"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="string">"GUI_GC_PLANET_ORBITAL_LONGRANGESCANNER"</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"E_Gravity_Well_Station"</span>,
+        GameObjectTypeCapital      = <span class="string">"E_GRAVITY_WELL_STATION"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GRAVITY_WELL_STATION"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="string">"GUI_GC_PLANET_ORBITAL_GRAVWELL"</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Ground_Magnepulse_Cannon"</span>,
+        GameObjectTypeCapital      = <span class="string">"GROUND_MAGNEPULSE_CANNON"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_MAGNEPULSE_CANNON"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Empire_Ground_Shutter_Shield"</span>,
+        GameObjectTypeCapital      = <span class="string">"EMPIRE_GROUND_SHUTTER_SHIELD"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_SHUTTER_SHIELD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Ground_Cantina_E"</span>,
+        GameObjectTypeCapital      = <span class="string">"GROUND_CANTINA_E"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_CANTINA"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Ground_Hutt_Palace_E"</span>,
+        GameObjectTypeCapital      = <span class="string">"GROUND_HUTT_PALACE_E"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_HUTT_PALACE"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"E_Ground_Base_Shield"</span>,
+        GameObjectTypeCapital      = <span class="string">"E_GROUND_BASE_SHIELD"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, <span class="string">"BASE_SHIELD"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_BASE_SHIELD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">15</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Ground_Gravity_Generator"</span>,
+        GameObjectTypeCapital      = <span class="string">"GROUND_GRAVITY_GENERATOR"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_GRAVITY_GEN"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Ground_Empire_Hypervelocity_Gun"</span>,
+        GameObjectTypeCapital      = <span class="string">"GROUND_EMPIRE_HYPERVELOCITY_GUN"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_HYPERVELOCITY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Empire_Ground_Mining_Facility"</span>,
+        GameObjectTypeCapital      = <span class="string">"EMPIRE_GROUND_MINING_FACILITY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_MINING_FACILITY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"E_Galactic_Turbolaser_Tower_Defenses"</span>,
+        GameObjectTypeCapital      = <span class="string">"E_GALACTIC_TURBOLASER_TOWER_DEFENSES"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_TURBOLASER_DEFENSE_UPGRADE"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"E_Ground_Barracks"</span>,
+        GameObjectTypeCapital      = <span class="string">"E_GROUND_BARRACKS"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_BARRACKS"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"E_Ground_Light_Vehicle_Factory"</span>,
+        GameObjectTypeCapital      = <span class="string">"E_GROUND_LIGHT_VEHICLE_FACTORY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_LIGHT_VEHICLE_FACTORY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"E_Ground_Heavy_Vehicle_Factory"</span>,
+        GameObjectTypeCapital      = <span class="string">"E_GROUND_HEAVY_VEHICLE_FACTORY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, <span class="string">"RUIN"</span> },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_HEAVY_VEHICLE_FACTORY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"E_Ground_Advanced_Vehicle_Factory"</span>,
+        GameObjectTypeCapital      = <span class="string">"E_GROUND_ADVANCED_VEHICLE_FACTORY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_ADVANCED_VEHICLE_FACTORY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"E_Ground_Officer_Academy"</span>,
+        GameObjectTypeCapital      = <span class="string">"E_GROUND_OFFICER_ACADEMY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_OFFICER_ACADEMY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"E_Ground_Research_Facility"</span>,
+        GameObjectTypeCapital      = <span class="string">"E_GROUND_RESEARCH_FACILITY"</span>,
+        AvailableForFactions       = { <span class="string">"Galactic_Empire"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_RESEARCH_FACILITY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Star_Base_1"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_STAR_BASE_1"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_STAR_BASE_1"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Star_Base_2"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_STAR_BASE_2"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_STAR_BASE_2"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Star_Base_3"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_STAR_BASE_3"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_STAR_BASE_3"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Star_Base_4"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_STAR_BASE_4"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_STAR_BASE_4"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Star_Base_5"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_STAR_BASE_5"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_STAR_BASE_5"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"R_Orbital_Jamming_Station"</span>,
+        GameObjectTypeCapital      = <span class="string">"R_ORBITAL_JAMMING_STATION"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_ORBITAL_JAMMING_STATION"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Orbital_Long_Range_Scanner"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_ORBITAL_LONG_RANGE_SCANNER"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_ORBITAL_LONG_RANGE_SCANNER"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Ground_Ion_Cannon"</span>,
+        GameObjectTypeCapital      = <span class="string">"GROUND_ION_CANNON"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_ION_CANNON"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Ground_Shutter_Shield"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_GROUND_SHUTTER_SHIELD"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_SHUTTER_SHIELD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Ground_Cantina_R"</span>,
+        GameObjectTypeCapital      = <span class="string">"GROUND_CANTINA_R"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_CANTINA"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Ground_Hutt_Palace_R"</span>,
+        GameObjectTypeCapital      = <span class="string">"GROUND_HUTT_PALACE_R"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_HUTT_PALACE"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"R_Ground_Base_Shield"</span>,
+        GameObjectTypeCapital      = <span class="string">"R_GROUND_BASE_SHIELD"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, <span class="string">"BASE_SHIELD"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_BASE_SHIELD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">15</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Ground_Grand_Arena"</span>,
+        GameObjectTypeCapital      = <span class="string">"GROUND_GRAND_ARENA"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_GRAND_ARENA"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Ground_Infiltrator_Facility"</span>,
+        GameObjectTypeCapital      = <span class="string">"GROUND_INFILTRATOR_FACILITY"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_INFILTRATOR_FACILITY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Rebel_Ground_Mining_Facility"</span>,
+        GameObjectTypeCapital      = <span class="string">"REBEL_GROUND_MINING_FACILITY"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_MINING_FACILITY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"R_Galactic_Turbolaser_Tower_Defenses"</span>,
+        GameObjectTypeCapital      = <span class="string">"R_GALACTIC_TURBOLASER_TOWER_DEFENSES"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_TURBOLASER_DEFENSE_UPGRADE"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"R_Ground_Barracks"</span>,
+        GameObjectTypeCapital      = <span class="string">"R_GROUND_BARRACKS"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_BARRACKS"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"R_Ground_Light_Vehicle_Factory"</span>,
+        GameObjectTypeCapital      = <span class="string">"R_GROUND_LIGHT_VEHICLE_FACTORY"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_LIGHT_VEHICLE_FACTORY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"R_Ground_Heavy_Vehicle_Factory"</span>,
+        GameObjectTypeCapital      = <span class="string">"R_GROUND_HEAVY_VEHICLE_FACTORY"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_HEAVY_VEHICLE_FACTORY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"R_Ground_Officer_Academy"</span>,
+        GameObjectTypeCapital      = <span class="string">"R_GROUND_OFFICER_ACADEMY"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_OFFICER_ACADEMY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"R_Ground_Research_Facility"</span>,
+        GameObjectTypeCapital      = <span class="string">"R_GROUND_RESEARCH_FACILITY"</span>,
+        AvailableForFactions       = { <span class="string">"Rebel_Alliance"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_RESEARCH_FACILITY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Underworld_Star_Base_1"</span>,
+        GameObjectTypeCapital      = <span class="string">"UNDERWORLD_STAR_BASE_1"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_STAR_BASE_1"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Underworld_Star_Base_2"</span>,
+        GameObjectTypeCapital      = <span class="string">"UNDERWORLD_STAR_BASE_2"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_STAR_BASE_2"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Underworld_Star_Base_3"</span>,
+        GameObjectTypeCapital      = <span class="string">"UNDERWORLD_STAR_BASE_3"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_STAR_BASE_3"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Underworld_Star_Base_4"</span>,
+        GameObjectTypeCapital      = <span class="string">"UNDERWORLD_STAR_BASE_4"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_STAR_BASE_4"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Underworld_Star_Base_5"</span>,
+        GameObjectTypeCapital      = <span class="string">"UNDERWORLD_STAR_BASE_5"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"ORBITAL"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_REBEL_STAR_BASE_5"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"Ground_Cantina_U"</span>,
+        GameObjectTypeCapital      = <span class="string">"GROUND_CANTINA_U"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_CANTINA"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"U_Ground_Palace"</span>,
+        GameObjectTypeCapital      = <span class="string">"U_GROUND_PALACE"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_PALACE_UNDERWORLD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"U_Ground_Barracks"</span>,
+        GameObjectTypeCapital      = <span class="string">"U_GROUND_BARRACKS"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_BARRACKS_UNDERWORLD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"U_Ground_Droid_Works"</span>,
+        GameObjectTypeCapital      = <span class="string">"U_GROUND_DROID_WORKS"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_DROID_WORKS"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"U_Ground_Vehicle_Factory"</span>,
+        GameObjectTypeCapital      = <span class="string">"U_GROUND_VEHICLE_FACTORY"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_FACTORY_UNDERWORLD"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"U_Ground_Mining_Facility"</span>,
+        GameObjectTypeCapital      = <span class="string">"U_GROUND_MINING_FACILITY"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_MINING_FACILITY"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+    {
+        <span class="comment">-- Generic settings:
+</span>        GameObjectTypeXML          = <span class="string">"U_Ground_Gravity_Generator"</span>,
+        GameObjectTypeCapital      = <span class="string">"U_GROUND_GRAVITY_GENERATOR"</span>,
+        AvailableForFactions       = { <span class="string">"Zann_Consortium"</span>, },
+        GUIFilterTags              = { <span class="string">"BUILDING"</span> },
+        CategoryMask               = { <span class="string">"Structure"</span>, },
+        ObjectFilterTags           = { <span class="string">"BUILDING"</span>, <span class="string">"GROUND"</span>, },
+        ObjectTextID               = <span class="string">"TEXT_GROUND_GRAVITY_GEN"</span>,
+        HeroType                   = <span class="string">"NONE"</span>,
+        Traits                     = { },
+        MaintenanceCost            = <span class="number">5</span>,
+        DiplomaticInfluence        = <span class="number">0.0</span>,
+        DiplomaticRating           = <span class="number">0</span>,
+        <span class="comment">-- Building specific settings:
+</span>        ShieldStrength             = <span class="number">0</span>,
+        GUIDummy                   = <span class="keyword">false</span>,
+    },
+}
+
+<span class="keyword">return</span> StaticObjectDefinitionsBuildings
+</pre>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

@@ -1,0 +1,829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>EaW Lua Framework</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>EaW Lua Framework</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Initialisation">Initialisation</a></li>
+<li><a href="#_abstract__Initialisation">{abstract} Initialisation</a></li>
+<li><a href="#Getter_functions">Getter functions</a></li>
+<li><a href="#_abstract__Evaluations">{abstract} Evaluations</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/cEvent.html">cEvent</a></li>
+  <li><a href="../modules/cEventHandler.html">cEventHandler</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLCheckFactionAlliance.html">cEvent_Type_DIPLCheckFactionAlliance</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLEndDiplomaticMission.html">cEvent_Type_DIPLEndDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLMakeAllies.html">cEvent_Type_DIPLMakeAllies</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLStartDiplomaticMission.html">cEvent_Type_DIPLStartDiplomaticMission</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLTurnPlanet.html">cEvent_Type_DIPLTurnPlanet</a></li>
+  <li><a href="../modules/cEvent_Type_DIPLUpdateAllianceRating.html">cEvent_Type_DIPLUpdateAllianceRating</a></li>
+  <li><a href="../modules/cEvent_Type_FleetHyperspaceAccident.html">cEvent_Type_FleetHyperspaceAccident</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBegin.html">cEvent_Type_OrbitalBombardmentBegin</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentBurst.html">cEvent_Type_OrbitalBombardmentBurst</a></li>
+  <li><a href="../modules/cEvent_Type_OrbitalBombardmentEnd.html">cEvent_Type_OrbitalBombardmentEnd</a></li>
+  <li><a href="../modules/cEvent_Type_SpawnUnits.html">cEvent_Type_SpawnUnits</a></li>
+  <li><a href="../modules/cEvent_Type_Testevent.html">cEvent_Type_Testevent</a></li>
+  <li><strong>cFaction</strong></li>
+  <li><a href="../modules/cGUIElement.html">cGUIElement</a></li>
+  <li><a href="../modules/cGUIElement_Type_Filter.html">cGUIElement_Type_Filter</a></li>
+  <li><a href="../modules/cGUIHandler.html">cGUIHandler</a></li>
+  <li><a href="../modules/cGalacticConquest.html">cGalacticConquest</a></li>
+  <li><a href="../modules/cGameObjectType.html">cGameObjectType</a></li>
+  <li><a href="../modules/cGameObjectTypeBuilding.html">cGameObjectTypeBuilding</a></li>
+  <li><a href="../modules/cGameObjectTypeUnit.html">cGameObjectTypeUnit</a></li>
+  <li><a href="../modules/cGameObjectTypeUpgrade.html">cGameObjectTypeUpgrade</a></li>
+  <li><a href="../modules/cGlobalMessageHandler.html">cGlobalMessageHandler</a></li>
+  <li><a href="../modules/cMajorFaction.html">cMajorFaction</a></li>
+  <li><a href="../modules/cMinorFaction.html">cMinorFaction</a></li>
+  <li><a href="../modules/cObjectManager.html">cObjectManager</a></li>
+  <li><a href="../modules/cPlanet.html">cPlanet</a></li>
+  <li><a href="../modules/configGlobalSettings.html">configGlobalSettings</a></li>
+  <li><a href="../modules/libDebugFunctions.html">libDebugFunctions</a></li>
+  <li><a href="../modules/libErrorFunctions.html">libErrorFunctions</a></li>
+  <li><a href="../modules/libGCFunctionLibrary.html">libGCFunctionLibrary</a></li>
+  <li><a href="../modules/libPGGenericFunctionLibrary.html">libPGGenericFunctionLibrary</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsBuildings.html">libStaticObjectDefinitionsBuildings</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUnits.html">libStaticObjectDefinitionsUnits</a></li>
+  <li><a href="../modules/libStaticObjectDefinitionsUpgrades.html">libStaticObjectDefinitionsUpgrades</a></li>
+  <li><a href="../modules/libStaticTraitDefinitions.html">libStaticTraitDefinitions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/README.md.html">README</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/cEvent.lua.html">cEvent.lua</a></li>
+  <li><a href="../examples/cEventHandler.lua.html">cEventHandler.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLCheckFactionAlliance.lua.html">cEvent_Type_DIPLCheckFactionAlliance.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLEndDiplomaticMission.lua.html">cEvent_Type_DIPLEndDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLMakeAllies.lua.html">cEvent_Type_DIPLMakeAllies.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLStartDiplomaticMission.lua.html">cEvent_Type_DIPLStartDiplomaticMission.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLTurnPlanet.lua.html">cEvent_Type_DIPLTurnPlanet.lua</a></li>
+  <li><a href="../examples/cEvent_Type_DIPLUpdateAllianceRating.lua.html">cEvent_Type_DIPLUpdateAllianceRating.lua</a></li>
+  <li><a href="../examples/cEvent_Type_FleetHyperspaceAccident.lua.html">cEvent_Type_FleetHyperspaceAccident.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBegin.lua.html">cEvent_Type_OrbitalBombardmentBegin.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentBurst.lua.html">cEvent_Type_OrbitalBombardmentBurst.lua</a></li>
+  <li><a href="../examples/cEvent_Type_OrbitalBombardmentEnd.lua.html">cEvent_Type_OrbitalBombardmentEnd.lua</a></li>
+  <li><a href="../examples/cEvent_Type_SpawnUnits.lua.html">cEvent_Type_SpawnUnits.lua</a></li>
+  <li><a href="../examples/cEvent_Type_Testevent.lua.html">cEvent_Type_Testevent.lua</a></li>
+  <li><a href="../examples/cFaction.lua.html">cFaction.lua</a></li>
+  <li><a href="../examples/cGUIElement.lua.html">cGUIElement.lua</a></li>
+  <li><a href="../examples/cGUIElement_Type_Filter.lua.html">cGUIElement_Type_Filter.lua</a></li>
+  <li><a href="../examples/cGUIHandler.lua.html">cGUIHandler.lua</a></li>
+  <li><a href="../examples/cGalacticConquest.lua.html">cGalacticConquest.lua</a></li>
+  <li><a href="../examples/cGameObjectType.lua.html">cGameObjectType.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeBuilding.lua.html">cGameObjectTypeBuilding.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUnit.lua.html">cGameObjectTypeUnit.lua</a></li>
+  <li><a href="../examples/cGameObjectTypeUpgrade.lua.html">cGameObjectTypeUpgrade.lua</a></li>
+  <li><a href="../examples/cGlobalMessageHandler.lua.html">cGlobalMessageHandler.lua</a></li>
+  <li><a href="../examples/cMajorFaction.lua.html">cMajorFaction.lua</a></li>
+  <li><a href="../examples/cMinorFaction.lua.html">cMinorFaction.lua</a></li>
+  <li><a href="../examples/cObjectManager.lua.html">cObjectManager.lua</a></li>
+  <li><a href="../examples/cPlanet.lua.html">cPlanet.lua</a></li>
+  <li><a href="../examples/configGlobalSettings.lua.html">configGlobalSettings.lua</a></li>
+  <li><a href="../examples/libDebugFunctions.lua.html">libDebugFunctions.lua</a></li>
+  <li><a href="../examples/libErrorFunctions.lua.html">libErrorFunctions.lua</a></li>
+  <li><a href="../examples/libGCDefinitions.lua.html">libGCDefinitions.lua</a></li>
+  <li><a href="../examples/libGCFunctionLibrary.lua.html">libGCFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libPGGenericFunctionLibrary.lua.html">libPGGenericFunctionLibrary.lua</a></li>
+  <li><a href="../examples/libStaticEventTypeDefinitions.lua.html">libStaticEventTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticFactionDefinitions.lua.html">libStaticFactionDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticGUIElements.lua.html">libStaticGUIElements.lua</a></li>
+  <li><a href="../examples/libStaticGUIObjectMappings.lua.html">libStaticGUIObjectMappings.lua</a></li>
+  <li><a href="../examples/libStaticMessageTypeDefinitions.lua.html">libStaticMessageTypeDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsBuildings.lua.html">libStaticObjectDefinitionsBuildings.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUnits.lua.html">libStaticObjectDefinitionsUnits.lua</a></li>
+  <li><a href="../examples/libStaticObjectDefinitionsUpgrades.lua.html">libStaticObjectDefinitionsUpgrades.lua</a></li>
+  <li><a href="../examples/libStaticPlanetDefinitions.lua.html">libStaticPlanetDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticPlanetStates.lua.html">libStaticPlanetStates.lua</a></li>
+  <li><a href="../examples/libStaticStructReinforces.lua.html">libStaticStructReinforces.lua</a></li>
+  <li><a href="../examples/libStaticTraderouteDefinitions.lua.html">libStaticTraderouteDefinitions.lua</a></li>
+  <li><a href="../examples/libStaticTraitDefinitions.lua.html">libStaticTraitDefinitions.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>cFaction</code></h1>
+<p>{abstract} Base cFaction class.</p>
+<p>
+ Base class for all faction types.
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#InitialiseTraits">InitialiseTraits (traitTable)</a></td>
+	<td class="summary">Initializes the faction traits.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetTraits">GetTraits ()</a></td>
+	<td class="summary">Returns a faction's traits.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetRawMilitaryStrength">GetRawMilitaryStrength ()</a></td>
+	<td class="summary">Returns a faction's raw military strength without trait modifiers applied.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetHomeSector">GetHomeSector ()</a></td>
+	<td class="summary">Returns the home sectors of the planets.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#EvaluateRawMilitaryStrength">EvaluateRawMilitaryStrength ()</a></td>
+	<td class="summary">Evaluates a faction's raw military strength.</td>
+	</tr>
+</table>
+<h2><a href="#Initialisation">Initialisation</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#New">New (parentGC, newFactionName)</a></td>
+	<td class="summary">{abstract} Constructor.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#InitialiseHomeSector">InitialiseHomeSector (sectorPlanetTable, capitalPlanetName)</a></td>
+	<td class="summary">Initialises the home sector of a faction.</td>
+	</tr>
+</table>
+<h2><a href="#_abstract__Initialisation">{abstract} Initialisation</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Initialise">Initialise ()</a></td>
+	<td class="summary">{abstract}.</td>
+	</tr>
+</table>
+<h2><a href="#Getter_functions">Getter functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#GetName">GetName ()</a></td>
+	<td class="summary">Returns a faction's name (Not the string key or the PlayerObject).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetStringKey">GetStringKey ()</a></td>
+	<td class="summary">Returns a faction's string key.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetGameFactionName">GetGameFactionName ()</a></td>
+	<td class="summary">Returns a faction's gameFactionName.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetObjectType">GetObjectType ()</a></td>
+	<td class="summary">Returns a faction's object type.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetPlayerObject">GetPlayerObject ()</a></td>
+	<td class="summary">Returns the PlayerObject for a faction.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetIsHumanPlayer">GetIsHumanPlayer ()</a></td>
+	<td class="summary">Is the faction human or AI?.</td>
+	</tr>
+</table>
+<h2><a href="#_abstract__Evaluations">{abstract} Evaluations</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#EvaluateHumanPlayer">EvaluateHumanPlayer ()</a></td>
+	<td class="summary">{abstract}.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#AddDiplomaticMission">AddDiplomaticMission (mission)</a></td>
+	<td class="summary">{abstract}.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#RemoveDiplomaticMission">RemoveDiplomaticMission (mission)</a></td>
+	<td class="summary">{abstract}.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#UpdateDiplomaticMissionHolochron">UpdateDiplomaticMissionHolochron ()</a></td>
+	<td class="summary">{abstract}.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ClearDiplomaticMissionHolochron">ClearDiplomaticMissionHolochron ()</a></td>
+	<td class="summary">{abstract}.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetProtectorates">GetProtectorates ()</a></td>
+	<td class="summary">{abstract}.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MakeAlly">MakeAlly ()</a></td>
+	<td class="summary">{abstract}.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IsAlliedWith">IsAlliedWith ()</a></td>
+	<td class="summary">{abstract}.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetAlly">GetAlly ()</a></td>
+	<td class="summary">{abstract}.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetIsDiplomacyStageTriggered">GetIsDiplomacyStageTriggered ()</a></td>
+	<td class="summary">{abstract}.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#GetRewardSet">GetRewardSet ()</a></td>
+	<td class="summary">{abstract}.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "InitialiseTraits"></a>
+    <strong>InitialiseTraits (traitTable)</strong>
+    </dt>
+    <dd>
+    Initializes the faction traits.
+ Only loads traits which are defined, if a trait is not defined, the trait will be skipped.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">traitTable</span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetTraits"></a>
+    <strong>GetTraits ()</strong>
+    </dt>
+    <dd>
+    Returns a faction's traits.
+ Traits are keywords used to describe a faction, they influence the base behaviour and buff/debuff values.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        Trait table.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetRawMilitaryStrength"></a>
+    <strong>GetRawMilitaryStrength ()</strong>
+    </dt>
+    <dd>
+    Returns a faction's raw military strength without trait modifiers applied.
+ This should not be used unless a specific function requires the raw value.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        Raw military strength.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetHomeSector"></a>
+    <strong>GetHomeSector ()</strong>
+    </dt>
+    <dd>
+    Returns the home sectors of the planets.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "EvaluateRawMilitaryStrength"></a>
+    <strong>EvaluateRawMilitaryStrength ()</strong>
+    </dt>
+    <dd>
+    Evaluates a faction's raw military strength.
+ This should only be called before the raw strength is needed as a value, not continuously updated without use.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        Raw strength.
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Initialisation"></a>Initialisation</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "New"></a>
+    <strong>New (parentGC, newFactionName)</strong>
+    </dt>
+    <dd>
+    {abstract} Constructor.
+ Creates a new LUA object of type cFaction.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parentGC</span>
+            <span class="types"><span class="type">cGalacticConquest</span></span>
+         The parent GC for this faction.
+        </li>
+        <li><span class="parameter">newFactionName</span>
+            <span class="types"><span class="type">String</span></span>
+         Used as key to load all relevant data from the static faction table.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "InitialiseHomeSector"></a>
+    <strong>InitialiseHomeSector (sectorPlanetTable, capitalPlanetName)</strong>
+    </dt>
+    <dd>
+    Initialises the home sector of a faction.
+ Attributes the specified planets to the faction.
+ Updates a planet to be capital.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sectorPlanetTable</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Contains all planets of a sector.
+        </li>
+        <li><span class="parameter">capitalPlanetName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Name of the capital. Has to be contained within the sector table.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="_abstract__Initialisation"></a>{abstract} Initialisation</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Initialise"></a>
+    <strong>Initialise ()</strong>
+    </dt>
+    <dd>
+    {abstract}.
+ Empty dummy: All factions are either major or minor.
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Getter_functions"></a>Getter functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "GetName"></a>
+    <strong>GetName ()</strong>
+    </dt>
+    <dd>
+    Returns a faction's name (Not the string key or the PlayerObject).
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">String</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetStringKey"></a>
+    <strong>GetStringKey ()</strong>
+    </dt>
+    <dd>
+    Returns a faction's string key.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">String</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetGameFactionName"></a>
+    <strong>GetGameFactionName ()</strong>
+    </dt>
+    <dd>
+    Returns a faction's gameFactionName.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">String</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetObjectType"></a>
+    <strong>GetObjectType ()</strong>
+    </dt>
+    <dd>
+    Returns a faction's object type.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">String</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetPlayerObject"></a>
+    <strong>GetPlayerObject ()</strong>
+    </dt>
+    <dd>
+    Returns the PlayerObject for a faction.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">PlayerObject</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetIsHumanPlayer"></a>
+    <strong>GetIsHumanPlayer ()</strong>
+    </dt>
+    <dd>
+    Is the faction human or AI?.
+ Wrapper function for the game's Is_Human() function to work with a cFaction object.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="_abstract__Evaluations"></a>{abstract} Evaluations</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "EvaluateHumanPlayer"></a>
+    <strong>EvaluateHumanPlayer ()</strong>
+    </dt>
+    <dd>
+    {abstract}.
+ Empty dummy, always returns false.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+        false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "AddDiplomaticMission"></a>
+    <strong>AddDiplomaticMission (mission)</strong>
+    </dt>
+    <dd>
+    {abstract}.
+ Empty dummy, always returns false.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">mission</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+        false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "RemoveDiplomaticMission"></a>
+    <strong>RemoveDiplomaticMission (mission)</strong>
+    </dt>
+    <dd>
+    {abstract}.
+ Empty dummy, always returns false.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">mission</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+        false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "UpdateDiplomaticMissionHolochron"></a>
+    <strong>UpdateDiplomaticMissionHolochron ()</strong>
+    </dt>
+    <dd>
+    {abstract}.
+ Empty dummy, always returns false.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+        false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ClearDiplomaticMissionHolochron"></a>
+    <strong>ClearDiplomaticMissionHolochron ()</strong>
+    </dt>
+    <dd>
+    {abstract}.
+ Empty dummy, always returns false.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+        false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetProtectorates"></a>
+    <strong>GetProtectorates ()</strong>
+    </dt>
+    <dd>
+    {abstract}.
+ Empty dummy, always returns false.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+        false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MakeAlly"></a>
+    <strong>MakeAlly ()</strong>
+    </dt>
+    <dd>
+    {abstract}.
+ Empty dummy, always returns false.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+        false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "IsAlliedWith"></a>
+    <strong>IsAlliedWith ()</strong>
+    </dt>
+    <dd>
+    {abstract}.
+ Empty dummy, always returns false.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+        false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetAlly"></a>
+    <strong>GetAlly ()</strong>
+    </dt>
+    <dd>
+    {abstract}.
+ Empty dummy, always returns false.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+        false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetIsDiplomacyStageTriggered"></a>
+    <strong>GetIsDiplomacyStageTriggered ()</strong>
+    </dt>
+    <dd>
+    {abstract}.
+ Empty dummy, always returns false.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+        false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "GetRewardSet"></a>
+    <strong>GetRewardSet ()</strong>
+    </dt>
+    <dd>
+    {abstract}.
+ Empty dummy, always returns false.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">Bool</span></span>
+        false
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2020-07-04 16:43:17 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
