@@ -1,12 +1,14 @@
 # Empire at War LUA Framework
 
-(c) 2017 - [Kad_Venku](https://github.com/KadVenku)
+(c) 2017 - [Lukas Grünwald](https://github.com/gruenwaldlk)
 
 ## Description
+
 This is an event driven framework for the Petroglyph game Star Wars: Empire at War - Forces of Corruption written entirely in LUA 5.1.  
 The purpose of this framework is providing mod makers with the ability to add new gameplay mechanics on top of the existing game as well as allowing easy interaction with the game's GUI and story scripting system.  
 
 ## General Idea
+
 The general idea is to mirror every necessary game object (planets, factions,...) as a LUA object. This way interaction between registered objects can be programmed and extended to one's liking via LUA 5.1 and only has to fall back to onto the game's default functionality to interact directly with the mirrored and linked game object.
 
 In addition the framework provides a fully functional event handler which registers custom event types which inherit from a base event class. These can be affiliated with in-game actions or LUA object actions.

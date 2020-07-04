@@ -1,5 +1,5 @@
 -- ===== ===== ===== ===== =====
--- Copyright (c) 2017 Kad Venku
+-- Copyright (c) 2017 Lukas Grünwald
 -- License       MIT License
 -- ===== ===== ===== ===== =====
 
